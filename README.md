@@ -5,6 +5,8 @@ so the owner pastes one line and Claude does the setup with them.
 
 **Repo link:** `https://github.com/ecommercefastlaunch-debug/work-without-working-kit`
 
+**One-page handout:** [PNG](handout/work-without-working-kits.png) · [PDF](handout/work-without-working-kits.pdf)
+
 Run the kits in order. Each one builds on the files the one before it made.
 
 | Kit | Day 1 blocks | What the owner leaves with | Runs on |
