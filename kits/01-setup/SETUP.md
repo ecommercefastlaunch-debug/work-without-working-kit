@@ -151,4 +151,4 @@ Then tell them:
 
 > You're set up. Start a **new** Code session and choose your **WORK FOLDER**. Tell me what
 > you want to work on and I'll make a folder for it. You can write to me in Tagalog, Taglish
-> or English. For more tools, run Kit 02, the Skills Directory. For video editing, Kit 03.
+> or English.

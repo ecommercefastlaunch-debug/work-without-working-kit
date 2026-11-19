@@ -33,8 +33,8 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 | Git | Downloads the kits and skills (Windows: Git for Windows) | [git-scm.com](https://git-scm.com) |
 | GitHub | The GitHub app (`gh`) plus the owner's own account, to save and share their work later | [cli.github.com](https://cli.github.com) |
 | FFmpeg | Lets Claude cut, convert and pull audio from video files | [ffmpeg.org](https://ffmpeg.org) |
-| Node.js | Runs the video editor (Kit 03) and other tools | [nodejs.org](https://nodejs.org) |
-| Kit files | The guides for Kits 02 and 03, in `Documents/work-without-working-kit` | this repo |
+| Node.js | Runs tools like video editors and app builders | [nodejs.org](https://nodejs.org) |
+| Kit files | This kit, saved in `Documents/work-without-working-kit` | this repo |
 
 **Claude skills (10)**, installed into `~/.claude/skills`:
 
@@ -48,13 +48,10 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 | customer-research | Turns customer messages and reviews into what customers really want | coreyhaines31/marketingskills (MIT) |
 | social | Posts, carousels and calendars for Facebook, Instagram, TikTok, LinkedIn | coreyhaines31/marketingskills (MIT) |
 | ad-creative | Ad headlines and copy variations for Meta, Google, TikTok | coreyhaines31/marketingskills (MIT) |
-| content-repurposing | One piece of content into many posts | this kit |
-| hook-killers | Finds why an opening line is weak and fixes it | this kit (MIT, Artem Novitckii) |
+| content-repurposing | One piece of content into many posts | this kit ([skills/](skills/)) |
+| hook-killers | Finds why an opening line is weak and fixes it | this kit ([skills/](skills/); MIT, Artem Novitckii) |
 
 Already in the Claude app, no install: Word, Excel, PowerPoint and PDF skills.
-
-More tools (Grill Me, Anthropic's Small Business plugin and 60 others)
-are in [Kit 02, the Skills Directory](../02-skills-directory/catalog.md).
 
 ## The WORK FOLDER
 
@@ -74,6 +71,7 @@ business and the rules: new project, new folder; results go in its Outputs.
 - [SETUP.md](SETUP.md): the steps Claude follows
 - [setup.sh](setup.sh): the one-shot installer (safe to re-run; skips what's done)
 - [templates/CLAUDE.md](templates/CLAUDE.md): the business file template
+- [skills/](skills/): the two Claude skills that live in this kit (content-repurposing, hook-killers)
 
 ## Takes about
 

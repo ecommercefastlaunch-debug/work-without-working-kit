@@ -76,8 +76,8 @@ for line in \
   "coreyhaines31/marketingskills|skills/customer-research|customer-research" \
   "coreyhaines31/marketingskills|skills/social|social" \
   "coreyhaines31/marketingskills|skills/ad-creative|ad-creative" \
-  "kit|kits/02-skills-directory/extra-skills/content-repurposing|content-repurposing" \
-  "kit|kits/02-skills-directory/extra-skills/hook-killers|hook-killers"; do
+  "kit|kits/01-setup/skills/content-repurposing|content-repurposing" \
+  "kit|kits/01-setup/skills/hook-killers|hook-killers"; do
   repo="${line%%|*}"; rest="${line#*|}"; path="${rest%%|*}"; name="${rest#*|}"
   if [ -e "$SK/$name" ]; then ALREADY "skill $name"; continue; fi
   if [ "$repo" = kit ]; then clone="$KIT_DIR"
