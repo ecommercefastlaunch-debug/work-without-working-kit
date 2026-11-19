@@ -7,6 +7,8 @@ description: {{One or two sentences: what this tool does and when to use it. Inc
 
 {{One sentence: the job this tool does for the business.}}
 
+{{BUILT ON}}
+
 Before starting, read the CLAUDE.md in the business folder for what we sell, our prices,
 and how we talk to customers.
 
