@@ -4,67 +4,78 @@
 <meta charset="utf-8">
 <title>Work Without Working: Day 1 Workbook</title>
 <style>
+  /* Work Without Working brand: #0B111B core, #00E5FF brand cyan, #F5F7FB surface.
+     Inter, bold italic for headlines. Slanted panels, bold bars, glow lines. */
   :root {
-    --midnight: #0B111B; --green: #BFFF63; --cloud: #F5F7FB; --ink: #0B111B;
-    --muted: #4A5568; --line: #DCE1EA; --soft: #EEF2F7;
+    --midnight: #0B111B; --cyan: #00E5FF; --cloud: #F5F7FB; --ink: #0B111B;
+    --muted: #4A5568; --line: #DCE1EA; --soft: #EEF2F7; --cyan-soft: #E0FBFF;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 794px; background: #fff; }
-  body { font-family: Inter, -apple-system, "Segoe UI", sans-serif; color: var(--ink); font-size: 12px; line-height: 1.45; }
+  body { font-family: Inter, Manrope, -apple-system, "Segoe UI", sans-serif; color: var(--ink); font-size: 12px; line-height: 1.45; }
   .nb { white-space: nowrap; }
   a { color: inherit; text-decoration: none; }
   b { font-weight: 700; }
 
   .page { width: 794px; height: 1123px; overflow: hidden; position: relative; background: #fff;
           padding: 38px 44px 56px; display: flex; flex-direction: column; gap: 12px; }
-  .foot { position: absolute; left: 44px; right: 44px; bottom: 22px; display: flex; justify-content: space-between;
-          font: 600 9px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #9AA5B5;
+  .page::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--midnight); }
+  .page::after { content: ""; position: absolute; top: 6px; left: 0; width: 38%; height: 3px; background: var(--cyan);
+                 box-shadow: 0 0 8px rgba(0,229,255,.7); }
+  .foot { position: absolute; left: 44px; right: 44px; bottom: 22px; display: flex; justify-content: space-between; align-items: center;
+          font: italic 800 9px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #8A96A8;
           border-top: 1px solid var(--line); padding-top: 9px; }
+  .foot span:last-child { background: var(--midnight); color: var(--cyan); padding: 4px 9px; transform: skewX(-14deg); font-style: normal; }
 
-  .eyebrow { font: 700 10.5px/1 Inter, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  .eyebrow.g { color: #5A8A00; }
-  h1 { font: 800 30px/1.08 Poppins, sans-serif; letter-spacing: -.01em; }
-  h2 { font: 700 18px/1.2 Poppins, sans-serif; }
-  h3 { font: 700 13.5px/1.25 Poppins, sans-serif; }
-  .lead { font-size: 13px; color: var(--muted); max-width: 640px; }
+  /* Bold bar: section label, slanted, cyan with dark italic caps */
+  .eyebrow { display: inline-block; align-self: flex-start; font: italic 800 11px/1 Inter, sans-serif; letter-spacing: .08em;
+             text-transform: uppercase; color: var(--midnight); background: var(--cyan); padding: 6px 14px 6px 10px;
+             clip-path: polygon(0 0, 100% 0, calc(100% - 9px) 100%, 0 100%); }
+  .eyebrow.g { }
+  h1 { font: italic 900 30px/1.02 Inter, sans-serif; letter-spacing: -.015em; text-transform: uppercase; }
+  h2 { font: italic 800 17px/1.2 Inter, sans-serif; text-transform: uppercase; letter-spacing: -.005em;
+       display: flex; align-items: center; gap: 10px; }
+  h2::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, var(--cyan), rgba(0,229,255,0)); }
+  h3 { font: italic 800 13.5px/1.25 Inter, sans-serif; }
+  .lead { font-size: 13px; color: var(--muted); max-width: 660px; }
   .head { display: flex; align-items: center; gap: 14px; }
-  .badge { background: var(--green); color: var(--midnight); font: 800 18px/1 Poppins, sans-serif; border-radius: 8px; padding: 9px 10px; flex: none; }
+  .badge { background: var(--cyan); color: var(--midnight); font: italic 900 20px/1 Inter, sans-serif; padding: 10px 16px 10px 12px; flex: none;
+           clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
   .head .when { font-size: 11.5px; color: var(--muted); margin-top: 3px; }
 
   .card { border: 1px solid var(--line); border-radius: 12px; padding: 13px 15px; background: #fff; }
   .card.soft { background: var(--cloud); }
-  .card.dark { background: var(--midnight); color: #C9D2E0; border: none; }
-  .card.dark h3 { color: var(--green); }
+  .card.dark { background: var(--midnight); color: #C9D2E0; border: none; box-shadow: inset 3px 0 0 var(--cyan); }
+  .card.dark h3 { color: var(--cyan); }
   .card.dark b { color: #fff; }
 
-  .prompt { background: var(--midnight); color: #E8EEF7; border-radius: 8px; padding: 9px 11px;
-            font: 400 10.6px/1.55 "SF Mono", Menlo, Consolas, monospace; }
-  .prompt::before { content: attr(data-label); display: block; font: 700 8px/1 Inter, sans-serif; letter-spacing: .12em;
-                    color: var(--green); margin-bottom: 5px; text-transform: uppercase; }
+  .prompt { background: var(--midnight); color: #E8EEF7; border-radius: 8px; padding: 9px 11px 9px 13px;
+            font: 400 10.6px/1.55 "SF Mono", Menlo, Consolas, monospace; box-shadow: inset 3px 0 0 var(--cyan); }
+  .prompt::before { content: attr(data-label); display: block; font: italic 800 8.5px/1 Inter, sans-serif; letter-spacing: .12em;
+                    color: var(--cyan); margin-bottom: 5px; text-transform: uppercase; }
   code, .mono { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: .92em; background: var(--soft); border-radius: 4px; padding: 0 3px; }
   .card.dark code { background: #1A2433; color: #fff; }
 
-  /* Step rows */
   .steps { display: flex; flex-direction: column; gap: 8px; }
   .steps.fill { flex: 1; }
   .steps.fill .step { flex: 1; }
   .step { display: grid; grid-template-columns: 30px 1fr 28px; gap: 10px; align-items: start;
-          border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
-  .num { width: 26px; height: 26px; border-radius: 50%; background: var(--midnight); color: var(--green);
-         font: 700 12.5px/26px Poppins, sans-serif; text-align: center; }
+          border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; position: relative; }
+  .step::before { content: ""; position: absolute; left: -1px; top: 12px; width: 3px; height: 22px; background: var(--cyan); border-radius: 0 2px 2px 0; }
+  .num { width: 26px; height: 26px; background: var(--midnight); color: var(--cyan);
+         font: italic 900 13px/26px Inter, sans-serif; text-align: center; clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%); }
   .step h3 { display: flex; justify-content: space-between; gap: 10px; }
-  .step h3 .t { font: 500 10.5px/1.6 Inter, sans-serif; color: var(--muted); white-space: nowrap; }
+  .step h3 .t { font: 600 10.5px/1.6 Inter, sans-serif; color: var(--muted); white-space: nowrap; font-style: normal; }
   .step p { margin-top: 2px; color: var(--ink); }
   .step .you { margin-top: 4px; color: var(--muted); font-size: 11.3px; }
   .step .you b { color: var(--ink); }
   .step .paste { margin-top: 6px; display: inline-block; background: var(--midnight); color: #fff; border-radius: 6px;
                  padding: 4px 8px; font: 600 10.6px/1.3 "SF Mono", Menlo, Consolas, monospace; }
-  .step .paste::before { content: "PASTE  "; color: var(--green); font: 700 8px/1 Inter, sans-serif; letter-spacing: .12em; }
+  .step .paste::before { content: "PASTE  "; color: var(--cyan); font: italic 800 8px/1 Inter, sans-serif; letter-spacing: .12em; }
   .box { width: 22px; height: 22px; border: 2px solid var(--midnight); border-radius: 6px; margin-top: 2px; }
   .boxsm { display: inline-block; width: 13px; height: 13px; border: 1.6px solid var(--midnight); border-radius: 3px;
            vertical-align: -2px; margin-right: 7px; flex: none; }
 
-  /* Write-in fields */
   .field { display: flex; flex-direction: column; gap: 4px; }
   .field label { font-weight: 700; font-size: 12px; }
   .field .hint { font-weight: 400; color: var(--muted); font-size: 11px; }
@@ -75,36 +86,45 @@
 
   ul.clean { list-style: none; display: flex; flex-direction: column; gap: 5px; }
   ul.clean li { display: flex; gap: 8px; align-items: flex-start; }
-  .dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-top: 5px; }
+  .dot { flex: none; width: 8px; height: 8px; background: var(--cyan); margin-top: 4px; transform: skewX(-14deg); }
   .card:not(.dark) .dot { background: var(--midnight); }
 
   table { width: 100%; border-collapse: collapse; font-size: 11.3px; }
-  th { text-align: left; font: 700 10px/1.2 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  th { text-align: left; font: italic 800 10px/1.2 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
        padding: 6px 8px; border-bottom: 2px solid var(--midnight); }
   td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
   td.w { height: 34px; }
 
   /* Cover */
   .cover { padding: 0; gap: 0; }
-  .cover .top { background: var(--midnight); color: #fff; padding: 44px 48px 32px; }
-  .cover h1 { font-size: 52px; line-height: 1.02; margin-top: 14px; }
-  .cover h1 span { color: var(--green); }
-  .cover .sub { color: #C9D2E0; font-size: 15px; margin-top: 14px; max-width: 560px; }
-  .cover .meta { color: var(--green); }
-  .cover .link { margin-top: 18px; font: 600 12.5px/1 "SF Mono", Menlo, Consolas, monospace; color: #fff;
-                 background: #1A2433; border-radius: 6px; padding: 8px 10px; display: inline-block; white-space: nowrap; }
-  .cover .inner { padding: 22px 48px 60px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
-  .qr { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 8px; text-align: center; flex: none; }
-  .qr img { width: 112px; height: 112px; display: block; }
-  .qr p { font: 600 9.5px/1.2 Inter, sans-serif; margin-top: 4px; }
+  .cover::before, .cover::after { display: none; }
+  .cover .top { background: var(--midnight); color: #fff; padding: 28px 40px 30px; position: relative; overflow: hidden; }
+  .cover .top .swoosh { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .cover .kicker { position: relative; display: flex; justify-content: center; align-items: center; gap: 14px;
+                   font: italic 700 11px/1 Inter, sans-serif; letter-spacing: .32em; color: #fff; text-transform: uppercase; }
+  .cover .kicker::before, .cover .kicker::after { content: ""; width: 34px; height: 2px; background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+  .cover .logo { position: relative; display: block; width: 580px; margin: 0 auto -6px; }
+  .cover .panel { position: relative; display: table; margin: 0 auto; background: var(--cyan); color: var(--midnight);
+                  font: italic 900 30px/1 Inter, sans-serif; text-transform: uppercase; letter-spacing: -.01em; padding: 12px 34px;
+                  clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%); }
+  .cover .sub { position: relative; color: #C9D2E0; font-size: 14px; margin: 14px auto 0; max-width: 560px; text-align: center; }
+  .cover .link { position: relative; display: table; margin: 14px auto 0; font: 600 12px/1 "SF Mono", Menlo, Consolas, monospace; color: #fff;
+                 border: 1px solid rgba(0,229,255,.55); box-shadow: 0 0 10px rgba(0,229,255,.25); border-radius: 6px; padding: 8px 10px; white-space: nowrap; }
+  .cover .glow { height: 3px; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+  .cover .inner { padding: 18px 44px 60px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .qr { background: #fff; border: 2px solid var(--midnight); border-radius: 12px; padding: 8px; text-align: center; flex: none; }
+  .qr img { width: 108px; height: 108px; display: block; }
+  .qr p { font: italic 800 9.5px/1.2 Inter, sans-serif; margin-top: 4px; text-transform: uppercase; }
 
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
-  .org .node.me { background: var(--midnight); color: #fff; }
-  .org .node.chief { background: var(--green); }
+  .org .node b { font-style: italic; font-weight: 800; }
+  .org .node.me { background: var(--midnight); color: #fff; box-shadow: 0 0 0 3px var(--cyan); }
+  .org .node.chief { background: var(--cyan); }
   .org .node small { display: block; font-size: 10px; color: var(--muted); margin-top: 2px; }
   .org .node.me small { color: #C9D2E0; }
+  .org .node.chief small { color: var(--midnight); }
   .org .node .lines { --n: 1; margin-top: 4px; }
   .org .v { width: 2px; height: 16px; background: var(--midnight); }
   .org .team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 100%; position: relative; padding-top: 16px; }
@@ -119,11 +139,20 @@
 <!-- 1. COVER -->
 <section class="page cover">
   <div class="top">
-    <div class="eyebrow meta">Day 1 · November 20, 2026 · Botanika Nature by Filigree, Alabang</div>
-    <h1>Work Without Working<br><span>Day 1 Workbook</span></h1>
+    <svg class="swoosh" viewBox="0 0 794 420" preserveAspectRatio="none" aria-hidden="true">
+      <defs><linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#00E5FF" stop-opacity="0"/><stop offset=".6" stop-color="#00E5FF" stop-opacity=".9"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></linearGradient></defs>
+      <path d="M-20 415 C 240 372, 520 432, 820 345" fill="none" stroke="url(#sw)" stroke-width="3"/>
+      <path d="M-20 428 C 260 392, 560 440, 820 372" fill="none" stroke="url(#sw)" stroke-width="1.2" opacity=".6"/>
+      <polygon points="700,0 794,0 794,70" fill="#00E5FF" opacity=".9"/>
+      <polygon points="0,0 60,0 0,48" fill="#00E5FF" opacity=".25"/>
+    </svg>
+    <div class="kicker">Day 1 · November 20, 2026 · Botanika, Alabang</div>
+    <img class="logo" src="brand/wow-logo.png" alt="Work Without Working: Make AI work for you">
+    <div class="panel">Day 1 Workbook</div>
     <p class="sub">Set up Claude, build your first AI tool, and start your AI team. Every step is in here, in order. Write in it as you go.</p>
     <a class="link" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">github.com/ecommercefastlaunch-debug/work-without-working-kit</a>
   </div>
+  <div class="glow"></div>
   <div class="inner">
     <div class="card soft" style="display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;padding:18px 20px">
       <div class="field"><label>My name</label><div class="lines" style="--n:1"></div></div>

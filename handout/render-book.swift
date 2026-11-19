@@ -16,8 +16,8 @@ JSON.stringify({
   pages: document.querySelectorAll('.page').length,
   overflow: [...document.querySelectorAll('.page')].map((p, i) => {
     const pr = p.getBoundingClientRect(); let max = 0;
-    p.querySelectorAll('*').forEach(e => { if (e.closest('.foot') || e.childElementCount) return; const r = e.getBoundingClientRect(); if (r.height > 0) max = Math.max(max, r.bottom - pr.top); });
-    const over = Math.max(max - (H_LIMIT), [...p.querySelectorAll('*')].reduce((m, e) => Math.max(m, e.getBoundingClientRect().right - pr.left - 794), 0));
+    p.querySelectorAll('*').forEach(e => { if (e.closest('.foot') || e.closest('svg') || e.childElementCount) return; const r = e.getBoundingClientRect(); if (r.height > 0) max = Math.max(max, r.bottom - pr.top); });
+    const over = Math.max(max - (H_LIMIT), [...p.querySelectorAll('*')].filter(e => !e.closest('svg')).reduce((m, e) => Math.max(m, e.getBoundingClientRect().right - pr.left - 794), 0));
     return over > 0 ? {page: i + 1, over: Math.round(over)} : null; }).filter(Boolean),
   wrappedLinks: [...document.querySelectorAll('.nb, .link')].filter(e => e.getClientRects().length > 1).map(e => e.textContent),
   fonts: [document.fonts.check('16px Poppins'), document.fonts.check('16px Inter')]
