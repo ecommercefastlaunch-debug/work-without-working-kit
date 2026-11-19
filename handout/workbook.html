@@ -122,6 +122,12 @@
   .regline { height: 26px; border-bottom: 1.5px solid #9AA5B5; }
   .regpick { display: flex; gap: 28px; font-size: 13px; padding-top: 4px; }
   .regpick .boxsm { width: 15px; height: 15px; vertical-align: -3px; }
+  .incgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 10px; }
+  .inc { display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: start; border: 1px solid var(--line);
+         border-radius: 10px; padding: 9px 11px; position: relative; }
+  .inc::before { content: ""; position: absolute; left: -1px; top: 10px; width: 3px; height: 20px; background: var(--cyan); border-radius: 0 2px 2px 0; }
+  .inc h3 { font-size: 13px; }
+  .inc p { font-size: 11.2px; color: var(--muted); margin-top: 1px; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -180,7 +186,7 @@
 
     <div class="card">
       <h3>Inside</h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · Setup checklist</div><div>p3 · My business and bottleneck</div><div>p4 · Kit 01 Setup, Steps 1 to 5</div><div>p5 · Kit 01 Steps 6 to 9, WORK FOLDER</div><div>p6 · Kit 02 Skills Directory</div><div>p7 · Worksheet: my first tool</div><div>p8 · Kit 03 24/7 Video Editor</div><div>p9 · Worksheet: my AI team</div><div>p10 · When you're stuck, notes</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · Setup checklist</div><div>p3 · My business and bottleneck</div><div>p4 · Kit 01 Setup and your WORK FOLDER</div><div>p5 · Kit 02 Skills Directory</div><div>p6 · Worksheet: my first tool</div><div>p7 · Kit 03 24/7 Video Editor</div><div>p8 · Worksheet: my AI team</div><div>p9 · When you're stuck, notes</div></div>
     </div>
 
     <div class="card dark" style="display:grid;grid-template-columns:1fr 1fr;gap:8px 22px">
@@ -279,78 +285,26 @@
   <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>3</span></div>
 </section>
 
-<!-- 4. KIT 01 STEPS 1-5 -->
+<!-- 4. KIT 01 SETUP -->
 <section class="page">
-  <div class="head"><span class="badge">01</span><div><h1 style="font-size:26px">Setup</h1><div class="when">Do this first · One step at a time, together · About 20 to 35 minutes</div></div></div>
-  <p class="lead">Claude installs one thing per step, shows a ✓, then tells you the next step. Tick the box, then wait for the trainer.</p>
-  <div class="prompt" data-label="Step 1 · Paste in Claude (scan the QR)">Set me up with Kit 01 from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/01-setup/SETUP.md</span> and do Step 1 only.</div>
+  <div class="head"><span class="badge">01</span><div><h1 style="font-size:26px">Setup</h1><div class="when">Do this first · One prompt installs everything · About 15 to 25 minutes</div></div></div>
+  <p class="lead">Paste one prompt. Claude installs everything below for you. You only approve when your computer asks.</p>
+  <div class="prompt" data-label="Paste in Claude (scan the QR)">Set me up with Kit 01 from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/01-setup/SETUP.md</span> and install everything for me. I'll allow what's needed.</div>
 
-  <div class="steps fill">
-    <div class="step"><div class="num">1</div><div>
-      <h3>Homebrew (Mac) · winget check (Windows) <span class="t">5 to 15 min</span></h3>
-      <p>Homebrew is the Mac's installer for everything after this. Windows has its own, called winget.</p>
-      <p class="you"><b>Mac:</b> a Terminal window opens. Click <b>OK</b> if asked. Type your <b>Mac password</b> (nothing shows while you type, that's normal), press Return. Press Return again if it says "Press RETURN". Leave it running.<br><b>Windows:</b> say yes when Claude asks to accept the programs' terms.</p>
-    </div><div class="box"></div></div>
+  <h2>What's included</h2>
+  <div class="incgrid"><div class="inc"><span class="box"></span><div><h3>Homebrew</h3><p>Mac only. The Mac's installer for everything below.</p></div></div><div class="inc"><span class="box"></span><div><h3>Git</h3><p>Downloads the kits and skills.</p></div></div><div class="inc"><span class="box"></span><div><h3>FFmpeg</h3><p>Lets Claude cut and convert your videos.</p></div></div><div class="inc"><span class="box"></span><div><h3>Node.js</h3><p>Runs the video editor and other tools.</p></div></div><div class="inc"><span class="box"></span><div><h3>Google Chrome</h3><p>The video editor uses it to make videos. Skipped if you have it.</p></div></div><div class="inc"><span class="box"></span><div><h3>Skills: stop-slop + dumbify</h3><p>Writing that doesn't sound like AI, and explanations kept simple.</p></div></div><div class="inc"><span class="box"></span><div><h3>Kit files</h3><p>The guides for Kits 02 and 03, saved on your laptop.</p></div></div><div class="inc"><span class="box"></span><div><h3>WORK FOLDER</h3><p>Your home base, with a file that tells Claude about your business.</p></div></div></div>
 
-    <div class="step"><div class="num">2</div><div>
-      <h3>WORK FOLDER <span class="t">3 min · can run while Homebrew installs</span></h3>
-      <p>Creates <code>Documents/WORK FOLDER</code>, your home base, and a file that tells Claude about your business.</p>
-      <p class="you"><b>You:</b> answer one question: what you sell and who buys it. Copy it from page 3.</p>
-      <span class="paste">Kit 01 Step 2</span>
-    </div><div class="box"></div></div>
-
-    <div class="step"><div class="num">3</div><div>
-      <h3>Git <span class="t">1 to 2 min</span></h3>
-      <p>Downloads the kits and skills from GitHub.</p>
-      <p class="you"><b>Windows:</b> if Claude says so, close and reopen the Claude app, then paste Step 3 again.</p>
-      <span class="paste">Kit 01 Step 3</span>
-    </div><div class="box"></div></div>
-
-    <div class="step"><div class="num">4</div><div>
-      <h3>FFmpeg <span class="t">2 to 8 min</span></h3>
-      <p>Lets Claude cut, convert and pull the audio out of your videos. Kit 03 needs it.</p>
-      <span class="paste">Kit 01 Step 4</span>
-    </div><div class="box"></div></div>
-
-    <div class="step"><div class="num">5</div><div>
-      <h3>Node.js <span class="t">1 to 2 min</span></h3>
-      <p>Runs the video editor in Kit 03 and other tools.</p>
-      <span class="paste">Kit 01 Step 5</span>
-    </div><div class="box"></div></div>
-  </div>
-  <div class="foot"><span>Kit 01 · Setup</span><span>4</span></div>
-</section>
-
-<!-- 5. KIT 01 STEPS 6-9 + WORK FOLDER -->
-<section class="page">
-  <div class="head"><span class="badge">01</span><div><h1 style="font-size:26px">Setup, continued</h1><div class="when">Same Claude session. Opened a new one? Paste the Step 1 prompt again, then your step.</div></div></div>
-  <div class="steps">
-    <div class="step"><div class="num">6</div><div>
-      <h3>Google Chrome <span class="t">1 to 3 min</span></h3>
-      <p>The video editor uses Chrome to make your videos. Skipped if you already have it.</p>
-      <span class="paste">Kit 01 Step 6</span>
-    </div><div class="box"></div></div>
-
-    <div class="step"><div class="num">7</div><div>
-      <h3>Kit files <span class="t">1 min</span></h3>
-      <p>Saves the guides for Kits 02 and 03 in <code>Documents/work-without-working-kit</code>.</p>
-      <span class="paste">Kit 01 Step 7</span>
-    </div><div class="box"></div></div>
-
-    <div class="step"><div class="num">8</div><div>
-      <h3>Skills: stop-slop and dumbify <span class="t">1 min</span></h3>
-      <p><b>stop-slop</b> keeps Claude's writing from sounding like AI. <b>dumbify</b> keeps explanations and customer messages simple. Both free, from their creators' GitHub.</p>
-      <span class="paste">Kit 01 Step 8</span>
-    </div><div class="box"></div></div>
-
-    <div class="step"><div class="num">9</div><div>
-      <h3>Final check <span class="t">1 min</span></h3>
-      <p>Claude checks everything again and shows ✓ or ✗. For any ✗, it tells you which step to paste again.</p>
-      <span class="paste">Kit 01 Step 9</span>
-    </div><div class="box"></div></div>
+  <div class="card dark">
+    <h3>What you do</h3>
+    <ul class="clean" style="margin-top:7px;gap:6px">
+      <li><span class="dot"></span><span><b>Mac:</b> a Terminal window opens. Click <b>OK</b>, type your <b>Mac password</b> (nothing shows while you type), press Return.</span></li>
+      <li><span class="dot"></span><span><b>Windows:</b> say yes to the programs' terms, and click <b>Yes</b> when Windows asks to allow changes.</span></li>
+      <li><span class="dot"></span><span>Answer one question: what you sell and who buys it. Copy it from page 3.</span></li>
+      <li><span class="dot"></span><span>At the end Claude shows a ✓ for each item. Tick the boxes above.</span></li>
+    </ul>
   </div>
 
-  <h2 style="margin-top:4px">Your WORK FOLDER</h2>
+  <h2>Your WORK FOLDER</h2>
   <div class="row2">
     <div class="prompt" data-label="Inside Documents" style="font-size:11px;line-height:1.7">WORK FOLDER/<br>&nbsp;&nbsp;CLAUDE.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your business + the rules<br>&nbsp;&nbsp;my-tools.md&nbsp;&nbsp;&nbsp;&nbsp;your tools (Kit 02)<br>&nbsp;&nbsp;&lt;project&gt;/&nbsp;&nbsp;&nbsp;&nbsp;one per project<br>&nbsp;&nbsp;&nbsp;&nbsp;Outputs/&nbsp;&nbsp;&nbsp;&nbsp;all Claude makes</div>
     <div class="card soft">
@@ -359,15 +313,14 @@
         <li><span class="dot"></span><span>Start a <b>new</b> Code session and choose your <b>WORK FOLDER</b>.</span></li>
         <li><span class="dot"></span><span>Say what you're working on. Claude makes a folder for it.</span></li>
         <li><span class="dot"></span><span>Everything it makes goes in that project's <b>Outputs</b>.</span></li>
-        <li><span class="dot"></span><span>Write in Tagalog, Taglish or English.</span></li>
       </ul>
     </div>
   </div>
   <div class="card field" style="flex:1">
     <label>My first projects <span class="hint">(each one becomes a folder)</span></label>
-    <div class="lines" style="--n:8"></div>
+    <div class="lines" style="--n:6"></div>
   </div>
-  <div class="foot"><span>Kit 01 · Setup</span><span>5</span></div>
+  <div class="foot"><span>Kit 01 · Setup</span><span>4</span></div>
 </section>
 
 <!-- 6. KIT 02 -->
@@ -386,12 +339,12 @@
     <div class="step"><div class="num">1</div><div><h3>Your business and project</h3><p>Claude reads your CLAUDE.md and asks the task that eats most of your time (page 3), and which project this is for.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">2</div><div><h3>Choose the path</h3><p>Claude shows the tools that fit, plus "see all", "something else" or "from scratch". You choose.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">3</div><div><h3>Install or find the tool</h3><p>Claude asks before installing anything. Tools from other people come from their GitHub, with credit.</p></div><div class="box"></div></div>
-    <div class="step"><div class="num">4</div><div><h3>Make it yours</h3><p>Three questions, one at a time: a real example, what a great result looks like, and what it must never do. Answers on page 7. Claude names it <code>my-something</code>.</p></div><div class="box"></div></div>
+    <div class="step"><div class="num">4</div><div><h3>Make it yours</h3><p>Three questions, one at a time: a real example, what a great result looks like, and what it must never do. Answers on page 6. Claude names it <code>my-something</code>.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">5</div><div><h3>Test it on real work</h3><p>Claude runs your tool on your example and saves the result in your project's Outputs.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">6</div><div><h3>Improve it once</h3><p>Say what to change. Claude fixes the tool itself, not just the result, and runs it again.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">7</div><div><h3>Record it</h3><p>Your tool is added to <code>WORK FOLDER/my-tools.md</code>. Use it any time: type <code>/my-yourtool</code> in a session.</p></div><div class="box"></div></div>
   </div>
-  <div class="foot"><span>Kit 02 · Skills Directory</span><span>6</span></div>
+  <div class="foot"><span>Kit 02 · Skills Directory</span><span>5</span></div>
 </section>
 
 <!-- 7. MY FIRST TOOL -->
@@ -415,7 +368,7 @@
       <tr><td class="w"></td><td></td></tr><tr><td class="w"></td><td></td></tr><tr><td class="w"></td><td></td></tr>
     </table>
   </div>
-  <div class="foot"><span>Kit 02 · Skills Directory</span><span>7</span></div>
+  <div class="foot"><span>Kit 02 · Skills Directory</span><span>6</span></div>
 </section>
 
 <!-- 8. KIT 03 -->
@@ -441,7 +394,7 @@
     <div class="step"><div class="num">7</div><div><h3>Approve and save</h3><p>Say Approve, or give one fix. The final video goes in your project's Outputs in your WORK FOLDER.</p></div><div class="box"></div></div>
   </div>
   <div class="card dark"><h3>Every new video after today</h3><p style="margin-top:4px">Open a session in the <b>herk-edit-kit</b> folder, give it your clip, and only review the draft.</p></div>
-  <div class="foot"><span>Kit 03 · 24/7 Video Editor</span><span>8</span></div>
+  <div class="foot"><span>Kit 03 · 24/7 Video Editor</span><span>7</span></div>
 </section>
 
 <!-- 9. MY AI TEAM -->
@@ -478,7 +431,7 @@
     <div class="card field"><label>My first AI hire</label><div class="lines" style="--n:4"></div></div>
     <div class="card field"><label>What I stop doing myself</label><div class="lines" style="--n:4"></div></div>
   </div>
-  <div class="foot"><span>Afternoon · AI workforce</span><span>9</span></div>
+  <div class="foot"><span>Afternoon · AI workforce</span><span>8</span></div>
 </section>
 
 <!-- 10. STUCK + NOTES -->
@@ -491,10 +444,10 @@
       <tr><td>Terminal asks for a <b>password</b></td><td>Type your Mac password and press Return. Nothing shows while you type, that's normal.</td></tr>
       <tr><td>"Claude wants to control Terminal"</td><td>Click <b>OK</b>.</td></tr>
       <tr><td>Windows: "Allow this app to make changes?"</td><td>Click <b>Yes</b>.</td></tr>
-      <tr><td><code>NEEDS HOMEBREW</code></td><td>Homebrew is still installing. Wait, then paste the step again.</td></tr>
-      <tr><td><code>NEEDS GIT</code> or "not found" on Windows</td><td>Close and reopen the Claude app, then paste the step again.</td></tr>
-      <tr><td>✗ or <code>FAILED</code></td><td>Paste the same step once more. It skips what's done.</td></tr>
-      <tr><td>Claude forgot the steps (new session)</td><td>Paste the Step 1 prompt again, then your step.</td></tr>
+      <tr><td><code>NEEDS HOMEBREW</code></td><td>Homebrew is still installing. Wait, then ask Claude to run the installer again.</td></tr>
+      <tr><td><code>NEEDS GIT</code> or "not found" on Windows</td><td>Close and reopen the Claude app, then paste the Kit 01 prompt again.</td></tr>
+      <tr><td>✗ or <code>FAILED</code></td><td>Ask Claude to run the installer once more. It skips what's done.</td></tr>
+      <tr><td>Something didn't install</td><td>Paste the Kit 01 prompt again. It skips what's done.</td></tr>
       <tr><td>Your tool doesn't show when you type <code>/</code></td><td>Start a new Code session.</td></tr>
       <tr><td>Anything fails twice</td><td><b>Raise your hand.</b> Tell the helper the step number.</td></tr>
     </table>
@@ -503,7 +456,7 @@
     <label>Notes</label>
     <div class="lines" style="--n:14"></div>
   </div>
-  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>10</span></div>
+  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>9</span></div>
 </section>
 
 </body>

@@ -69,13 +69,6 @@
   .rules div { display: flex; gap: 8px; }
   .rules b { color: #fff; }
   .dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-top: 4px; }
-  .steps-label { font-size: 12px; color: var(--muted); margin: 10px 0 6px; }
-  .steps-label b { color: var(--ink); font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px; }
-  .steps { display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 4px; }
-  .steps span { display: flex; align-items: center; gap: 4px; background: var(--cloud); border: 1px solid var(--line);
-                border-radius: 6px; padding: 4px 6px 4px 4px; font: 600 9.6px/1.1 Inter, sans-serif; white-space: nowrap; }
-  .steps i { font: 700 9px/14px Poppins, sans-serif; font-style: normal; width: 14px; height: 14px; flex: none; border-radius: 50%;
-             background: var(--midnight); color: var(--green); text-align: center; }
 </style>
 </head>
 <body>
@@ -101,13 +94,9 @@
 
   <main class="grid">
     <article class="kit wide">
-      <div class="kit-top"><span class="badge">01</span><div><h2>Setup</h2><div class="when">Do this first · One step at a time, together · About 20 to 35 minutes · Mac: have your Mac password ready</div></div></div>
-      <p class="gets">Claude installs one thing per step and shows a ✓. Wait for the trainer before the next step. You just approve when your computer asks.</p>
-      <div class="prompt">Set me up with Kit 01 from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/01-setup/SETUP.md</span> and do Step 1 only.</div>
-      <div class="steps-label">Then paste, one at a time: <b class="nb">Kit 01 Step 2</b>, <b class="nb">Kit 01 Step 3</b> … up to <b class="nb">Kit 01 Step 9</b></div>
-      <div class="steps">
-        <span><i>1</i>Homebrew</span><span><i>2</i>WORK FOLDER</span><span><i>3</i>Git</span><span><i>4</i>FFmpeg</span><span><i>5</i>Node.js</span><span><i>6</i>Chrome</span><span><i>7</i>Kit files</span><span><i>8</i>Skills</span><span><i>9</i>Check</span>
-      </div>
+      <div class="kit-top"><span class="badge">01</span><div><h2>Setup</h2><div class="when">Do this first · Everything in one go · About 15 to 25 minutes · Mac: have your Mac password ready</div></div></div>
+      <p class="gets">Claude installs everything for you: Git, FFmpeg, Node.js, Chrome, your WORK FOLDER, and the skills stop-slop and dumbify. You just approve when your computer asks.</p>
+      <div class="prompt">Set me up with Kit 01 from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/01-setup/SETUP.md</span> and install everything for me. I'll allow what's needed.</div>
     </article>
 
     <article class="kit wide">
