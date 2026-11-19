@@ -16,9 +16,6 @@ mattpocock/skills|skills/productivity/grill-me|grill-me
 mattpocock/skills|skills/productivity/grilling|grilling
 hardikpandya/stop-slop|.|stop-slop
 artemnovitckii/content-skills|dumbify|dumbify
-coreyhaines31/marketingskills|skills/copywriting|copywriting
-coreyhaines31/marketingskills|skills/copy-editing|copy-editing
-coreyhaines31/marketingskills|skills/customer-research|customer-research
 "
 
 ok=0; skipped=0; failed=0

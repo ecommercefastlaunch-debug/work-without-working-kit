@@ -11,8 +11,8 @@ Run the kits in order. Each one builds on the files the one before it made.
 
 | Kit | Day 1 blocks | What the owner leaves with | Runs on |
 |---|---|---|---|
-| [01 Setup](kits/01-setup/) | 2 to 4 | Git working, the kits downloaded, a work folder, a CLAUDE.md about their business, 6 starter skills and the Small Business plugin | Mac, Windows |
-| [02 Build Your Own Tool](kits/02-build-your-tool/) | 6 (Exercise 1) | Their own tool: picked from 73 ready tools, found online, or built from scratch, then tuned to their business and tested | Mac, Windows |
+| [01 Setup](kits/01-setup/) | 2 to 4 | Homebrew (Mac), the kit files, a work folder with a CLAUDE.md about their business, FFmpeg, Wispr Flow for Taglish voice, and Grill Me, stop-slop, dumbify | Mac, Windows |
+| [02 Build Your Own Tool](kits/02-build-your-tool/) | 6 (Exercise 1) | Their own tool: picked from 74 ready tools, found online, or built from scratch, then tuned to their business and tested | Mac, Windows |
 | [03 Org and AI Chief](kits/03-org-and-ai-chief/) | 7 to 9 | Org plan, Grok Bot hired as AI Chief of Staff | Mac, Windows |
 | [04 AI Workforce](kits/04-ai-workforce/) | 10 to 11 (Exercise 2) | 1 or 2 AI employees, each scored on a real task | Mac, Windows |
 | [05 Connect Grok to Claude](kits/05-connect-grok/) | 13 | Grok sends tasks, Claude does them (AI-Inbox) | Mac only |

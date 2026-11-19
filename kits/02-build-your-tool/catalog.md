@@ -3,13 +3,19 @@
 Every tool here is a Claude skill you can install with one command. Pick one that fits your
 bottleneck, then Kit 02 helps you make it yours: tuned to your business and tested on real work.
 
-**73 tools.** Install one with:
+**74 tools.** Install one with:
 
 ```
 bash ~/Documents/work-without-working-kit/kits/02-build-your-tool/install-tool.sh <tool-name>
 ```
 
 Tools marked *installed in Kit 01* are already on your laptop.
+
+## Running the business
+
+| Tool | What it does | Needs | From |
+|---|---|---|---|
+| `small-business` | Anthropic's plugin: 44 tools for cash flow, invoices, proposals, reviews, hiring, restocking and more. Just describe what you need | Nothing | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) |
 
 ## Planning & thinking
 
@@ -18,7 +24,7 @@ Tools marked *installed in Kit 01* are already on your laptop.
 | `grill-me` | Interviews you with hard questions until a plan or idea is clear | Nothing (installed in Kit 01) | [mattpocock/skills](https://github.com/mattpocock/skills) |
 | `grilling` | The interview engine Grill Me uses | Nothing (installed in Kit 01) | [mattpocock/skills](https://github.com/mattpocock/skills) |
 | `market-and-product-fit-research` | Researches what real customers say online about a product or market, with a source for every claim | Claude in Chrome for Reddit; works with web search alone | this kit |
-| `customer-research` | Turns customer messages, reviews and interviews into what customers really want | Nothing (installed in Kit 01) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
+| `customer-research` | Turns customer messages, reviews and interviews into what customers really want | Nothing | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 
 ## Writing that sounds human
 
@@ -28,13 +34,13 @@ Tools marked *installed in Kit 01* are already on your laptop.
 | `dumbify` | Makes explanations and messages simple and easy to follow | Nothing (installed in Kit 01) | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) |
 | `anti-ai-writing` | A final check that strips generic, AI-sounding writing from any post | Nothing | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) |
 | `storytelling` | Gives scripts and posts a story that holds attention | Nothing | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) |
-| `copy-editing` | Tightens and proofreads your existing text without rewriting it | Nothing (installed in Kit 01) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
+| `copy-editing` | Tightens and proofreads your existing text without rewriting it | Nothing | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 
 ## Sales & marketing copy
 
 | Tool | What it does | Needs | From |
 |---|---|---|---|
-| `copywriting` | Writes offers, landing pages, headlines and product pages | Nothing (installed in Kit 01) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
+| `copywriting` | Writes offers, landing pages, headlines and product pages | Nothing | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | `product-marketing` | Sharpens positioning: who it's for, why you, what to say first | Nothing | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | `marketing-psychology` | Applies honest persuasion (social proof, framing, anchoring) to your offer | Nothing | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | `product-marketing-context-global` | Writes one product profile file that the numbered marketing skills below read first | Nothing | [minhnv0807/ai-business-skills](https://github.com/minhnv0807/ai-business-skills) |
@@ -129,9 +135,9 @@ Tools marked *installed in Kit 01* are already on your laptop.
 | `motion-prompt-writer` | Writes prompts for motion graphics | Nothing | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
 | `reference-to-motion` | Turns a reference video into a motion graphic | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
 
-## Already on your laptop from Kit 01: the Small Business plugin
+## Inside the Small Business plugin
 
-Anthropic's Small Business plugin has 44 tools. Just describe what you need in plain words and it picks the right one. A few that fit most owners:
+After `install-tool.sh small-business`, just describe what you need in plain words and it picks the right tool. A few that fit most owners:
 
 | Say something like | Tool |
 |---|---|
@@ -143,6 +149,8 @@ Anthropic's Small Business plugin has 44 tools. Just describe what you need in p
 | "Write a job post" / "Screen these applicants" | `job-post-builder`, `hiring-screener` |
 | "Help me answer customer questions faster" | `ticket-deflector`, `speed-to-lead` |
 | "What should I restock?" | `inventory-planner`, `restock` |
+
+Don't connect other apps to it during the retreat; it works from pasted text and files.
 
 ## Comes with Kit 06: the 24/7 video editor
 

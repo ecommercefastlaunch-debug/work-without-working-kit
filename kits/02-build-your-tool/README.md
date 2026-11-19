@@ -18,7 +18,7 @@ Run Kit 02 from my Documents/work-without-working-kit folder. Read kits/02-build
 
 | Path | When | What Claude does |
 |---|---|---|
-| **A. Pick from the catalog** | One of the [73 ready tools](catalog.md) fits | Suggests the 3 to 5 that fit their bottleneck, installs the one they pick |
+| **A. Pick from the catalog** | One of the [74 ready tools](catalog.md) fits | Suggests the 3 to 5 that fit their bottleneck, installs the one they pick |
 | **B. Something else** | They want a tool that isn't in the catalog | Searches GitHub and skill directories, checks license and safety, reads it fully, and installs it only after they say yes |
 | **C. Build from scratch** | Nothing out there fits | Writes it with them from the template |
 
@@ -47,6 +47,8 @@ business facts, a real example, and their rules, built on top of the installed t
 - [catalog.md](catalog.md): the menu, by category
 - [catalog.tsv](catalog.tsv): the same list for Claude and the installer (edit this one, then regenerate catalog.md)
 - [install-tool.sh](install-tool.sh): installs a catalog tool by name, or an approved GitHub skill
+- [install-plugin.sh](install-plugin.sh): installs Anthropic's Small Business plugin (catalog tool `small-business`)
+- [gen-catalog.py](gen-catalog.py): rebuilds catalog.md after you edit catalog.tsv
 - [extra-skills/](extra-skills/): tools that live in this kit (content-repurposing, hook-killers,
   market-and-product-fit-research, ui-image-gen, awesome-design-md)
 - [templates/SKILL.md](templates/SKILL.md): the template for their own version
@@ -55,7 +57,7 @@ business facts, a real example, and their rules, built on top of the installed t
 
 30 minutes. Keep it to one task. Good first tools: reply drafts for common customer
 questions (`copywriting`), captions for a product (`37-social-caption-global`), a follow-up
-for unpaid invoices (`invoice-chase` from the Small Business plugin), turning one video into
+for unpaid invoices (`invoice-chase`, after installing `small-business`), turning one video into
 many posts (`content-repurposing`), or product photos (`ui-image-gen` with their ChatGPT).
 
 **Helpers:** steer owners away from tasks that need logging in to another app (Facebook,

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Kit 01: installs Anthropic's Small Business plugin (44 skills for running a small
+# Kit 02 (catalog tool "small-business"): installs Anthropic's Small Business plugin (44 skills for running a small
 # business) from github.com/anthropics/knowledge-work-plugins (Apache-2.0).
 set -u
 

@@ -1,14 +1,15 @@
 name	category	what it does	needs	source	path
+small-business	Running the business	Anthropic's plugin: 44 tools for cash flow, invoices, proposals, reviews, hiring, restocking and more. Just describe what you need	Nothing	plugin	small-business@knowledge-work-plugins
 grill-me	Planning & thinking	Interviews you with hard questions until a plan or idea is clear	Nothing (installed in Kit 01)	mattpocock/skills	skills/productivity/grill-me
 grilling	Planning & thinking	The interview engine Grill Me uses	Nothing (installed in Kit 01)	mattpocock/skills	skills/productivity/grilling
 market-and-product-fit-research	Planning & thinking	Researches what real customers say online about a product or market, with a source for every claim	Claude in Chrome for Reddit; works with web search alone	kit	extra-skills/market-and-product-fit-research
-customer-research	Planning & thinking	Turns customer messages, reviews and interviews into what customers really want	Nothing (installed in Kit 01)	coreyhaines31/marketingskills	skills/customer-research
+customer-research	Planning & thinking	Turns customer messages, reviews and interviews into what customers really want	Nothing	coreyhaines31/marketingskills	skills/customer-research
 stop-slop	Writing that sounds human	Removes phrases that make writing sound like AI	Nothing (installed in Kit 01)	hardikpandya/stop-slop	.
 dumbify	Writing that sounds human	Makes explanations and messages simple and easy to follow	Nothing (installed in Kit 01)	artemnovitckii/content-skills	dumbify
 anti-ai-writing	Writing that sounds human	A final check that strips generic, AI-sounding writing from any post	Nothing	artemnovitckii/content-skills	anti-ai-writing
 storytelling	Writing that sounds human	Gives scripts and posts a story that holds attention	Nothing	artemnovitckii/content-skills	storytelling
-copy-editing	Writing that sounds human	Tightens and proofreads your existing text without rewriting it	Nothing (installed in Kit 01)	coreyhaines31/marketingskills	skills/copy-editing
-copywriting	Sales & marketing copy	Writes offers, landing pages, headlines and product pages	Nothing (installed in Kit 01)	coreyhaines31/marketingskills	skills/copywriting
+copy-editing	Writing that sounds human	Tightens and proofreads your existing text without rewriting it	Nothing	coreyhaines31/marketingskills	skills/copy-editing
+copywriting	Sales & marketing copy	Writes offers, landing pages, headlines and product pages	Nothing	coreyhaines31/marketingskills	skills/copywriting
 product-marketing	Sales & marketing copy	Sharpens positioning: who it's for, why you, what to say first	Nothing	coreyhaines31/marketingskills	skills/product-marketing
 marketing-psychology	Sales & marketing copy	Applies honest persuasion (social proof, framing, anchoring) to your offer	Nothing	coreyhaines31/marketingskills	skills/marketing-psychology
 product-marketing-context-global	Sales & marketing copy	Writes one product profile file that the numbered marketing skills below read first	Nothing	minhnv0807/ai-business-skills	skills/en/product-marketing-context-global

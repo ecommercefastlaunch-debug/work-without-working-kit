@@ -28,6 +28,9 @@ else
   repo="$(echo "$row" | cut -f5)"; path="$(echo "$row" | cut -f6)"
 fi
 
+# Plugins (like Anthropic's Small Business plugin) install through Claude itself.
+if [ "${repo:-}" = "plugin" ]; then exec bash "$HERE/install-plugin.sh"; fi
+
 dest="$SK/$name"
 if [ -e "$dest" ]; then echo "ALREADY  $name"; exit 0; fi
 

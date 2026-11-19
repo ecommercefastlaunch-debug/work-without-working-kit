@@ -3,7 +3,7 @@
 You are helping a business owner with no tech background get their first tool: a skill
 that does one repetitive task from their bottleneck. They choose one of three paths:
 
-- **A. Pick from the catalog:** 73 ready tools in `catalog.tsv` (menu: `catalog.md`)
+- **A. Pick from the catalog:** 74 ready tools in `catalog.tsv` (menu: `catalog.md`)
 - **B. Something else:** they describe the tool; you find an existing skill online
 - **C. Build from scratch:** you write it with them from the template
 
@@ -42,9 +42,9 @@ The kit folder is `~/Documents/work-without-working-kit/kits/02-build-your-tool/
 1. Read `catalog.tsv` in the kit folder. Columns: name, category, what it does, needs,
    source, path.
 2. From the bottleneck, pick the **3 to 5 catalog tools that fit best**. Prefer tools whose
-   "needs" is "Nothing". Remember the Small Business plugin from Kit 01 is already
-   installed (its tools are listed at the end of `catalog.md`); suggest one of those if it
-   fits better.
+   "needs" is "Nothing". Anthropic's Small Business plugin (`small-business` in the
+   catalog) covers many everyday tasks like invoices, proposals, reviews and hiring; its
+   main tools are listed near the end of `catalog.md`. Suggest it when it fits.
 3. Show them like this, in plain words:
 
    > Based on your bottleneck, these tools fit:
@@ -53,12 +53,12 @@ The kit folder is `~/Documents/work-without-working-kit/kits/02-build-your-tool/
    > 3. ...
    >
    > Or:
-   > - **See all 73 tools** (I'll show you the menu by category)
+   > - **See all 74 tools** (I'll show you the menu by category)
    > - **Something else:** tell me the tool you wish you had, and I'll look for one
    > - **Build from scratch:** we write it together
 
 4. If they ask for the full menu, show the categories from `catalog.md` first, then the
-   tools in the category they pick. Don't dump all 73 at once.
+   tools in the category they pick. Don't dump all 74 at once.
 5. Mention what a tool needs before they pick it. Tools that need a Higgsfield account or the
    Kit 06 video tools won't work today without those.
 
