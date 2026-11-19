@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work Without Working · Day 1 Workbook</title>
+<meta name="description" content="Your Day 1 workbook, setup prompts, 61 sales and marketing skills, and sample applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  :root { --midnight:#0B111B; --panel:#121A27; --line:#22304A; --cyan:#00E5FF; --cloud:#F5F7FB; --muted:#9FB0C7; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--midnight); color: var(--cloud); font: 400 16px/1.55 Inter, -apple-system, "Segoe UI", sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding: 36px 0 30px; border-bottom: 3px solid var(--cyan); }
+  .kicker { font: italic 700 12px/1 Inter, sans-serif; letter-spacing: .28em; text-transform: uppercase; }
+  header img { width: min(560px, 100%); display: block; margin: 14px auto 6px; }
+  .panel { display: inline-block; background: var(--cyan); color: var(--midnight); font: italic 900 clamp(22px, 5vw, 32px)/1 Inter, sans-serif;
+           text-transform: uppercase; padding: 12px 30px; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%); }
+  header p { color: var(--muted); margin: 14px auto 0; max-width: 560px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--cyan); color: var(--midnight); font: 800 15px/1 Inter, sans-serif;
+         text-decoration: none; padding: 13px 18px; border-radius: 8px; border: 0; cursor: pointer; }
+  .btn.ghost { background: transparent; color: var(--cloud); border: 1.5px solid var(--line); }
+  section { padding: 34px 0 6px; }
+  .sh { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .num { flex: none; background: var(--cyan); color: var(--midnight); font: italic 900 18px/1 Inter, sans-serif; padding: 8px 13px 8px 10px;
+         clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); }
+  h2 { font: italic 900 clamp(20px, 4.4vw, 26px)/1.1 Inter, sans-serif; text-transform: uppercase; }
+  .lead { color: var(--muted); margin-bottom: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .prompt { position: relative; background: #060A11; border: 1px solid var(--line); border-left: 3px solid var(--cyan); border-radius: 8px;
+            padding: 14px 14px 14px 16px; font: 400 14px/1.6 "SF Mono", Menlo, Consolas, monospace; color: #E8EEF7; overflow-wrap: anywhere; }
+  .prompt .fill { color: var(--cyan); }
+  .copy { margin-top: 10px; }
+  .copy.done { background: #fff; }
+  ul.check { list-style: none; display: grid; gap: 8px; }
+  ul.check li { padding-left: 28px; position: relative; }
+  ul.check li::before { content: ""; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; border: 2px solid var(--cyan); border-radius: 4px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 12px; }
+  .app h3 { font: italic 800 17px/1.2 Inter, sans-serif; display: flex; gap: 10px; align-items: center; }
+  .app h3 span { background: var(--cyan); color: var(--midnight); font: italic 900 13px/1 Inter, sans-serif; padding: 5px 8px; }
+  .app p { color: var(--muted); font-size: 14px; margin: 4px 0 10px; }
+  .app .prompt { font-size: 13px; }
+  .or { margin: 16px 0 10px; font: italic 800 13px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  ol.steps { padding-left: 20px; display: grid; gap: 6px; }
+  footer { margin-top: 40px; padding: 24px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Day 1 · November 20, 2026 · Botanika, Alabang</div>
+    <img src="https://raw.githubusercontent.com/ecommercefastlaunch-debug/work-without-working-kit/main/handout/brand/wow-logo.png" alt="Work Without Working: Make AI work for you">
+    <div class="panel">Day 1 Workbook</div>
+    <p>Set up Claude, add your sales and marketing skills, and put them to work. Copy the prompts from here instead of typing them.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit/raw/main/handout/work-without-working-workbook.pdf">Download the workbook (PDF)</a>
+      <a class="btn ghost" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="before">
+    <div class="sh"><span class="num">01</span><h2>Before we start</h2></div>
+    <div class="card">
+      <ul class="check">
+        <li><b>Claude subscription.</b> You're signed in to your Claude account.</li>
+        <li><b>Claude desktop app</b> installed, and you can see the <b>Code</b> tab.</li>
+        <li><b>At least 20GB free storage</b> on your laptop.</li>
+        <li><b>Connected to the Wi-Fi.</b> Weak signal? Connect to your own 5G instead.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="setup">
+    <div class="sh"><span class="num">02</span><h2>Work Without Working Setup Kit</h2></div>
+    <p class="lead">Installs Homebrew (Mac), Git and the GitHub app, FFmpeg and Node.js, connects your GitHub account, and makes your WORK FOLDER. Paste this in Claude's Code tab.</p>
+    <div class="prompt" id="p-setup">Set me up with the Work Without Working Setup Kit from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/01-setup/SETUP.md and install everything for me. I'll allow what's needed.</div>
+    <button class="btn copy" data-copy="p-setup">Copy prompt</button>
+  </section>
+
+  <section id="bottleneck">
+    <div class="sh"><span class="num">03</span><h2>My bottleneck</h2></div>
+    <p class="lead">About 5 minutes. It shows the one area holding your business back: marketing, sales, service delivery, or operations.</p>
+    <a class="btn" href="https://business-bottleneck-quiz.vercel.app/">Take the Business Bottleneck Quiz</a>
+  </section>
+
+  <section id="skills">
+    <div class="sh"><span class="num">04</span><h2>Sales and Marketing Skills</h2></div>
+    <p class="lead">61 skills that teach Claude a sales or marketing job, including making images with your ChatGPT. Two ways to add them:</p>
+    <div class="card">
+      <div style="font-weight:800">1. Paste this prompt in Claude</div>
+      <div class="prompt" id="p-skills" style="margin-top:10px">Add my sales and marketing skills from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/02-skills/SETUP.md and install them for me.</div>
+      <button class="btn copy" data-copy="p-skills">Copy prompt</button>
+      <div class="or">or</div>
+      <div style="font-weight:800">2. Download them, then let Claude install them</div>
+      <ol class="steps" style="margin:10px 0 12px">
+        <li>Download the zip to your laptop (it goes to your Downloads folder).</li>
+        <li>Paste the prompt below in Claude.</li>
+      </ol>
+      <a class="btn ghost" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit/raw/main/handout/sales-and-marketing-skills.zip">Download all 61 skills (zip)</a>
+      <div class="prompt" id="p-zip" style="margin-top:12px">Install the skills from sales-and-marketing-skills.zip in my Downloads folder.</div>
+      <button class="btn copy" data-copy="p-zip">Copy prompt</button>
+    </div>
+    <p class="lead" style="margin-top:12px">Then open a <b>new</b> Code session in your WORK FOLDER. Type <b>/</b> to see your skills, or just ask.</p>
+  </section>
+
+  <section id="applications">
+    <div class="sh"><span class="num">05</span><h2>Sample Applications</h2></div>
+    <p class="lead">Copy a prompt, replace the <span style="color:var(--cyan)">[brackets]</span> with your details, and send it in a Code session in your WORK FOLDER.</p>
+    <div class="grid" id="apps"></div>
+  </section>
+
+  <section id="own">
+    <div class="sh"><span class="num">06</span><h2>Make your own tool</h2></div>
+    <p class="lead">Start from your next steps in the workbook's bottleneck page.</p>
+    <div class="prompt" id="p-own">Make me a tool for <span class="fill">[the task]</span>. I'll give it <span class="fill">[what I give it]</span>, and I want back <span class="fill">[what I want]</span>. Ask me questions one at a time, then save it as a skill I can use every week.</div>
+    <button class="btn copy" data-copy="p-own">Copy prompt</button>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Work Without Working · The Builders Tribe · Stuck twice? Raise your hand.</div>
+</footer>
+
+<script>
+  const apps = [
+    ["My Offer","Market research, competitors and a clear offer","Use offer-builder on my business. I sell [what I sell] to [who buys it] for [price]."],
+    ["10 Ads in One Go","10 ad scripts from 10 angles","Use breakthrough-ads to write 10 ad scripts for [my product], in Taglish."],
+    ["Product Poster","A 4:5 poster made with your ChatGPT","Use image-generation to make a 4:5 poster of [my product] with the words [headline]."],
+    ["Price Objection Replies","Answers you can send on Messenger","Use sales-objections: my customers say [what they say]. Give me Messenger replies."],
+    ["Follow-Up Messages","For people who asked and went quiet","Use sales-followup: write 3 follow-ups for people who asked about [product] and didn't reply."],
+    ["30-Day Content Plan","A month of posts with captions","Use content-strategy and social-captions: plan 30 days of [Facebook / IG / TikTok] posts, with captions."],
+    ["5 Reels Scripts","Short videos with hooks, ready to shoot","Use video-scripts: 5 Reels scripts about [topic], in Taglish, 30 seconds each."],
+    ["Review Replies","Kind replies to your Google and Facebook reviews","Use review-response-writer on my [Google / Facebook] reviews. I'll paste them next."],
+    ["Testimonial Request","A message asking a happy customer for a review","Use testimonial-request: write a message asking [customer] for a review of [product]."],
+    ["Payday Promo","A 15th and 30th sale: offer, posts and a Messenger blast","Use offers and launch: plan a payday sale for [product], with the offer, 3 posts and 1 Messenger blast."]
+  ];
+  const esc = t => t.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  document.getElementById("apps").innerHTML = apps.map((a, i) => `
+    <div class="card app">
+      <h3><span>${i + 1}</span>${esc(a[0])}</h3>
+      <p>${esc(a[1])}</p>
+      <div class="prompt" id="p-app${i}">${esc(a[2]).replace(/\[([^\]]+)\]/g, '<span class="fill">[$1]</span>')}</div>
+      <button class="btn copy" data-copy="p-app${i}">Copy prompt</button>
+    </div>`).join("");
+  document.addEventListener("click", async e => {
+    const b = e.target.closest("[data-copy]"); if (!b) return;
+    const text = document.getElementById(b.dataset.copy).innerText;
+    try { await navigator.clipboard.writeText(text); }
+    catch { const r = document.createRange(); r.selectNodeContents(document.getElementById(b.dataset.copy));
+            const s = getSelection(); s.removeAllRanges(); s.addRange(r); document.execCommand("copy"); s.removeAllRanges(); }
+    const old = b.textContent; b.textContent = "Copied ✓"; b.classList.add("done");
+    setTimeout(() => { b.textContent = old; b.classList.remove("done"); }, 1600);
+  });
+</script>
+</body>
+</html>
