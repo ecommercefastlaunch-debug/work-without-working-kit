@@ -19,9 +19,11 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
    OK and types their Mac password. **Windows:** Claude asks once to accept the programs' terms.
 3. **While Homebrew installs,** Claude creates `Documents/WORK FOLDER`, asks one question
    (what they sell and who buys, or a link to their page), and writes `WORK FOLDER/CLAUDE.md`.
-4. Claude runs **one installer** (`setup.sh`): Git, FFmpeg, Node.js, Chrome, the kit files, and
-   the skills.
-5. Done checklist.
+4. Claude runs **one installer** (`setup.sh`): Git, GitHub, FFmpeg, Node.js, the kit files, and
+   the Claude skills.
+5. **GitHub account:** the owner signs up (if new) and signs in themselves; Claude opens the
+   pages. They can skip it and do it later.
+6. Done checklist.
 
 ## What gets installed and why
 
@@ -29,16 +31,29 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 |---|---|---|
 | Homebrew (Mac) | The Mac's installer for the tools below | [brew.sh](https://brew.sh) |
 | Git | Downloads the kits and skills (Windows: Git for Windows) | [git-scm.com](https://git-scm.com) |
+| GitHub | The GitHub app (`gh`) plus the owner's own account, to save and share their work later | [cli.github.com](https://cli.github.com) |
 | FFmpeg | Lets Claude cut, convert and pull audio from video files | [ffmpeg.org](https://ffmpeg.org) |
 | Node.js | Runs the video editor (Kit 03) and other tools | [nodejs.org](https://nodejs.org) |
-| Google Chrome | Needed by the video editor to render videos | [google.com/chrome](https://www.google.com/chrome) |
 | Kit files | The guides for Kits 02 and 03, in `Documents/work-without-working-kit` | this repo |
+
+**Claude skills (10)**, installed into `~/.claude/skills`:
+
+| Skill | What it does for the owner | Source |
+|---|---|---|
 | stop-slop | Claude's writing stops sounding like AI | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) (MIT) |
 | dumbify | Explanations and customer messages stay simple | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) (MIT) |
+| storytelling | Gives scripts and posts a story that holds attention | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) (MIT) |
+| copywriting | Offers, landing pages, headlines and product pages | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT) |
+| product-marketing | Positioning: who it's for, why you, what to say first | coreyhaines31/marketingskills (MIT) |
+| customer-research | Turns customer messages and reviews into what customers really want | coreyhaines31/marketingskills (MIT) |
+| social | Posts, carousels and calendars for Facebook, Instagram, TikTok, LinkedIn | coreyhaines31/marketingskills (MIT) |
+| ad-creative | Ad headlines and copy variations for Meta, Google, TikTok | coreyhaines31/marketingskills (MIT) |
+| content-repurposing | One piece of content into many posts | this kit |
+| hook-killers | Finds why an opening line is weak and fixes it | this kit (MIT, Artem Novitckii) |
 
 Already in the Claude app, no install: Word, Excel, PowerPoint and PDF skills.
 
-More tools (Grill Me, copywriting, customer-research, Anthropic's Small Business plugin and 70 others)
+More tools (Grill Me, Anthropic's Small Business plugin and 60 others)
 are in [Kit 02, the Skills Directory](../02-skills-directory/catalog.md).
 
 ## The WORK FOLDER

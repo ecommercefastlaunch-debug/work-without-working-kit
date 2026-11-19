@@ -6,9 +6,11 @@ so **install it automatically**. Don't ask "can I install this?" item by item. T
 in when the computer itself needs them: typing their password, clicking **Allow** or **Yes**,
 or accepting terms on Windows.
 
-**What gets installed:** Homebrew (Mac), Git, FFmpeg, Node.js, Google Chrome, the kit files,
-and two skills, stop-slop and dumbify. **What gets created:** their WORK FOLDER with a short
-CLAUDE.md.
+**What gets installed:** Homebrew (Mac), Git and GitHub, FFmpeg, Node.js, the kit files, and
+the Claude skills (stop-slop, dumbify, storytelling, copywriting, product-marketing,
+customer-research, social, ad-creative, content-repurposing, hook-killers). **What gets
+created:** their WORK FOLDER with a short CLAUDE.md. **What they connect:** their GitHub
+account (they sign up or sign in themselves).
 
 **How to work**
 
@@ -24,8 +26,8 @@ CLAUDE.md.
 
 Find out if this is a Mac or a Windows laptop. Then say, in your own words:
 
-> I'm setting everything up for you now: Git, FFmpeg, Node.js, Chrome, your WORK FOLDER, and
-> two writing skills. It takes about 15 to 25 minutes. If your computer asks for your
+> I'm setting everything up for you now: Homebrew, Git and GitHub, FFmpeg, Node.js, your
+> WORK FOLDER, and your Claude skills. It takes about 15 to 25 minutes. If your computer asks for your
 > password or shows an **Allow** button, go ahead and approve it. I'll tell you when.
 
 Then go straight to Step 2.
@@ -89,8 +91,8 @@ While it installs (5 to 15 minutes), do Step 3.
 
 **Windows**
 
-1. Tell them: "Windows asks you to accept the terms of each program (Git, FFmpeg, Node.js,
-   Chrome). Is it OK if I accept them for you?" Wait for yes.
+1. Tell them: "Windows asks you to accept the terms of each program (Git, GitHub, FFmpeg,
+   Node.js). Is it OK if I accept them for you?" Wait for yes.
 2. If Git Bash isn't there yet, run
    `winget install --id Git.Git -e --accept-package-agreements --accept-source-agreements`,
    then they close and reopen the Claude app and paste the kit prompt again.
@@ -107,18 +109,43 @@ The installer prints one line per item (`INSTALLED`, `ALREADY`, `FAILED`) and en
 - `NEEDS GIT` (Windows): close and reopen the Claude app, then run it again.
 - `FAILED`: run it once more; it skips what's done. Still failing: helper.
 
-## Step 5: Done
+## Step 5: GitHub account
+
+GitHub is where the kits and Claude skills come from. With their own account they can also
+save and share their own work later. If they'd rather do this later, skip it: nothing else
+in Kit 01 needs it.
+
+1. Check `gh auth status`. If it says they're logged in: ✓, go to Step 6.
+2. Ask: "Do you already have a GitHub account?"
+   - **No:** open https://github.com/signup in their browser (`open` on Mac, `start` on
+     Windows). They sign up themselves: their email, their password, and the code GitHub
+     emails them. You never type any of it. Wait until they say it's done.
+3. Open a window where they sign in, with GitHub's official sign-in already running:
+   - **Mac:**
+     `osascript -e 'tell application "Terminal" to activate' -e 'tell application "Terminal" to do script "gh auth login --web --git-protocol https --hostname github.com"'`
+   - **Windows:**
+     `start powershell -NoExit -Command "gh auth login --web --git-protocol https --hostname github.com"`
+
+   Tell them:
+
+   > A window opened with a one-time code. If it asks "Authenticate Git with your GitHub
+   > credentials?", type **Y** and press Enter. Press **Enter** to open GitHub in your
+   > browser, paste the code there, and click **Authorize**. Then come back here.
+4. Check `gh auth status` again. Logged in: ✓.
+
+## Step 6: Done
 
 Show a check or a cross for each:
 
 - Homebrew (Mac)
 - Git
+- GitHub (CLI installed, account signed in, or "later")
 - FFmpeg
 - Node.js
-- Google Chrome
 - Kit files in `Documents/work-without-working-kit`
 - `Documents/WORK FOLDER` with CLAUDE.md
-- Skills: stop-slop, dumbify
+- Claude skills (10): stop-slop, dumbify, storytelling, copywriting, product-marketing,
+  customer-research, social, ad-creative, content-repurposing, hook-killers
 
 Then tell them:
 

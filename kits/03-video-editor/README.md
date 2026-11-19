@@ -5,11 +5,11 @@ Claude cuts dead air and mistakes, adds captions, and renders a draft the owner 
 
 ## Before this kit
 
-Kit 01 (Setup) is done, so Git, FFmpeg, Node.js and Chrome are already installed. The owner has one
+Kit 01 (Setup) is done, so Git, FFmpeg and Node.js are already installed. Chrome is needed too (most laptops have it). The owner has one
 short raw clip (1 to 3 minutes of them talking) on the laptop.
 
-**This is the heaviest kit.** It needs Node.js 22 or newer, Git, FFmpeg, and Chrome,
-which Kit 01 installs. What's left is the kit's own download and setup.
+**This is the heaviest kit.** It needs Node.js 22 or newer, Git, FFmpeg (all from Kit 01) and Chrome,
+which Kit 03 checks for. What's left is the kit's own download and setup.
 Helpers: install these on laptops the night before where you can. If a laptop can't get
 them, that owner watches the facilitator's demo instead.
 
