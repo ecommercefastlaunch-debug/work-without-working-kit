@@ -143,6 +143,16 @@
   .addrow i { color: #fff; }
   .addrow .after { margin-top: 9px; font-size: 11.3px; color: #C9D2E0; }
   .qrdrive { display: flex; flex-direction: column; justify-content: center; }
+  .toolgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 10px; }
+  .tool { border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; display: flex; flex-direction: column; gap: 7px; position: relative; }
+  .tool::before { content: ""; position: absolute; left: -1px; top: 10px; width: 3px; height: 18px; background: var(--cyan); border-radius: 0 2px 2px 0; }
+  .tool .tt { display: flex; gap: 9px; align-items: flex-start; }
+  .tool .tn { flex: none; width: 22px; height: 22px; background: var(--midnight); color: var(--cyan); font: italic 900 11.5px/22px Inter, sans-serif;
+              text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
+  .tool h3 { font-size: 13px; }
+  .tool p { font-size: 10.8px; color: var(--muted); margin-top: 1px; line-height: 1.35; }
+  .tp { margin-top: auto; background: var(--midnight); color: #E8EEF7; border-radius: 7px; padding: 7px 9px; font: 400 9.8px/1.5 "SF Mono", Menlo, Consolas, monospace; }
+  .tp .fill { color: var(--cyan); }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -201,7 +211,7 @@
 
     <div class="card">
       <h3>Inside</h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · Setup checklist</div><div>p3 · My business and bottleneck</div><div>p4 · Kit 01 Setup Kit and WORK FOLDER</div><div>p5 · Kit 02 Sales and Marketing Skills</div><div>p6 · Worksheet: my AI team</div><div>p7 · When you're stuck, notes</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · Setup checklist</div><div>p3 · My business and bottleneck</div><div>p4 · Kit 01 Setup Kit and WORK FOLDER</div><div>p5 · Kit 02 Sales and Marketing Skills</div><div>p6 · Kit 03 Tools</div><div>p7 · Worksheet: my AI team</div><div>p8 · When you're stuck, notes</div></div>
     </div>
 
     <div class="card dark" style="display:grid;grid-template-columns:1fr 1fr;gap:8px 22px">
@@ -358,6 +368,25 @@
   <div class="foot"><span>Kit 02 · Sales and Marketing Skills</span><span>5</span></div>
 </section>
 
+<!-- 6. KIT 03 TOOLS -->
+<section class="page">
+  <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">Tools</h1><div class="when">After Kits 01 and 02 · Nothing to install · Copy a prompt, fill in the [brackets], send</div></div></div>
+  <p class="lead">Your first tools. Each one is a prompt that puts your new skills to work. Open a Code session in your WORK FOLDER and try them on your real business.</p>
+
+  <h2>Sample tools</h2>
+  <div class="toolgrid"><div class="tool"><div class="tt"><span class="tn">1</span><div><h3>My Offer</h3><p>Market research, competitors and a clear offer for what you sell</p></div></div><div class="tp">Use offer-builder on my business: <span class="fill">[what I sell, who buys it, my price]</span>.</div></div><div class="tool"><div class="tt"><span class="tn">2</span><div><h3>10 Ads in One Go</h3><p>10 ad scripts from 10 angles, ready for Reels or Facebook</p></div></div><div class="tp">Use breakthrough-ads to write 10 ad scripts for my offer. Write them in Taglish.</div></div><div class="tool"><div class="tt"><span class="tn">3</span><div><h3>Product Poster</h3><p>A 4:5 poster of your product, made with your ChatGPT</p></div></div><div class="tp">Use image-generation to make a 4:5 poster of <span class="fill">[my product]</span> with the words "<span class="fill">[headline]</span>".</div></div><div class="tool"><div class="tt"><span class="tn">4</span><div><h3>Price Objection Replies</h3><p>Replies for &quot;mahal&quot; and &quot;pag-iisipan ko muna&quot; you can send on Messenger</p></div></div><div class="tp">Use sales-objections: my customers say "mahal" and "pag-iisipan ko muna". Give me Messenger replies.</div></div><div class="tool"><div class="tt"><span class="tn">5</span><div><h3>Follow-Up Messages</h3><p>3 follow-ups for people who asked the price and went quiet</p></div></div><div class="tp">Use sales-followup: write 3 follow-ups for inquiries who didn't reply after I sent the price.</div></div><div class="tool"><div class="tt"><span class="tn">6</span><div><h3>30-Day Content Plan</h3><p>A month of posts with captions for your page</p></div></div><div class="tp">Use content-strategy and social-captions: plan 30 days of Facebook posts for my business, with captions.</div></div><div class="tool"><div class="tt"><span class="tn">7</span><div><h3>5 Reels Scripts</h3><p>Short video scripts with hooks, ready to shoot</p></div></div><div class="tp">Use video-scripts: 5 Reels scripts about <span class="fill">[topic]</span>, in Taglish, 30 seconds each.</div></div><div class="tool"><div class="tt"><span class="tn">8</span><div><h3>Review Replies</h3><p>Kind, professional replies to your Google and Facebook reviews</p></div></div><div class="tp">Use review-response-writer on these reviews: <span class="fill">[paste the reviews]</span>.</div></div></div>
+
+  <div class="card field" style="flex:1">
+    <label>Make your own tool <span class="hint">(start from your bottleneck on page 3)</span></label>
+    <div class="tp" style="margin-top:4px">Make me a tool for <span class="fill">[task]</span>. I'll give it <span class="fill">[what I give it]</span>, and I want back <span class="fill">[what I want]</span>. Ask me questions one at a time, then save it as a skill I can use every week.</div>
+    <div class="row2" style="margin-top:8px">
+      <div><span class="hint">My tool's task</span><div class="lines" style="--n:8"></div></div>
+      <div><span class="hint">What I want back</span><div class="lines" style="--n:8"></div></div>
+    </div>
+  </div>
+  <div class="foot"><span>Kit 03 · Tools</span><span>6</span></div>
+</section>
+
 <!-- 9. MY AI TEAM -->
 <section class="page">
   <div class="eyebrow g">Worksheet · Grok Bot Setup + AI Chief of Staff</div>
@@ -392,7 +421,7 @@
     <div class="card field"><label>My first AI hire</label><div class="lines" style="--n:4"></div></div>
     <div class="card field"><label>What I stop doing myself</label><div class="lines" style="--n:4"></div></div>
   </div>
-  <div class="foot"><span>Afternoon · AI workforce</span><span>6</span></div>
+  <div class="foot"><span>Afternoon · AI workforce</span><span>7</span></div>
 </section>
 
 <!-- 10. STUCK + NOTES -->
@@ -417,7 +446,7 @@
     <label>Notes</label>
     <div class="lines" style="--n:14"></div>
   </div>
-  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>7</span></div>
+  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>8</span></div>
 </section>
 
 </body>
