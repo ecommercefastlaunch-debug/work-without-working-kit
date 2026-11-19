@@ -1,6 +1,6 @@
 #!/bin/bash
 # Kit 01: the one-shot installer. Run once after Homebrew (Mac) or Git (Windows) is in place.
-# Installs or updates: the kit files, FFmpeg, Wispr Flow, and the skills
+# Installs or updates: the kit files, FFmpeg, and the skills
 # (grill-me, grilling, stop-slop, dumbify). Skips anything already installed; safe to re-run.
 set -u
 
@@ -31,18 +31,14 @@ if [ -d "$KIT_DIR/.git" ]; then
 elif git clone -q "$KIT_URL" "$KIT_DIR" 2>/dev/null; then INSTALLED "kit files in Documents/work-without-working-kit"
 else FAILED "kit files (couldn't download)"; fi
 
-# --- FFmpeg and Wispr Flow
+# --- FFmpeg
 if [ "$OS" = mac ]; then
   if command -v ffmpeg >/dev/null 2>&1 || "$BREW" list ffmpeg >/dev/null 2>&1; then ALREADY ffmpeg
   elif "$BREW" install ffmpeg >/dev/null 2>&1; then INSTALLED ffmpeg
   else FAILED ffmpeg; fi
 
-  if [ -d "/Applications/Wispr Flow.app" ] || "$BREW" list --cask wispr-flow >/dev/null 2>&1; then ALREADY "Wispr Flow"
-  elif "$BREW" install --cask wispr-flow >/dev/null 2>&1; then INSTALLED "Wispr Flow"
-  else FAILED "Wispr Flow (download it from https://wisprflow.ai instead)"; fi
 else
   command -v ffmpeg >/dev/null 2>&1 && ALREADY ffmpeg || echo "TODO     ffmpeg: on Windows run  winget install --id Gyan.FFmpeg -e"
-  echo "TODO     Wispr Flow: on Windows download it from https://wisprflow.ai"
 fi
 
 # --- Skills

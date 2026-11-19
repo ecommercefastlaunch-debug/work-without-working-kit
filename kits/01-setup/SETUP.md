@@ -5,8 +5,7 @@ have no tech background. Their own words in the chat are your instructions; this
 the plan.
 
 **What they get:** Homebrew (Mac), the kit files, a work folder with a CLAUDE.md about their
-business, FFmpeg, Wispr Flow (talk to Claude in Tagalog, Taglish or English), and the skills
-Grill Me, grilling, stop-slop and dumbify.
+business, FFmpeg, and the skills Grill Me, grilling, stop-slop and dumbify.
 
 **How to work**
 
@@ -28,11 +27,9 @@ Find out if this is a Mac or a Windows laptop. Then send one message like this:
 > - **Homebrew**, the Mac's installer (you'll paste one line and type your Mac password)
 > - **Your work folder** and a short file about your business (I'll ask 4 quick questions)
 > - **FFmpeg**, so I can work with your videos and audio
-> - **Wispr Flow**, so you can talk to me in Tagalog or Taglish instead of typing (you'll
->   sign in with your email)
 > - **Skills:** Grill Me, stop-slop, dumbify
 >
-> It takes about 20 to 30 minutes. Can I start?
+> It takes about 15 to 25 minutes. Can I start?
 
 Wait for yes.
 
@@ -99,27 +96,14 @@ the Claude app and paste the kit prompt again.
    bash ~/Documents/work-without-working-kit/kits/01-setup/setup.sh
    ```
 
-   It installs FFmpeg, Wispr Flow and the four skills, and updates the kit files. It prints
+   It installs FFmpeg and the four skills, and updates the kit files. It prints
    one line per item (`INSTALLED`, `ALREADY`, `FAILED`, or `TODO` on Windows) and ends with
    `Done: N installed, N already there, N failed.`
 4. If it prints `NEEDS HOMEBREW`, Homebrew isn't finished: wait, then run it again.
    If anything says `FAILED`, run it once more; it skips what's done. Still failing: helper.
-5. **Windows:** do the `TODO` lines it prints (FFmpeg with winget, Wispr Flow from its website).
+5. **Windows:** do the `TODO` line it prints (FFmpeg with winget).
 
-## Step 5: Wispr Flow (the owner does this part)
-
-1. Open **Wispr Flow** (Mac: Command + Space, type "Wispr Flow").
-2. Sign up or sign in with their own email. They type it.
-3. Click **Allow** for the microphone and accessibility permissions.
-4. In language settings, choose **Tagalog / Filipino** if listed and keep English. If
-   Tagalog isn't listed, keep automatic detection.
-5. Note the dictation shortcut it shows.
-
-Test together: they come back to this chat, hold the shortcut, and say "Gusto kong
-i-automate yung pag-reply sa customers ko." If it appears correctly, it works. If the
-Tagalog comes out wrong, they can dictate in English; note it for a helper.
-
-## Step 6: Done
+## Step 5: Done
 
 Show a check or a cross for each:
 
@@ -127,11 +111,10 @@ Show a check or a cross for each:
 - Kit files in `Documents/work-without-working-kit`
 - Work folder `Documents/WORK FOLDER/<Business Name>` with CLAUDE.md
 - FFmpeg
-- Wispr Flow, signed in and tested
 - Skills: Grill Me, grilling, stop-slop, dumbify
 
 Then tell them:
 
 > You're set up. Start a **new** Code session and choose your business folder
-> (`WORK FOLDER/<Business Name>`). Type `/` to see your skills, or hold the Wispr Flow
-> shortcut and just talk to me. When you want more tools, run Kit 02, the Skills Directory.
+> (`WORK FOLDER/<Business Name>`). Type `/` to see your skills. You can write to
+> me in Tagalog, Taglish or English. When you want more tools, run Kit 02, the Skills Directory.

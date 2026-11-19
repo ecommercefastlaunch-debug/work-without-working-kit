@@ -1,8 +1,7 @@
 # Kit 01: Setup
 
 **Everything installed in one go.** One prompt, one yes, one installer. The owner only steps
-in for their Mac password (Homebrew), four questions about their business, and signing in to
-Wispr Flow.
+in for their Mac password (Homebrew) and four questions about their business.
 
 ## The one prompt (owners paste this)
 
@@ -19,10 +18,8 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
    **Windows:** Claude installs Git.
 3. **While Homebrew installs,** Claude asks the business name and 4 questions, builds
    `Documents/WORK FOLDER/<Business>/` with 5 folders, and writes its CLAUDE.md.
-4. Claude runs **one installer** (`setup.sh`): kit files, FFmpeg, Wispr Flow, and the skills.
-5. The owner signs in to Wispr Flow, allows the microphone, picks Tagalog, and tests it by
-   talking to Claude in Taglish.
-6. Done checklist.
+4. Claude runs **one installer** (`setup.sh`): kit files, FFmpeg, and the skills.
+5. Done checklist.
 
 ## What gets installed and why
 
@@ -31,7 +28,6 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 | Homebrew (Mac) | The Mac's installer for the tools below; also brings Git | [brew.sh](https://brew.sh) |
 | Kit files | The guides for Kits 02 and 03, in `Documents/work-without-working-kit` | this repo |
 | FFmpeg | Lets Claude cut, convert and pull audio from video files | [ffmpeg.org](https://ffmpeg.org) |
-| Wispr Flow | Talk instead of type, in Tagalog, Taglish or English, in any app. Free plan: about 2,000 words a week | [wisprflow.ai](https://wisprflow.ai) |
 | Grill Me + grilling | Interviews them until a plan is clear | [mattpocock/skills](https://github.com/mattpocock/skills) (MIT) |
 | stop-slop | Claude's writing stops sounding like AI | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) (MIT) |
 | dumbify | Explanations and customer messages stay simple | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) (MIT) |
@@ -49,9 +45,6 @@ are in [Kit 02, the Skills Directory](../02-skills-directory/catalog.md).
 
 ## Takes about
 
-20 to 30 minutes. Homebrew is the longest part (5 to 15 minutes), and the business questions
-happen while it runs. Helpers: owners need their Mac password, their own email for Wispr Flow,
-and must click Allow for the microphone and accessibility permissions.
+15 to 25 minutes. Homebrew is the longest part (5 to 15 minutes), and the business questions
+happen while it runs. Helpers: owners need their Mac password.
 
-**Tagalog in Wispr Flow:** it lists 100+ languages, but we haven't confirmed Tagalog by name.
-Test it on one laptop before the event.

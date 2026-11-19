@@ -9,7 +9,7 @@ the setup with them.
 
 | Kit | What the owner leaves with | Runs on |
 |---|---|---|
-| [01 Setup](kits/01-setup/) | Everything in one go: Homebrew (Mac), the kit files, a work folder with a CLAUDE.md about their business, FFmpeg, Wispr Flow for Taglish voice, and Grill Me, stop-slop, dumbify | Mac, Windows |
+| [01 Setup](kits/01-setup/) | Everything in one go: Homebrew (Mac), the kit files, a work folder with a CLAUDE.md about their business, FFmpeg, and Grill Me, stop-slop, dumbify | Mac, Windows |
 | [02 Skills Directory](kits/02-skills-directory/) | Any of 74 ready tools (or one Claude finds or builds), tuned to their business and tested on real work. Run it again for each new tool | Mac, Windows |
 | [03 24/7 Video Editor](kits/03-video-editor/) | Nate Herk's video-editing kit installed, and one of their clips edited | Mac, Windows; heavy install |
 
