@@ -152,6 +152,19 @@
   .app p { font-size: 10.6px; color: var(--muted); margin-top: 1px; line-height: 1.3; }
   .tp { margin-top: auto; background: var(--midnight); color: #E8EEF7; border-radius: 7px; padding: 7px 9px; font: 400 10px/1.5 "SF Mono", Menlo, Consolas, monospace; }
   .tp .fill { color: var(--cyan); }
+  .how3 { display: flex; flex-direction: column; gap: 9px; margin-top: 10px; font-size: 12.3px; }
+  .how3 > div, .hstep { display: flex; gap: 9px; align-items: flex-start; }
+  .how3 .wn, .hstep .wn { flex: none; width: 20px; height: 20px; background: var(--cyan); color: var(--midnight); font: italic 900 11px/20px Inter, sans-serif;
+             text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
+  .hstep span:not(.wn) { color: var(--muted); }
+  .toc { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 22px; margin-top: 8px; }
+  .toc div { display: flex; gap: 9px; align-items: baseline; }
+  .toc b { font: italic 900 12px/1 Inter, sans-serif; background: var(--midnight); color: var(--cyan); min-width: 20px; padding: 3px 0; text-align: center; }
+  ul.clean.big { gap: 9px; font-size: 13px; }
+  ul.clean.big .boxsm { width: 16px; height: 16px; vertical-align: -3px; }
+  .quizrow { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: stretch; }
+  .qres { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 6px; font-size: 12px; }
+  .qres i { color: var(--muted); font-style: normal; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -197,25 +210,35 @@
     <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:stretch">
       <div class="card">
         <h3>How this workbook works</h3>
-        <ul class="clean" style="margin-top:10px;gap:9px;font-size:12.5px">
-          <li><span class="dot"></span><span>Every black box is a prompt: <b>scan the QR, then copy and paste it</b>.</span></li>
-          <li><span class="dot"></span><span><b>Tick the box</b> <span class="boxsm" style="margin:0 2px"></span> when Claude shows a ✓.</span></li>
-          <li><span class="dot"></span><span><b>Wait for the trainer</b> before the next step.</span></li>
-        </ul>
+        <div class="how3">
+          <div><span class="wn">1</span><span><b>Black boxes are prompts.</b> Scan the QR, copy the prompt, paste it in Claude.</span></div>
+          <div><span class="wn">2</span><span><b>Tick the box</b> <span class="boxsm" style="margin:0 1px"></span> when Claude shows a ✓.</span></div>
+          <div><span class="wn">3</span><span><b>Write on the white lines.</b> They're your answers and notes.</span></div>
+        </div>
       </div>
       <div class="qr"><img src="qr.svg" alt="QR code to the kits on GitHub"><p>Scan to copy<br>the prompts</p></div>
     </div>
 
     <div class="card">
-      <h3>Inside</h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · Setup checklist</div><div>p3 · My business and bottleneck</div><div>p4 · Kit 01 Setup Kit and WORK FOLDER</div><div>p5 · Kit 02 Sales and Marketing Skills</div><div>p6 · Sample applications</div><div>p7 · Worksheet: my AI team</div><div>p8 · When you're stuck, notes</div></div>
+      <h3>What's inside</h3>
+      <div class="toc">
+        <div><b>2</b><span>Before we start</span></div>
+        <div><b>3</b><span>My business and my bottleneck</span></div>
+        <div><b>4</b><span>01 Work Without Working Setup Kit</span></div>
+        <div><b>5</b><span>02 Sales and Marketing Skills</span></div>
+        <div><b>6</b><span>03 Sample Applications</span></div>
+        <div><b>7</b><span>My AI team</span></div>
+        <div><b>8</b><span>When you're stuck, and notes</span></div>
+      </div>
     </div>
 
-    <div class="card dark" style="display:grid;grid-template-columns:1fr 1fr;gap:8px 22px">
+    <div class="card dark" style="display:grid;grid-template-columns:1fr 1fr;gap:9px 22px">
       <h3 style="grid-column:1/-1">House rules</h3>
-      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>You type</b> your own passwords and keys. Claude never does.</span></div>
-      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Nothing goes out</b> without your yes.</span></div>
-      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>After Kit 01,</b> work in your WORK FOLDER.</span></div>
+      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Wait for the trainer</b> before the next step. Nobody gets left behind.</span></div>
+      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>You type</b> your own passwords and codes. Claude never does.</span></div>
+      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Nothing goes out</b> (posts, messages, payments) without your yes.</span></div>
+      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Work in your WORK FOLDER:</b> one folder per project.</span></div>
+      <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Ask anything.</b> No question is too basic.</span></div>
       <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Stuck twice?</b> Raise your hand.</span></div>
     </div>
   </div>
@@ -228,27 +251,25 @@
   <h1>Before we start</h1>
   <div class="card">
     <h3>Check these now</h3>
-    <ul class="clean" style="margin-top:8px;gap:7px">
-      <li><span class="boxsm"></span><span><b>ChatGPT</b> subscription, and the <b>ChatGPT desktop app</b> downloaded</span></li>
-      <li><span class="boxsm"></span><span><b>Claude</b> subscription, and the <b>Claude desktop app</b> downloaded. You're signed in and can see the <b>Code</b> tab.</span></li>
-      <li><span class="boxsm"></span><span><b>50GB free storage</b> on your laptop</span></li>
-      <li><span class="boxsm"></span><span><b>Your own 5G data</b>, as backup to the venue Wi-Fi</span></li>
-      <li><span class="boxsm"></span><span>Laptop charged, charger with you</span></li>
-      <li><span class="boxsm"></span><span><b>Mac:</b> you know your Mac password (the one you use to unlock it or install apps)</span></li>
+    <ul class="clean big" style="margin-top:10px">
+      <li><span class="boxsm"></span><span><b>Claude subscription.</b> You're signed in to your Claude account.</span></li>
+      <li><span class="boxsm"></span><span><b>Claude desktop app</b> installed on your laptop, and you can see the <b>Code</b> tab.</span></li>
+      <li><span class="boxsm"></span><span><b>At least 20GB free storage</b> on your laptop.</span></li>
+      <li><span class="boxsm"></span><span><b>Connected to the Wi-Fi.</b> Weak signal? Connect to your own 5G instead.</span></li>
     </ul>
   </div>
 
   <div class="card soft">
     <h3>How it works</h3>
     <div class="row3" style="margin-top:8px">
-      <div><b>1. Open Claude</b><br><span style="color:var(--muted)">Click the <b>Code</b> tab.</span></div>
-      <div><b>2. Paste the prompt</b><br><span style="color:var(--muted)">From the QR. Don't retype long ones.</span></div>
-      <div><b>3. Answer and approve</b><br><span style="color:var(--muted)">Claude does the work. You approve when your computer asks.</span></div>
+      <div class="hstep"><span class="wn">1</span><div><b>Open Claude</b><br><span>Open the Claude app and click the <b>Code</b> tab.</span></div></div>
+      <div class="hstep"><span class="wn">2</span><div><b>Paste the prompt</b><br><span>Scan the QR and copy it. Don't retype long prompts.</span></div></div>
+      <div class="hstep"><span class="wn">3</span><div><b>Answer and approve</b><br><span>Claude does the work. You answer its questions and approve when your computer asks.</span></div></div>
     </div>
   </div>
 
   <div class="field card" style="flex:1">
-    <label>What I want to leave with these two days <span class="hint">(one sentence)</span></label>
+    <label>What I want to leave with in these two days <span class="hint">(one sentence)</span></label>
     <div class="lines"><i></i><i></i><i></i></div>
     <label style="margin-top:14px">Questions I want answered</label>
     <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
@@ -260,24 +281,29 @@
 <section class="page">
   <div class="eyebrow g">Worksheet · Find your bottleneck</div>
   <h1>My business and my bottleneck</h1>
-  <p class="lead">Claude asks about this during Setup. Write it here first, then copy it in.</p>
+  <p class="lead">Take the quiz, then fill this in. Claude asks about your business during Setup, so you can copy it from here.</p>
 
+  <div class="quizrow">
+    <div class="card">
+      <h3>Take the Business Bottleneck Quiz</h3>
+      <p style="margin-top:4px">About 5 minutes. Scan the QR or open <b class="nb">business-bottleneck-quiz.vercel.app</b>. It shows the one area holding your business back.</p>
+      <div style="font-weight:700;font-size:12px;margin-top:10px">My result</div>
+      <div class="qres"><span><span class="boxsm"></span>Marketing <i>(leads)</i></span><span><span class="boxsm"></span>Sales <i>(conversion)</i></span><span><span class="boxsm"></span>Service delivery <i>(retention)</i></span><span><span class="boxsm"></span>Operations <i>(efficiency)</i></span></div>
+    </div>
+    <div class="qr"><img src="qr-quiz.svg" alt="QR code to the Business Bottleneck Quiz"><p>Scan to take<br>the quiz</p></div>
+  </div>
   <div class="card field">
     <label>In one or two sentences: what do I sell, and who buys it? <span class="hint">(or the link to my Facebook page or website)</span></label>
     <div class="lines"><i></i><i></i><i></i><i></i></div>
   </div>
 
   <div class="card">
-    <h3>My bottleneck quiz result</h3>
-    <div style="display:flex;gap:22px;margin-top:8px;font-size:12px"><span><span class="boxsm"></span>Marketing <span style="color:var(--muted)">(leads)</span></span><span><span class="boxsm"></span>Sales <span style="color:var(--muted)">(conversion)</span></span><span><span class="boxsm"></span>Service delivery <span style="color:var(--muted)">(retention)</span></span><span><span class="boxsm"></span>Operations</span></div>
-  </div>
-  <div class="card">
     <h3>Where does my week go?</h3>
     <p style="color:var(--muted);font-size:11.3px;margin-top:2px">List the tasks you or your staff repeat every week. Circle the one that eats the most time.</p>
     <table style="margin-top:6px">
       <tr><th style="width:46%">Task I repeat</th><th>Who does it</th><th>Hours a week</th><th>Could AI draft it?</th></tr>
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
+      
+      
       <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
       <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
       <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
