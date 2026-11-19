@@ -10,7 +10,7 @@ Kit 03 is done: `02 AI Team/org-plan.md` exists and the AI Chief is hired in Gro
 ## The one prompt (owners paste this into Claude)
 
 ```
-Run Kit 04 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/04-ai-workforce/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.
+Run Kit 04 from my Documents/work-without-working-kit folder. Read kits/04-ai-workforce/SETUP.md and follow it step by step with me.
 ```
 
 ## What happens

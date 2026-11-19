@@ -16,7 +16,7 @@ Grok's task into Claude instead. Same result, one extra step.
 ## The one prompt (owners paste this into Claude)
 
 ```
-Run Kit 05 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/05-connect-grok/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.
+Run Kit 05 from my Documents/work-without-working-kit folder. Read kits/05-connect-grok/SETUP.md and follow it step by step with me.
 ```
 
 ## How it works

@@ -18,40 +18,47 @@
   body { font-family: Inter, -apple-system, "Segoe UI", sans-serif; color: var(--ink); }
   .page { width: 794px; height: 1123px; display: flex; flex-direction: column; }
 
+  /* Links and file paths must never break across lines: a hyphen at a line end
+     gets dropped when someone copies from a photo of this page. */
+  .nb { white-space: nowrap; }
+
   header {
-    background: var(--midnight); color: #fff; padding: 30px 36px 26px;
+    background: var(--midnight); color: #fff; padding: 26px 36px 22px;
     display: flex; justify-content: space-between; align-items: center; gap: 24px;
   }
   .eyebrow { font: 600 11px/1 Inter, sans-serif; letter-spacing: .14em; color: var(--green); text-transform: uppercase; }
-  h1 { font: 800 38px/1.05 Poppins, sans-serif; margin-top: 10px; letter-spacing: -.01em; }
+  h1 { font: 800 36px/1.05 Poppins, sans-serif; margin-top: 10px; letter-spacing: -.01em; }
   h1 span { color: var(--green); }
-  .sub { font-size: 13px; color: #C9D2E0; margin-top: 10px; }
+  .sub { font-size: 13px; color: #C9D2E0; margin-top: 8px; }
+  .link { margin-top: 10px; font: 600 12.5px/1 "SF Mono", Menlo, Consolas, monospace; color: #fff;
+          background: #1A2433; border-radius: 6px; padding: 7px 9px; display: inline-block; white-space: nowrap; }
   .qr { background: #fff; border-radius: 12px; padding: 8px; text-align: center; flex: none; }
-  .qr img { width: 120px; height: 120px; display: block; }
+  .qr img { width: 118px; height: 118px; display: block; }
   .qr p { font: 600 9.5px/1.2 Inter, sans-serif; color: var(--midnight); margin-top: 4px; }
 
-  .how { display: flex; gap: 10px; padding: 18px 36px 6px; }
+  .how { display: flex; gap: 10px; padding: 16px 36px 4px; }
   .step { flex: 1; display: flex; gap: 10px; align-items: flex-start; font-size: 12px; line-height: 1.4; color: var(--muted); }
   .step b { color: var(--ink); }
   .num { flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--midnight); color: var(--green);
          font: 700 12px/22px Poppins, sans-serif; text-align: center; }
 
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 12px 36px; flex: 1; }
-  .kit { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 11px; padding: 12px 36px 26px; flex: 1; }
+  .kit { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; display: flex; flex-direction: column; }
+  .kit.wide { grid-column: 1 / -1; }
   .kit-top { display: flex; align-items: center; gap: 10px; }
   .badge { background: var(--green); color: var(--midnight); font: 800 13px/1 Poppins, sans-serif; border-radius: 6px; padding: 6px 8px; }
   .kit h2 { font: 700 15.5px/1.15 Poppins, sans-serif; }
   .when { font-size: 10.5px; color: var(--muted); margin-top: 2px; }
-  .gets { font-size: 11.5px; line-height: 1.4; margin: 9px 0 9px; color: var(--ink); }
+  .gets { font-size: 11.5px; line-height: 1.4; margin: 8px 0; color: var(--ink); }
   .prompt { margin-top: auto; background: var(--midnight); color: #E8EEF7; border-radius: 8px; padding: 9px 10px;
-            font: 400 9.6px/1.45 "SF Mono", Menlo, Consolas, monospace; word-break: break-word; }
+            font: 400 9.6px/1.5 "SF Mono", Menlo, Consolas, monospace; overflow-wrap: normal; word-break: normal; hyphens: manual; }
   .prompt::before { content: "PASTE IN CLAUDE"; display: block; font: 700 8px/1 Inter, sans-serif; letter-spacing: .12em; color: var(--green); margin-bottom: 5px; }
-  .note { font-size: 10px; color: var(--muted); margin-top: 6px; }
 
-  footer { padding: 6px 36px 26px; display: flex; gap: 18px; font-size: 11px; color: var(--muted); }
-  footer div { flex: 1; display: flex; gap: 8px; align-items: flex-start; line-height: 1.4; }
-  footer b { color: var(--ink); }
-  .dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--green); border: 1.5px solid var(--midnight); margin-top: 3px; }
+  .rules { background: var(--midnight); color: #C9D2E0; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 9px; font-size: 11px; line-height: 1.4; }
+  .rules h2 { font: 700 15px/1.15 Poppins, sans-serif; color: var(--green); }
+  .rules div { display: flex; gap: 8px; }
+  .rules b { color: #fff; }
+  .dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -61,6 +68,7 @@
       <div class="eyebrow">Day 1 · November 20, 2026 · Botanika, Alabang</div>
       <h1>Work Without Working<br><span>Your 6 Setup Kits</span></h1>
       <p class="sub">One prompt per kit. Claude walks you through every step.</p>
+      <div class="link">github.com/ecommercefastlaunch-debug/work-without-working-kit</div>
     </div>
     <div class="qr">
       <img src="qr.svg" alt="QR code to the kits on GitHub">
@@ -70,53 +78,55 @@
 
   <section class="how">
     <div class="step"><div class="num">1</div><div>Open the <b>Claude app</b> and click the <b>Code</b> tab.</div></div>
-    <div class="step"><div class="num">2</div><div><b>Scan the QR</b>, open the kit, and copy its prompt. Don't retype it.</div></div>
+    <div class="step"><div class="num">2</div><div><b>Scan the QR</b> and copy the kit's prompt. Don't retype it.</div></div>
     <div class="step"><div class="num">3</div><div><b>Paste it</b> in Claude and answer its questions. Do the kits in order.</div></div>
   </section>
 
   <main class="grid">
-    <article class="kit">
-      <div class="kit-top"><span class="badge">01</span><div><h2>Setup</h2><div class="when">Morning · Blocks 2–4</div></div></div>
+    <article class="kit wide">
+      <div class="kit-top"><span class="badge">01</span><div><h2>Setup</h2><div class="when">Morning · Blocks 2–4 · Do this first: it downloads all the other kits to your laptop</div></div></div>
       <p class="gets">Git working, your work folder, a CLAUDE.md about your business, and Grill Me installed.</p>
-      <div class="prompt">Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/01-setup/SETUP.md and follow it step by step. Explain each step simply and ask me before you install anything.</div>
+      <div class="prompt">Set me up with Kit 01 from <span class="nb">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</span>. Read <span class="nb">kits/01-setup/SETUP.md</span> and follow it step by step. Explain each step simply and ask me before you install anything.</div>
     </article>
 
     <article class="kit">
       <div class="kit-top"><span class="badge">02</span><div><h2>Build Your Own Tool</h2><div class="when">Morning · Block 6 · Exercise 1</div></div></div>
       <p class="gets">One tool you build for your own business, tested on a real example.</p>
-      <div class="prompt">Run Kit 02 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/02-build-your-tool/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.</div>
+      <div class="prompt">Run Kit 02 from my <span class="nb">Documents/work-without-working-kit</span> folder. Read <span class="nb">kits/02-build-your-tool/SETUP.md</span> and follow it step by step with me.</div>
     </article>
 
     <article class="kit">
       <div class="kit-top"><span class="badge">03</span><div><h2>Org and AI Chief</h2><div class="when">Afternoon · Blocks 7–9</div></div></div>
       <p class="gets">Your org plan, and Grok Bot hired as your AI Chief of Staff.</p>
-      <div class="prompt">Run Kit 03 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/03-org-and-ai-chief/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.</div>
+      <div class="prompt">Run Kit 03 from my <span class="nb">Documents/work-without-working-kit</span> folder. Read <span class="nb">kits/03-org-and-ai-chief/SETUP.md</span> and follow it step by step with me.</div>
     </article>
 
     <article class="kit">
       <div class="kit-top"><span class="badge">04</span><div><h2>AI Workforce</h2><div class="when">Afternoon · Blocks 10–11 · Exercise 2</div></div></div>
       <p class="gets">1 or 2 AI employees, each tested on a real task and scored Pass or Fix.</p>
-      <div class="prompt">Run Kit 04 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/04-ai-workforce/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.</div>
+      <div class="prompt">Run Kit 04 from my <span class="nb">Documents/work-without-working-kit</span> folder. Read <span class="nb">kits/04-ai-workforce/SETUP.md</span> and follow it step by step with me.</div>
     </article>
 
     <article class="kit">
       <div class="kit-top"><span class="badge">05</span><div><h2>Connect Grok to Claude</h2><div class="when">Afternoon · Block 13 · Mac only</div></div></div>
       <p class="gets">Your AI Chief in Grok sends tasks straight to Claude. No more copy-paste.</p>
-      <div class="prompt">Run Kit 05 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/05-connect-grok/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.</div>
+      <div class="prompt">Run Kit 05 from my <span class="nb">Documents/work-without-working-kit</span> folder. Read <span class="nb">kits/05-connect-grok/SETUP.md</span> and follow it step by step with me.</div>
     </article>
 
     <article class="kit">
       <div class="kit-top"><span class="badge">06</span><div><h2>24/7 Video Editor</h2><div class="when">Afternoon · Blocks 12 &amp; 14 · Exercise 3</div></div></div>
       <p class="gets">The video editor installed, and one of your clips edited from a Grok task.</p>
-      <div class="prompt">Run Kit 06 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/06-video-editor/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.</div>
+      <div class="prompt">Run Kit 06 from my <span class="nb">Documents/work-without-working-kit</span> folder. Read <span class="nb">kits/06-video-editor/SETUP.md</span> and follow it step by step with me.</div>
     </article>
-  </main>
 
-  <footer>
-    <div><span class="dot"></span><span><b>Between kits,</b> start a new Code session in your business folder.</span></div>
-    <div><span class="dot"></span><span><b>You type</b> your own passwords and keys. Claude never does.</span></div>
-    <div><span class="dot"></span><span><b>Nothing goes out</b> without your yes. Stuck twice? Raise your hand.</span></div>
-  </footer>
+    <aside class="rules">
+      <h2>House rules</h2>
+      <div><span class="dot"></span><span><b>Between kits,</b> start a new Code session in your business folder.</span></div>
+      <div><span class="dot"></span><span><b>You type</b> your own passwords and keys. Claude never does.</span></div>
+      <div><span class="dot"></span><span><b>Nothing goes out</b> without your yes.</span></div>
+      <div><span class="dot"></span><span><b>Stuck twice?</b> Raise your hand.</span></div>
+    </aside>
+  </main>
 </div>
 </body>
 </html>

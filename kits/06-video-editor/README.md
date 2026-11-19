@@ -19,7 +19,7 @@ the kit installs and runs its demo, but can't cut a real clip by its words.
 ## The one prompt (owners paste this into Claude)
 
 ```
-Run Kit 06 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/06-video-editor/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.
+Run Kit 06 from my Documents/work-without-working-kit folder. Read kits/06-video-editor/SETUP.md and follow it step by step with me.
 ```
 
 ## What happens

@@ -11,7 +11,7 @@ They're in a Code session with their business folder (`WORK FOLDER/<Business>`) 
 ## The one prompt (owners paste this)
 
 ```
-Run Kit 02 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/02-build-your-tool/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.
+Run Kit 02 from my Documents/work-without-working-kit folder. Read kits/02-build-your-tool/SETUP.md and follow it step by step with me.
 ```
 
 ## What Claude does with them

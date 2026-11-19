@@ -11,7 +11,7 @@ Grok Bot is installed and signed in (the facilitator gives those steps in the ro
 ## The one prompt (owners paste this into Claude)
 
 ```
-Run Kit 03 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/03-org-and-ai-chief/SETUP.md (it's also in my Documents/work-without-working-kit folder) and follow it step by step with me.
+Run Kit 03 from my Documents/work-without-working-kit folder. Read kits/03-org-and-ai-chief/SETUP.md and follow it step by step with me.
 ```
 
 ## What happens
