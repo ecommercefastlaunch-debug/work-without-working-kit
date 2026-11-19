@@ -8,7 +8,8 @@ or accepting terms on Windows.
 
 **What gets installed:** Homebrew (Mac), Git and GitHub, FFmpeg, Node.js, the kit files, and
 the Claude skills (stop-slop, dumbify, storytelling, copywriting, product-marketing,
-customer-research, social, ad-creative, content-repurposing, hook-killers). **What gets
+customer-research, social, ad-creative, content-repurposing, hook-killers, offer-builder,
+breakthrough-ads). **What gets
 created:** their WORK FOLDER with a short CLAUDE.md. **What they connect:** their GitHub
 account (they sign up or sign in themselves).
 
@@ -144,8 +145,9 @@ Show a check or a cross for each:
 - Node.js
 - Kit files in `Documents/work-without-working-kit`
 - `Documents/WORK FOLDER` with CLAUDE.md
-- Claude skills (10): stop-slop, dumbify, storytelling, copywriting, product-marketing,
-  customer-research, social, ad-creative, content-repurposing, hook-killers
+- Claude skills (12): stop-slop, dumbify, storytelling, copywriting, product-marketing,
+  customer-research, social, ad-creative, content-repurposing, hook-killers, offer-builder,
+  breakthrough-ads
 
 Then tell them:
 

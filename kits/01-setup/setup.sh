@@ -1,7 +1,7 @@
 #!/bin/bash
 # Kit 01: the one-shot installer. Run after Homebrew (Mac) is in place; on Windows it uses winget.
 # Installs or updates: Git, GitHub CLI, FFmpeg, Node.js, the kit files, and the Claude skills
-# (stop-slop, dumbify and 8 marketing skills). Skips anything already installed; safe to re-run.
+# (stop-slop, dumbify and 10 marketing skills). Skips anything already installed; safe to re-run.
 #
 # Windows: winget asks to accept each package's terms. Pass --accept-terms only after the
 # owner said yes to that.
@@ -77,7 +77,9 @@ for line in \
   "coreyhaines31/marketingskills|skills/social|social" \
   "coreyhaines31/marketingskills|skills/ad-creative|ad-creative" \
   "kit|kits/01-setup/skills/content-repurposing|content-repurposing" \
-  "kit|kits/01-setup/skills/hook-killers|hook-killers"; do
+  "kit|kits/01-setup/skills/hook-killers|hook-killers" \
+  "kit|kits/01-setup/skills/offer-builder|offer-builder" \
+  "kit|kits/01-setup/skills/breakthrough-ads|breakthrough-ads"; do
   repo="${line%%|*}"; rest="${line#*|}"; path="${rest%%|*}"; name="${rest#*|}"
   if [ -e "$SK/$name" ]; then ALREADY "skill $name"; continue; fi
   if [ "$repo" = kit ]; then clone="$KIT_DIR"

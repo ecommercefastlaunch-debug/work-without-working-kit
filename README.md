@@ -9,7 +9,7 @@ and Claude does the setup with them.
 
 | Kit | What the owner leaves with | Runs on |
 |---|---|---|
-| [01 Setup](kits/01-setup/) | One prompt installs everything: Homebrew (Mac), Git and GitHub, FFmpeg, Node.js, the kit files, the WORK FOLDER with a CLAUDE.md, and 10 Claude skills | Mac, Windows |
+| [01 Setup](kits/01-setup/) | One prompt installs everything: Homebrew (Mac), Git and GitHub, FFmpeg, Node.js, the kit files, the WORK FOLDER with a CLAUDE.md, and 12 Claude skills | Mac, Windows |
 
 After Kit 01, owners open their Code sessions in the WORK FOLDER. Every new project gets its own folder
 there, and everything Claude makes goes in that project's `Outputs` folder.

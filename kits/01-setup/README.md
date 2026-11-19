@@ -36,7 +36,7 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 | Node.js | Runs tools like video editors and app builders | [nodejs.org](https://nodejs.org) |
 | Kit files | This kit, saved in `Documents/work-without-working-kit` | this repo |
 
-**Claude skills (10)**, installed into `~/.claude/skills`:
+**Claude skills (12)**, installed into `~/.claude/skills`:
 
 | Skill | What it does for the owner | Source |
 |---|---|---|
@@ -50,6 +50,8 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 | ad-creative | Ad headlines and copy variations for Meta, Google, TikTok | coreyhaines31/marketingskills (MIT) |
 | content-repurposing | One piece of content into many posts | this kit ([skills/](skills/)) |
 | hook-killers | Finds why an opening line is weak and fixes it | this kit ([skills/](skills/); MIT, Artem Novitckii) |
+| offer-builder | Market research, competitors, positioning and offer statements from what they sell | this kit ([skills/](skills/)) |
+| breakthrough-ads | 10 ad scripts per request from different angles, using Breakthrough Advertising principles | this kit ([skills/](skills/)) |
 
 Already in the Claude app, no install: Word, Excel, PowerPoint and PDF skills.
 
@@ -71,7 +73,7 @@ business and the rules: new project, new folder; results go in its Outputs.
 - [SETUP.md](SETUP.md): the steps Claude follows
 - [setup.sh](setup.sh): the one-shot installer (safe to re-run; skips what's done)
 - [templates/CLAUDE.md](templates/CLAUDE.md): the business file template
-- [skills/](skills/): the two Claude skills that live in this kit (content-repurposing, hook-killers)
+- [skills/](skills/): the Claude skills that live in this kit (content-repurposing, hook-killers, offer-builder, breakthrough-ads)
 
 ## Takes about
 
