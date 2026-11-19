@@ -165,6 +165,11 @@
   .quizrow { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: stretch; }
   .qres { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 6px; font-size: 12px; }
   .qres i { color: var(--muted); font-style: normal; }
+  .acts { display: flex; flex-direction: column; gap: 10px; margin-top: 2px; }
+  .actrow { display: grid; grid-template-columns: 20px 1fr 130px; gap: 10px; align-items: end; }
+  .actrow .wn { width: 20px; height: 20px; background: var(--cyan); color: var(--midnight); font: italic 900 11px/20px Inter, sans-serif;
+                text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); margin-bottom: 4px; }
+  .actrow .by .hint { font-size: 9.5px; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -224,7 +229,7 @@
       <div class="toc">
         <div><b>2</b><span>Before we start</span></div>
         <div><b>3</b><span>01 Work Without Working Setup Kit</span></div>
-        <div><b>4</b><span>My business and my bottleneck</span></div>
+        <div><b>4</b><span>My bottleneck: learning and reflection</span></div>
         <div><b>5</b><span>02 Sales and Marketing Skills</span></div>
         <div><b>6</b><span>03 Sample Applications</span></div>
         <div><b>7</b><span>My AI team</span></div>
@@ -318,9 +323,9 @@
 
 <!-- 4. BUSINESS + BOTTLENECK -->
 <section class="page">
-  <div class="eyebrow g">Worksheet · Find your bottleneck</div>
-  <h1>My business and my bottleneck</h1>
-  <p class="lead">Take the quiz first, then fill this in. You'll use it in the skills and sample applications next.</p>
+  <div class="eyebrow g">Worksheet · Learning and reflection</div>
+  <h1>My bottleneck</h1>
+  <p class="lead">Take the quiz first. Then write what you learned, what it means for you, and what you'll do about it.</p>
 
   <div class="quizrow">
     <div class="card">
@@ -332,42 +337,22 @@
     <div class="qr"><img src="qr-quiz.svg" alt="QR code to the Business Bottleneck Quiz"><p>Scan to take<br>the quiz</p></div>
   </div>
   <div class="card field">
-    <label>In one or two sentences: what do I sell, and who buys it? <span class="hint">(or the link to my Facebook page or website)</span></label>
-    <div class="lines"><i></i><i></i><i></i><i></i></div>
-  </div>
-
-  <div class="card">
-    <h3>Where does my week go?</h3>
-    <p style="color:var(--muted);font-size:11.3px;margin-top:2px">List the tasks you or your staff repeat every week. Circle the one that eats the most time.</p>
-    <table style="margin-top:6px">
-      <tr><th style="width:46%">Task I repeat</th><th>Who does it</th><th>Hours a week</th><th>Could AI draft it?</th></tr>
-      
-      
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-    <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-      <tr><td class="w"></td><td></td><td></td><td>Yes · Maybe · No</td></tr>
-    </table>
+    <label>What I learned <span class="hint">(from the quiz, and about my business)</span></label>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i></div>
   </div>
 
   <div class="card field">
-    <label>My bottleneck: the one task that eats most of my time every week</label>
-    <div class="lines"><i></i><i></i></div>
+    <label>My reflection <span class="hint">(what this means for me, and what's been holding me back)</span></label>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="row2">
-    <div class="card field">
-      <label>If AI did a first draft of it, I'd get back</label>
-      <div class="lines"><i></i></div>
-      <span class="hint">hours a week</span>
-    </div>
-    <div class="card field">
-      <label>I'd spend that time on</label>
-      <div class="lines"><i></i><i></i></div>
-    </div>
+
+  <div class="card field" style="flex:1">
+    <label>What I think I should do <span class="hint">(my next steps)</span></label>
+    <div class="acts"><div class="actrow"><span class="wn">1</span><div class="lines"><i></i></div><div class="by"><span class="hint">By when</span><div class="lines"><i></i></div></div></div><div class="actrow"><span class="wn">2</span><div class="lines"><i></i></div><div class="by"><span class="hint">By when</span><div class="lines"><i></i></div></div></div><div class="actrow"><span class="wn">3</span><div class="lines"><i></i></div><div class="by"><span class="hint">By when</span><div class="lines"><i></i></div></div></div></div>
+    <label style="margin-top:14px">The one thing I'll start this week</label>
+    <div class="lines"><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>My business and my bottleneck</span><span>4</span></div>
+  <div class="foot"><span>My bottleneck</span><span>4</span></div>
 </section>
 
 <!-- 5. KIT 02 SKILLS -->
@@ -410,7 +395,7 @@
 <section class="page">
   <div class="eyebrow g">Worksheet · Grok Bot Setup + AI Chief of Staff</div>
   <h1>My AI team</h1>
-  <p class="lead">You're the owner. Your AI Chief of Staff runs the team. Each AI employee has one job. Start with the jobs from page 4.</p>
+  <p class="lead">You're the owner. Your AI Chief of Staff runs the team. Each AI employee has one job. Start with your next steps on page 4.</p>
 
   <div class="org">
     <div class="node me"><b>Me, the owner</b><small>I decide and approve</small></div>
