@@ -50,6 +50,13 @@ Add my video skills from https://github.com/ecommercefastlaunch-debug/work-witho
 | Reels & clips | `reel-export`, `clip-factory` |
 | Plan & brief | `brand-intake`, `motion-brief-writer`, `motion-prompt-writer`, `reference-to-motion` |
 
+**Other way: Google Drive.** Download [video-skills.zip](https://drive.google.com/file/d/1e6LuFo21HSY-yD83-5S81xKxsK0zVJiq/view)
+(also in this repo: [handout/video-skills.zip](../../handout/video-skills.zip)), then paste in Claude:
+
+```
+Install the skills from video-skills.zip in my Downloads folder.
+```
+
 Each skill is copied from its original GitHub repo with its license:
 [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics), [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills), [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes), [mohitagw15856/pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills).
 

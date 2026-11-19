@@ -36,6 +36,11 @@ It prints one line per skill (`INSTALLED`, `ALREADY`, `FAILED`) and ends with
 `Done: N installed, N already there, N failed.` On `FAILED`, run it once more; it skips what's
 done. Still failing: helper.
 
+**Other way (from the zip):** if they downloaded `video-skills.zip` from Google Drive or the
+web page and asked you to install it, unzip it (it holds a `video-skills/` folder) and copy each
+skill folder inside into `~/.claude/skills`, skipping any that are already there. Don't copy
+`README.txt`. Then go to Step 3.
+
 ## Step 3: Done
 
 Show the result grouped by category (from
