@@ -122,6 +122,17 @@
   .regline { height: 26px; border-bottom: 1.5px solid #9AA5B5; }
   .regpick { display: flex; gap: 28px; font-size: 13px; padding-top: 4px; }
   .regpick .boxsm { width: 15px; height: 15px; vertical-align: -3px; }
+  .prog { padding: 10px 14px 6px; }
+  .prog .dayhead { font: italic 900 15px/1 Inter, sans-serif; text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .prog .dayhead span { background: var(--midnight); color: var(--cyan); padding: 5px 12px 5px 9px; clip-path: polygon(0 0, 100% 0, calc(100% - 7px) 100%, 0 100%); }
+  .prog table { table-layout: fixed; }
+  .prog td { padding: 7px 8px; font-size: 11.5px; }
+  .prog td.tm { width: 136px; white-space: nowrap; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .prog td.who { width: 150px; color: var(--muted); text-align: right; }
+  .prog tr.brk td { color: var(--muted); font-style: italic; background: var(--cloud); }
+  .prog ul.sub { list-style: none; display: flex; flex-wrap: wrap; gap: 3px 6px; margin-top: 3px; }
+  .prog ul.sub li { font-size: 10.3px; background: var(--cyan-soft); border-radius: 4px; padding: 1px 6px; }
+  .prog .pg { font: italic 800 9px/1 Inter, sans-serif; background: var(--cyan); color: var(--midnight); padding: 2px 5px; margin-left: 4px; vertical-align: 1px; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -180,7 +191,7 @@
 
     <div class="card">
       <h3>Inside</h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · Before we start, the day at a glance</div><div>p3 · My business and bottleneck</div><div>p4 · Kit 01 Setup, Steps 1 to 5</div><div>p5 · Kit 01 Steps 6 to 9, WORK FOLDER</div><div>p6 · Kit 02 Skills Directory</div><div>p7 · Worksheet: my first tool</div><div>p8 · Kit 03 24/7 Video Editor</div><div>p9 · Worksheet: my AI team</div><div>p10 · When you're stuck, notes</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 22px;margin-top:6px"><div>p2 · The program, both days</div><div>p3 · Setup checklist</div><div>p4 · My business and bottleneck</div><div>p5 · Kit 01 Setup, Steps 1 to 5</div><div>p6 · Kit 01 Steps 6 to 9, WORK FOLDER</div><div>p7 · Kit 02 Skills Directory</div><div>p8 · Worksheet: my first tool</div><div>p9 · Kit 03 24/7 Video Editor</div><div>p10 · Worksheet: my AI team</div><div>p11 · When you're stuck, notes</div></div>
     </div>
 
     <div class="card dark" style="display:grid;grid-template-columns:1fr 1fr;gap:8px 22px">
@@ -194,16 +205,34 @@
   <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>1</span></div>
 </section>
 
-<!-- 2. BEFORE WE START + DAY AT A GLANCE -->
+<!-- 2. THE PROGRAM -->
 <section class="page">
-  <div class="eyebrow g">Start here</div>
+  <div class="eyebrow">The Builders Tribe · The program</div>
+  <h1>Work Without Working</h1>
+  <p class="lead" style="margin-top:-4px"><b>November 20–21, 2026 · 9:00 AM–6:00 PM</b> · with RD Morales, Chrys Tiu and Fibo Lim</p>
+  <div class="card prog">
+    <div class="dayhead"><span>Day 1</span> Friday, November 20</div>
+    <table><tr><td class="tm">9:00–9:30 AM</td><td><b>Welcome + Acknowledgement</b></td><td class="who">RD Morales</td></tr><tr><td class="tm">9:30–9:50 AM</td><td><b>Introduction + Setting Expectations</b></td><td class="who">Chrys Tiu</td></tr><tr><td class="tm">9:50–10:20 AM</td><td><b>Audience Expectations + AI 101</b></td><td class="who">RD Morales</td></tr><tr><td class="tm">10:20–10:50 AM</td><td><b>Setup Checklist <span class="pg">p3</span></b><ul class="sub"><li>ChatGPT subscription + desktop app</li><li>Claude subscription + desktop app</li><li>50GB storage · your own 5G data</li></ul></td><td class="who">RD Morales</td></tr><tr><td class="tm">10:50–11:20 AM</td><td><b>Find Your Bottleneck + Quiz <span class="pg">p4</span></b></td><td class="who">RD Morales</td></tr><tr class="brk"><td class="tm">11:20–11:35 AM</td><td colspan="2">Break</td></tr><tr><td class="tm">11:35 AM–12:10 PM</td><td><b>Generative AI vs. Agentic AI</b></td><td class="who">RD Morales</td></tr><tr><td class="tm">12:10–1:10 PM</td><td><b>Marketing Workflow</b><ul class="sub"><li>Offer &amp; Copywriting (Chrys Tiu)</li><li>Graphics (RD Morales)</li></ul></td><td class="who">Chrys Tiu · RD Morales</td></tr><tr class="brk"><td class="tm">1:10–2:10 PM</td><td colspan="2">Lunch</td></tr><tr><td class="tm">2:10–2:45 PM</td><td><b>Agentic AI + Testimonials</b></td><td class="who">RD Morales · JC</td></tr><tr><td class="tm">2:45–5:30 PM</td><td><b>Grok Bot Setup + Implementation <span class="pg">p10</span></b><ul class="sub"><li>AI Chief of Staff</li><li>AI Workforce</li><li>Hiring Employees</li><li>Business Applications</li></ul></td><td class="who">RD Morales</td></tr><tr><td class="tm">5:30–6:00 PM</td><td><b>Sharing + Day 1 Wrap-Up</b></td><td class="who">Chrys Tiu</td></tr></table>
+  </div>
+  <div class="card prog">
+    <div class="dayhead"><span>Day 2</span> Saturday, November 21</div>
+    <table><tr><td class="tm">9:00–10:00 AM</td><td><b>Welcome + Build Up + Surprise Trainer</b></td><td class="who">Chrys Tiu · RD Morales</td></tr><tr><td class="tm">10:00 AM–1:00 PM</td><td><b>Appify, Build + Upsell</b></td><td class="who">Fibo Lim</td></tr><tr class="brk"><td class="tm">1:00–2:00 PM</td><td colspan="2">Lunch</td></tr><tr><td class="tm">2:00–2:45 PM</td><td><b>The Possibilities of an AI Workforce + Tee Up</b></td><td class="who">RD Morales</td></tr><tr><td class="tm">2:45–5:30 PM</td><td><b>BUILD, BUILD, BUILD</b><ul class="sub"><li>Hands-on implementation</li><li>AI workforce building</li><li>Application to your own business</li></ul></td><td class="who">Chrys Tiu · RD Morales</td></tr><tr><td class="tm">5:30–6:00 PM</td><td><b>Celebration + Certificates</b></td><td class="who">Chrys Tiu · RD Morales</td></tr><tr class="brk"><td class="tm">6:00 PM</td><td colspan="2">Official end</td></tr></table>
+  </div>
+  <div class="foot"><span>Work Without Working · Program</span><span>2</span></div>
+</section>
+
+<!-- 3. BEFORE WE START -->
+<section class="page">
+  <div class="eyebrow g">Setup checklist · 10:20 AM</div>
   <h1>Before we start</h1>
   <div class="card">
     <h3>Check these now</h3>
-    <ul class="clean" style="margin-top:8px">
+    <ul class="clean" style="margin-top:8px;gap:7px">
+      <li><span class="boxsm"></span><span><b>ChatGPT</b> subscription, and the <b>ChatGPT desktop app</b> downloaded</span></li>
+      <li><span class="boxsm"></span><span><b>Claude</b> subscription, and the <b>Claude desktop app</b> downloaded. You're signed in and can see the <b>Code</b> tab.</span></li>
+      <li><span class="boxsm"></span><span><b>50GB free storage</b> on your laptop</span></li>
+      <li><span class="boxsm"></span><span><b>Your own 5G data</b>, as backup to the venue Wi-Fi</span></li>
       <li><span class="boxsm"></span><span>Laptop charged, charger with you</span></li>
-      <li><span class="boxsm"></span><span>Connected to the venue Wi-Fi</span></li>
-      <li><span class="boxsm"></span><span>The <b>Claude desktop app</b> is installed and you're signed in. You can see the <b>Code</b> tab.</span></li>
       <li><span class="boxsm"></span><span><b>Mac:</b> you know your Mac password (the one you use to unlock it or install apps)</span></li>
       <li><span class="boxsm"></span><span>For Kit 03: a <b>1 to 3 minute clip</b> of you talking, saved on your laptop</span></li>
       <li><span class="boxsm"></span><span>For Kit 03 (optional): an <b>ElevenLabs</b> account, so the editor can cut your clip by your words</span></li>
@@ -219,42 +248,18 @@
     </div>
   </div>
 
-  <h2 style="margin-top:4px">The day at a glance</h2>
-  <div class="row2">
-    <div class="card">
-      <div class="eyebrow">Morning</div>
-      <ul class="clean" style="margin-top:8px">
-        <li><span class="boxsm"></span><span><b>Find your bottleneck</b> (worksheet, page 3)</span></li>
-        <li><span class="boxsm"></span><span><b>Kit 01 Setup</b>: install everything, one step at a time</span></li>
-        <li><span class="boxsm"></span><span><b>Your WORK FOLDER</b>: where all your work lives</span></li>
-        <li><span class="boxsm"></span><span><b>Install skills</b>: add-ons that teach Claude a job</span></li>
-        <li><span class="boxsm"></span><span><b>Exercise 1: Build your own tool</b> (Kit 02)</span></li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="eyebrow">Afternoon</div>
-      <ul class="clean" style="margin-top:8px">
-        <li><span class="boxsm"></span><span><b>Org structure</b>: how your business is run today</span></li>
-        <li><span class="boxsm"></span><span><b>Your AI chief</b>: the one who manages the AI team</span></li>
-        <li><span class="boxsm"></span><span><b>Your AI employees</b>: one job each</span></li>
-        <li><span class="boxsm"></span><span><b>Build your AI workforce</b> (worksheet, page 9)</span></li>
-        <li><span class="boxsm"></span><span><b>24/7 Video Editor</b> (Kit 03)</span></li>
-      </ul>
-    </div>
-  </div>
-
   <div class="field card" style="flex:1">
-    <label>What I want to leave with today <span class="hint">(one sentence)</span></label>
+    <label>What I want to leave with these two days <span class="hint">(one sentence)</span></label>
     <div class="lines" style="--n:3"></div>
-    <label style="margin-top:14px">Questions I want answered today</label>
-    <div class="lines" style="--n:7"></div>
+    <label style="margin-top:14px">Questions I want answered</label>
+    <div class="lines" style="--n:13"></div>
   </div>
-  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>2</span></div>
+  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>3</span></div>
 </section>
 
 <!-- 3. BUSINESS + BOTTLENECK -->
 <section class="page">
-  <div class="eyebrow g">Worksheet · Morning</div>
+  <div class="eyebrow g">Worksheet · Find your bottleneck · 10:50 AM</div>
   <h1>My business and my bottleneck</h1>
   <p class="lead">Claude asks about this in Kit 01 Step 2 and Kit 02 Step 1. Write it here first, then copy it in.</p>
 
@@ -263,6 +268,10 @@
     <div class="lines" style="--n:4"></div>
   </div>
 
+  <div class="card">
+    <h3>My bottleneck quiz result</h3>
+    <div style="display:flex;gap:22px;margin-top:8px;font-size:12px"><span><span class="boxsm"></span>Marketing <span style="color:var(--muted)">(leads)</span></span><span><span class="boxsm"></span>Sales <span style="color:var(--muted)">(conversion)</span></span><span><span class="boxsm"></span>Service delivery <span style="color:var(--muted)">(retention)</span></span><span><span class="boxsm"></span>Operations</span></div>
+  </div>
   <div class="card">
     <h3>Where does my week go?</h3>
     <p style="color:var(--muted);font-size:11.3px;margin-top:2px">List the tasks you or your staff repeat every week. Circle the one that eats the most time.</p>
@@ -279,7 +288,7 @@
     </table>
   </div>
 
-  <div class="card soft field">
+  <div class="card field">
     <label>My bottleneck: the one task that eats most of my time every week</label>
     <div class="lines" style="--n:2"></div>
   </div>
@@ -294,7 +303,7 @@
       <div class="lines" style="--n:2"></div>
     </div>
   </div>
-  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>3</span></div>
+  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>4</span></div>
 </section>
 
 <!-- 4. KIT 01 STEPS 1-5 -->
@@ -313,7 +322,7 @@
     <div class="step"><div class="num">2</div><div>
       <h3>WORK FOLDER <span class="t">3 min · can run while Homebrew installs</span></h3>
       <p>Creates <code>Documents/WORK FOLDER</code>, your home base, and a file that tells Claude about your business.</p>
-      <p class="you"><b>You:</b> answer one question: what you sell and who buys it. Copy it from page 3.</p>
+      <p class="you"><b>You:</b> answer one question: what you sell and who buys it. Copy it from page 4.</p>
       <span class="paste">Kit 01 Step 2</span>
     </div><div class="box"></div></div>
 
@@ -336,7 +345,7 @@
       <span class="paste">Kit 01 Step 5</span>
     </div><div class="box"></div></div>
   </div>
-  <div class="foot"><span>Kit 01 · Setup</span><span>4</span></div>
+  <div class="foot"><span>Kit 01 · Setup</span><span>5</span></div>
 </section>
 
 <!-- 5. KIT 01 STEPS 6-9 + WORK FOLDER -->
@@ -385,7 +394,7 @@
     <label>My first projects <span class="hint">(each one becomes a folder)</span></label>
     <div class="lines" style="--n:8"></div>
   </div>
-  <div class="foot"><span>Kit 01 · Setup</span><span>5</span></div>
+  <div class="foot"><span>Kit 01 · Setup</span><span>6</span></div>
 </section>
 
 <!-- 6. KIT 02 -->
@@ -401,15 +410,15 @@
   </div>
 
   <div class="steps fill">
-    <div class="step"><div class="num">1</div><div><h3>Your business and project</h3><p>Claude reads your CLAUDE.md and asks the task that eats most of your time (page 3), and which project this is for.</p></div><div class="box"></div></div>
+    <div class="step"><div class="num">1</div><div><h3>Your business and project</h3><p>Claude reads your CLAUDE.md and asks the task that eats most of your time (page 4), and which project this is for.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">2</div><div><h3>Choose the path</h3><p>Claude shows the tools that fit, plus "see all", "something else" or "from scratch". You choose.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">3</div><div><h3>Install or find the tool</h3><p>Claude asks before installing anything. Tools from other people come from their GitHub, with credit.</p></div><div class="box"></div></div>
-    <div class="step"><div class="num">4</div><div><h3>Make it yours</h3><p>Three questions, one at a time: a real example, what a great result looks like, and what it must never do. Answers on page 7. Claude names it <code>my-something</code>.</p></div><div class="box"></div></div>
+    <div class="step"><div class="num">4</div><div><h3>Make it yours</h3><p>Three questions, one at a time: a real example, what a great result looks like, and what it must never do. Answers on page 8. Claude names it <code>my-something</code>.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">5</div><div><h3>Test it on real work</h3><p>Claude runs your tool on your example and saves the result in your project's Outputs.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">6</div><div><h3>Improve it once</h3><p>Say what to change. Claude fixes the tool itself, not just the result, and runs it again.</p></div><div class="box"></div></div>
     <div class="step"><div class="num">7</div><div><h3>Record it</h3><p>Your tool is added to <code>WORK FOLDER/my-tools.md</code>. Use it any time: type <code>/my-yourtool</code> in a session.</p></div><div class="box"></div></div>
   </div>
-  <div class="foot"><span>Kit 02 · Skills Directory</span><span>6</span></div>
+  <div class="foot"><span>Kit 02 · Skills Directory</span><span>7</span></div>
 </section>
 
 <!-- 7. MY FIRST TOOL -->
@@ -426,14 +435,14 @@
     <div class="card field"><label>My tool's name</label><div style="display:flex;align-items:flex-end;gap:4px;margin-top:6px"><span class="mono" style="font-size:14px">/my-</span><div class="lines" style="--n:1;flex:1"></div></div></div>
     <div class="card field"><label>Built on</label><div style="display:flex;gap:16px;margin-top:8px;font-size:11.3px"><span><span class="boxsm"></span>A catalog tool</span><span><span class="boxsm"></span>Found online</span><span><span class="boxsm"></span>From scratch</span></div></div>
   </div>
-  <div class="card soft">
+  <div class="card">
     <h3>Next tools I want</h3>
     <table style="margin-top:4px">
       <tr><th style="width:50%">Task</th><th>Tool name</th></tr>
       <tr><td class="w"></td><td></td></tr><tr><td class="w"></td><td></td></tr><tr><td class="w"></td><td></td></tr>
     </table>
   </div>
-  <div class="foot"><span>Kit 02 · Skills Directory</span><span>7</span></div>
+  <div class="foot"><span>Kit 02 · Skills Directory</span><span>8</span></div>
 </section>
 
 <!-- 8. KIT 03 -->
@@ -441,7 +450,7 @@
   <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">24/7 Video Editor</h1><div class="when">After Kit 01 · Heavy install, about 30 minutes plus the edit · Built on Nate Herk's Herk Edit Kit</div></div></div>
   <p class="lead">Claude installs the video editor, then edits one of your own clips: dead air and mistakes cut, captions added, a draft for you to approve.</p>
   <div class="row2">
-    <div class="card soft"><h3>Bring</h3><ul class="clean" style="margin-top:6px">
+    <div class="card"><h3>Bring</h3><ul class="clean" style="margin-top:6px">
       <li><span class="boxsm"></span><span>A 1 to 3 minute clip of you talking</span></li>
       <li><span class="boxsm"></span><span>Your ElevenLabs key, if you have one. <b>You paste it yourself.</b> No key? You still get the demo today.</span></li>
     </ul></div>
@@ -459,19 +468,19 @@
     <div class="step"><div class="num">7</div><div><h3>Approve and save</h3><p>Say Approve, or give one fix. The final video goes in your project's Outputs in your WORK FOLDER.</p></div><div class="box"></div></div>
   </div>
   <div class="card dark"><h3>Every new video after today</h3><p style="margin-top:4px">Open a session in the <b>herk-edit-kit</b> folder, give it your clip, and only review the draft.</p></div>
-  <div class="foot"><span>Kit 03 · 24/7 Video Editor</span><span>8</span></div>
+  <div class="foot"><span>Kit 03 · 24/7 Video Editor</span><span>9</span></div>
 </section>
 
 <!-- 9. MY AI TEAM -->
 <section class="page">
-  <div class="eyebrow g">Worksheet · Afternoon</div>
+  <div class="eyebrow g">Worksheet · Grok Bot Setup + Implementation · 2:45 PM</div>
   <h1>My AI team</h1>
-  <p class="lead">You're the owner. Your AI chief runs the team. Each AI employee has one job. Start with the jobs from page 3.</p>
+  <p class="lead">You're the owner. Your AI Chief of Staff runs the team. Each AI employee has one job. Start with the jobs from page 4.</p>
 
   <div class="org">
     <div class="node me"><b>Me, the owner</b><small>I decide and approve</small></div>
     <div class="v"></div>
-    <div class="node chief"><b>AI chief</b><small>Gives out the work and reports to me</small></div>
+    <div class="node chief"><b>AI Chief of Staff</b><small>Gives out the work and reports to me</small></div>
     <div class="team">
       <div class="node"><b>AI employee 1</b><small>Job · tool</small><div class="lines"></div></div>
       <div class="node"><b>AI employee 2</b><small>Job · tool</small><div class="lines"></div></div>
@@ -496,7 +505,7 @@
     <div class="card field"><label>My first AI hire</label><div class="lines" style="--n:4"></div></div>
     <div class="card field"><label>What I stop doing myself</label><div class="lines" style="--n:4"></div></div>
   </div>
-  <div class="foot"><span>Afternoon · AI workforce</span><span>9</span></div>
+  <div class="foot"><span>Afternoon · AI workforce</span><span>10</span></div>
 </section>
 
 <!-- 10. STUCK + NOTES -->
@@ -521,7 +530,7 @@
     <label>Notes</label>
     <div class="lines" style="--n:14"></div>
   </div>
-  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>10</span></div>
+  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>11</span></div>
 </section>
 
 </body>

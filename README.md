@@ -5,7 +5,7 @@ the setup with them.
 
 **Repo link:** `https://github.com/ecommercefastlaunch-debug/work-without-working-kit`
 
-**Day 1 workbook (10 pages, print A4):** [PDF](handout/work-without-working-workbook.pdf). Every step of Kits 01 to 03, plus worksheets.
+**Day 1 workbook (11 pages, print A4):** [PDF](handout/work-without-working-workbook.pdf). The 2-day program, every step of Kits 01 to 03, and worksheets.
 
 **One-page handout:** [PNG](handout/work-without-working-kits.png) · [PDF](handout/work-without-working-kits.pdf)
 
