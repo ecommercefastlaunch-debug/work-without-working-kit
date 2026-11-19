@@ -9,7 +9,7 @@ the setup with them.
 
 | Kit | What the owner leaves with | Runs on |
 |---|---|---|
-| [01 Setup](kits/01-setup/) | Installed automatically: Homebrew (Mac), Git, FFmpeg, Node.js, Chrome, the kit files, the WORK FOLDER with a CLAUDE.md, and the skills stop-slop and dumbify | Mac, Windows |
+| [01 Setup](kits/01-setup/) | Installed one step at a time, with a ✓ after each: Homebrew (Mac), WORK FOLDER with a CLAUDE.md, Git, FFmpeg, Node.js, Chrome, the kit files, and the skills stop-slop and dumbify | Mac, Windows |
 | [02 Skills Directory](kits/02-skills-directory/) | Any of 74 ready tools (or one Claude finds or builds), tuned to their business and tested on real work. Run it again for each new tool | Mac, Windows |
 | [03 24/7 Video Editor](kits/03-video-editor/) | Nate Herk's video-editing kit installed, and one of their clips edited | Mac, Windows; heavy install |
 
@@ -25,6 +25,6 @@ from its README (or the handout). Claude reads the kit's `SETUP.md` and walks th
 ## Rules every kit follows
 
 - Claude explains what it's doing in plain words and checks it worked.
-- Claude asks before installing anything (Kit 01 asks once, for the whole list).
+- Claude asks before installing anything (in Kit 01, pasting a step's prompt is the yes for that step).
 - Passwords, payments and account sign-ups are always done by the owner, never by Claude.
 - Skills from other people are installed from their original GitHub repo, with credit.

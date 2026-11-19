@@ -1,27 +1,34 @@
-# Kit 01: Setup
+# Kit 01: Setup, one step at a time
 
-**Claude installs everything automatically.** The owner pastes one prompt, answers one
-question about their business, and only approves what the computer asks for: their Mac
-password for Homebrew, an **Allow** button, or (on Windows) accepting the programs' terms.
+The room installs together, **one step at a time**. The trainer calls a step, everyone pastes
+it in Claude, and nobody moves on until Claude shows a ✓. Claude does the work; the owner
+only approves what the computer asks for: their Mac password for Homebrew, an **Allow**
+button, or (on Windows) accepting the programs' terms.
 
-## The one prompt (owners paste this)
+## The prompts (owners paste these, in the Claude app's Code tab)
 
-Open the Claude desktop app, click the **Code** tab, and paste:
+**Step 1** (the start prompt, it tells Claude where the guide is):
 
 ```
-Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/01-setup/SETUP.md and install everything for me. I'll allow what's needed.
+Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/01-setup/SETUP.md and do Step 1 only.
 ```
 
-## What happens
+**Steps 2 to 9**, one at a time, in the same session:
 
-1. Claude says what it's installing and starts right away (no "can I start?").
-2. **Mac:** Claude opens Terminal with Homebrew's installer already running; the owner clicks
-   OK and types their Mac password. **Windows:** Claude asks once to accept the programs' terms.
-3. **While Homebrew installs,** Claude creates `Documents/WORK FOLDER`, asks one question
-   (what they sell and who buys, or a link to their page), and writes `WORK FOLDER/CLAUDE.md`.
-4. Claude runs **one installer** (`setup.sh`): Git, FFmpeg, Node.js, Chrome, the kit files, and
-   the skills.
-5. Done checklist.
+| Step | Paste | What happens | About |
+|---|---|---|---|
+| 1 | the start prompt | **Mac:** Homebrew. Terminal opens; the owner clicks OK and types their Mac password. **Windows:** checks winget and asks once to accept the programs' terms | 5–15 min |
+| 2 | `Kit 01 Step 2` | Creates `Documents/WORK FOLDER`, asks what they sell, writes `WORK FOLDER/CLAUDE.md` (can run while Homebrew installs) | 3 min |
+| 3 | `Kit 01 Step 3` | Git | 1–2 min |
+| 4 | `Kit 01 Step 4` | FFmpeg | 2–8 min |
+| 5 | `Kit 01 Step 5` | Node.js | 1–2 min |
+| 6 | `Kit 01 Step 6` | Google Chrome (skipped if they have it) | 1–3 min |
+| 7 | `Kit 01 Step 7` | Kit files, into `Documents/work-without-working-kit` | 1 min |
+| 8 | `Kit 01 Step 8` | Skills: stop-slop and dumbify | 1 min |
+| 9 | `Kit 01 Step 9` | Final check: ✓ or ✗ for everything | 1 min |
+
+About 20 to 35 minutes for the room. If someone opened a new session halfway, they paste the
+start prompt again, then their step.
 
 ## What gets installed and why
 
@@ -57,12 +64,11 @@ business and the rules: new project, new folder; results go in its Outputs.
 ## Files
 
 - [SETUP.md](SETUP.md): the steps Claude follows
-- [setup.sh](setup.sh): the one-shot installer (safe to re-run; skips what's done)
+- [setup.sh](setup.sh): helpers only, does Steps 3 to 8 in one run to catch up someone who fell behind
 - [templates/CLAUDE.md](templates/CLAUDE.md): the business file template
 
-## Takes about
+## Tips for the trainer
 
-15 to 25 minutes. Homebrew is the longest part (5 to 15 minutes), and the work folder is set
-up while it runs. Helpers: owners need their Mac password, and should click OK when asked if
-Claude can control Terminal.
-
+- Start Step 1 first thing: Homebrew is the longest part. Do Step 2 while it runs.
+- Owners need their Mac password, and should click **OK** when asked if Claude can control Terminal.
+- Wait for a ✓ from the room before calling the next step. Anyone with a ✗ twice raises their hand.
