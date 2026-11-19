@@ -128,26 +128,37 @@
 
   <section id="video">
     <div class="sh"><span class="num">07</span><h2>My 24/7 AI Video Editor</h2></div>
-    <p class="lead">Claude edits your videos for you: it cuts the dead air and mistakes, adds captions and graphics, and gives you a draft to approve. It runs on <a href="https://github.com/nateherkai/herk-edit-kit" style="color:var(--cyan)">Herk Edit Kit</a>, Nate Herk's free video editor. Do the Setup Kit first.</p>
+    <p class="lead">Claude edits your videos for you: it cuts the dead air and mistakes, adds captions, transitions, graphics and sound, and gives you a draft to approve. Two parts, each with its own prompt. Do the Setup Kit (02) first.</p>
     <div class="card">
-      <div style="font-weight:800">A. Setup Kit: paste this in Claude</div>
-      <div class="prompt" id="p-video" style="margin-top:10px">Set me up with the 24/7 AI Video Editor from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/03-video-editor/SETUP.md and install it for me. I'll allow what's needed.</div>
+      <div style="font-weight:800">A. Setup Kit: Herk Edit Kit + video engine</div>
+      <p class="lead" style="margin:6px 0 10px">Installs <a href="https://github.com/nateherkai/herk-edit-kit" style="color:var(--cyan)">Herk Edit Kit</a>, Nate Herk's free video editor, and the engine that renders the MP4. About 10 to 15 minutes.</p>
+      <div class="prompt" id="p-video">Set me up with the 24/7 AI Video Editor from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/03-video-editor/SETUP.md and install it for me. I'll allow what's needed.</div>
       <button class="btn copy" data-copy="p-video">Copy prompt</button>
-      <p class="lead" style="margin-top:10px">Installs the editor in Documents/herk-edit-kit, renders a demo video, and helps you add your ElevenLabs key (optional; you paste it yourself). About 10 to 20 minutes.</p>
-    </div>
-    <div class="card" style="margin-top:12px">
-      <div style="font-weight:800">B. Skills</div>
-      <ul class="check" style="margin-top:8px">
-        <li><b>Edit my video:</b> short-form-edit (Reels, Shorts, short ads), edit-video (long videos)</li>
-        <li><b>Cutting:</b> cut-silences (dead air), cut-mistakes (stutters and retakes, shows each cut first)</li>
-        <li><b>Visuals:</b> video-storytelling, hyperframes-video-beats, style-library</li>
-        <li><b>Make from scratch:</b> make-a-video, website-to-hyperframes, motion-showreel</li>
-      </ul>
-      <p class="lead" style="margin-top:10px">Start a <b>new</b> Code session and choose the <b>herk-edit-kit</b> folder in Documents. The video skills only work there. Then:</p>
+      <p class="lead" style="margin-top:14px">It comes with Nate's editing skills (short-form-edit, edit-video, cut-silences, cut-mistakes and more). They work in a <b>new</b> Code session opened in the <b>herk-edit-kit</b> folder in Documents. For your own voice, you paste your ElevenLabs key in its settings file yourself.</p>
       <div class="prompt" id="p-reel">Use short-form-edit to turn my clip at <span class="fill">[where my clip is]</span> into a 30 to 60 second Reel, with a strong hook, captions and B-roll. Show me the cuts before you render.</div>
       <button class="btn copy" data-copy="p-reel">Copy prompt</button>
-      <div class="prompt" id="p-promo" style="margin-top:12px">Use website-to-hyperframes to make a 20-second promo video from <span class="fill">[my website link]</span>.</div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div style="font-weight:800">B. Skills: 25 video skills, separate install</div>
+      <p class="lead" style="margin:6px 0 10px">Transitions, effects, sound, explainers, titles, charts and Reels. They work in <b>every</b> folder. About 1 to 3 minutes.</p>
+      <div class="prompt" id="p-vskills">Add my video skills from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/03-video-editor/SKILLS.md and install them for me.</div>
+      <button class="btn copy" data-copy="p-vskills">Copy prompt</button>
+      <ul class="check" style="margin-top:14px">
+        <li><b>Transitions &amp; effects:</b> hyperframes-registry, motion-effects, sound-effects</li>
+        <li><b>Video basics:</b> hyperframes, hyperframes-cli, media-use</li>
+        <li><b>Explainers &amp; promos:</b> explainer-default, explainer-engaging, explainer-high-energy, launch-video, vox-explainer, apple-launch-film</li>
+        <li><b>B-roll &amp; cutouts:</b> motion-broll, object-separation</li>
+        <li><b>Titles, charts &amp; loops:</b> title-sequence-3d, animated-chart, milestone-reveal, loop-cover, newsletter-promo</li>
+        <li><b>Reels &amp; clips:</b> reel-export, clip-factory</li>
+        <li><b>Plan &amp; brief:</b> brand-intake, motion-brief-writer, motion-prompt-writer, reference-to-motion</li>
+      </ul>
+      <p class="lead" style="margin-top:12px">Try these in a <b>new</b> Code session:</p>
+      <div class="prompt" id="p-brand">Use brand-intake to set up my brand for videos. My brand is <span class="fill">[business name]</span>.</div>
+      <button class="btn copy" data-copy="p-brand">Copy prompt</button>
+      <div class="prompt" id="p-promo" style="margin-top:12px">Use explainer-high-energy to make a 15-second promo for <span class="fill">[my product]</span>.</div>
       <button class="btn copy" data-copy="p-promo">Copy prompt</button>
+      <div class="prompt" id="p-clips" style="margin-top:12px">Use clip-factory on my video at <span class="fill">[where my video is]</span>.</div>
+      <button class="btn copy" data-copy="p-clips">Copy prompt</button>
     </div>
   </section>
 </main>

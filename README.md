@@ -14,7 +14,7 @@ Source: [site/index.html](site/index.html), hosted on Vercel (project `work-with
 |---|---|---|
 | [01 Work Without Working Setup Kit](kits/01-setup/) | One prompt installs Homebrew (Mac), Git, the GitHub app, FFmpeg and Node.js, connects their GitHub account, and creates the WORK FOLDER with a CLAUDE.md | Mac, Windows |
 | [02 Sales and Marketing Skills](kits/02-skills/) | One prompt installs 61 Claude skills for sales and marketing, including image making with ChatGPT (Codex) | Mac, Windows |
-| [03 My 24/7 AI Video Editor](kits/03-video-editor/) | One prompt installs Nate Herk's Herk Edit Kit; Claude then edits their clips into Reels and long videos with captions and graphics | Mac, Windows |
+| [03 My 24/7 AI Video Editor](kits/03-video-editor/) | Two separate prompts. A. Setup Kit installs Nate Herk's Herk Edit Kit and the video engine. B. Skills installs 25 video skills (transitions, effects, sound, explainers, titles, Reels) with their own installer | Mac, Windows |
 
 After Kit 01, owners open their Code sessions in the WORK FOLDER. Every new project gets its own folder
 there, and everything Claude makes goes in that project's `Outputs` folder.

@@ -1,4 +1,4 @@
-# Kit 03: My 24/7 AI Video Editor (instructions for Claude)
+# Kit 03 A. Setup Kit: My 24/7 AI Video Editor (instructions for Claude)
 
 You are installing Nate Herk's free video-editing kit, **Herk Edit Kit**
 (https://github.com/nateherkai/herk-edit-kit, MIT license), for a business owner at the
@@ -18,7 +18,9 @@ they asked you to install it, so **install it automatically**. Don't ask step by
 
 ## Step 1: Check the tools
 
-Say: "I'm setting up your 24/7 AI video editor. About 10 to 20 minutes."
+Say: "I'm setting up your 24/7 AI video editor: Herk Edit Kit and the video engine. About 10 to 15 minutes."
+
+This kit installs only those two. The video skills are a separate install (`SKILLS.md`).
 
 Check, and report found or missing in one line:
 
@@ -49,49 +51,24 @@ Inside `Documents/herk-edit-kit`, run in order (say each takes a minute or more)
 
 1. `npm ci`
 2. `npm run setup` (checks the tools and creates the `.env` settings file)
-3. `npx hyperframes browser ensure` (downloads the browser the editor uses to render video)
+3. `npx hyperframes browser ensure` (the video engine: downloads the browser it renders with)
 4. `npm test`
 
 If `npm test` fails, run `npx hyperframes doctor` and show the helper the lines marked fail.
 
-## Step 4: Render the demo video
-
-Inside `herk-edit-kit`:
-
-1. `npm run demo`
-2. In `video-projects/demo`: `npx hyperframes lint`, then
-   `npx hyperframes render --quality draft --output renders/demo.mp4`
-3. Open the video for them (Mac: `open`, Windows: `start ""`). Done when they've seen it play.
-
-## Step 5: Transcription key (optional, the owner does this)
-
-Say: "To edit your videos by what you say, the kit sends the audio to a service called
-ElevenLabs. That needs your own key from your own ElevenLabs account. You paste it; I never
-see it."
-
-- **They have a key:** open the settings file for them (Mac: `open -e .env`; Windows:
-  `notepad .env`, both inside `herk-edit-kit`). Tell them: find `ELEVENLABS_API_KEY=`, paste
-  the key right after the `=`, save, close. Wait until they say it's done.
-- **No key yet:** say they can sign up at elevenlabs.io later and add it the same way.
-  Everything else works now; editing their own talking clips needs the key (or ask the
-  editor to use Whisper instead).
-
-## Step 6: Done
+## Step 4: Done
 
 Show this list with a ✓ or ✗ for each line:
 
-- Node.js, Git, FFmpeg ready
-- Herk Edit Kit installed, test passed
-- Demo video rendered and played
-- ElevenLabs key added (or "later")
+- Herk Edit Kit installed in Documents/herk-edit-kit
+- Video engine ready (test passed)
 
 Then tell them:
 
-> Your 24/7 AI video editor is ready. To use it, start a **new** Code session and choose
-> the **herk-edit-kit** folder in Documents (the video skills only work there). Then paste:
+> Your video editor is installed. Next, add your video skills (B. Skills in section 07 of
+> your workbook). To edit a video, start a **new** Code session and choose the
+> **herk-edit-kit** folder in Documents.
 >
-> "Use short-form-edit to turn my clip at [where my clip is] into a 30 to 60 second Reel,
-> with a strong hook, captions and B-roll. Show me the cuts before you render."
->
-> When you approve the video, ask Claude to copy it to your project's Outputs folder in
-> your WORK FOLDER.
+> To edit a clip of yourself talking, the editor needs your own ElevenLabs key to read what
+> you say. Ask Claude to open the herk-edit-kit `.env` file, and paste the key after
+> `ELEVENLABS_API_KEY=` yourself. Claude never types or sees it.

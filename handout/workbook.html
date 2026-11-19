@@ -438,36 +438,54 @@
   <div class="foot"><span>My AI team</span><span>06</span></div>
 </section>
 
-<!-- 8. MY 24/7 AI VIDEO EDITOR -->
+<!-- 8. MY 24/7 AI VIDEO EDITOR: A. SETUP KIT -->
 <section class="page">
-  <div class="head"><span class="badge">07</span><div><h1 style="font-size:26px">My 24/7 AI Video Editor</h1><div class="when">After the Setup Kit · One prompt installs it · About 10 to 20 minutes</div></div></div>
-  <p class="lead">Claude edits your videos for you. It cuts the dead air and mistakes, adds captions and graphics, and gives you a draft to approve. It runs on <b>Herk Edit Kit</b>, Nate Herk's free video editor.</p>
+  <div class="head"><span class="badge">07</span><div><h1 style="font-size:26px">My 24/7 AI Video Editor</h1><div class="when">After the Setup Kit · Two parts: A. Setup Kit, then B. Skills</div></div></div>
+  <p class="lead">Claude edits your videos for you. It cuts the dead air and mistakes, adds captions, transitions, graphics and sound, and gives you a draft to approve.</p>
 
   <h2>A. Setup Kit</h2>
-  <div class="prompt" data-label="Paste in Claude (scan the QR)">Set me up with the 24/7 AI Video Editor from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/03-video-editor/SETUP.md</span> and install it for me. I'll allow what's needed.</div>
-  <div class="incgrid"><div class="inc"><span class="box"></span><div><h3>Herk Edit Kit</h3><p>The video editor, saved in Documents/herk-edit-kit.</p></div></div><div class="inc"><span class="box"></span><div><h3>Video engine</h3><p>Turns Claude's edit into a finished MP4.</p></div></div><div class="inc"><span class="box"></span><div><h3>Demo video</h3><p>Claude renders a short test video. You watch it play.</p></div></div><div class="inc"><span class="box"></span><div><h3>ElevenLabs key <span style="font-weight:600;color:var(--muted)">(optional)</span></h3><p>Lets Claude edit by what you say. You paste your own key; Claude never sees it.</p></div></div></div>
+  <div class="prompt" data-label="Paste in Claude (scan the QR) · About 10 to 15 minutes">Set me up with the 24/7 AI Video Editor from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/03-video-editor/SETUP.md</span> and install it for me. I'll allow what's needed.</div>
+  <div class="incgrid"><div class="inc"><span class="box"></span><div><h3>Herk Edit Kit</h3><p>Nate Herk's free video editor, saved in Documents/herk-edit-kit.</p></div></div><div class="inc"><span class="box"></span><div><h3>Video engine</h3><p>Turns Claude's edit into a finished MP4.</p></div></div></div>
 
-  <h2>B. Skills</h2>
+  <h3 style="margin-top:2px">Comes with Nate's editing skills</h3>
   <div class="skgrid" style="flex:none;grid-auto-rows:auto"><div class="skcat"><h3>Edit my video <span>2</span></h3><div class="chips"><span class="hl">short-form-edit</span><span>edit-video</span></div><p class="hint" style="margin-top:5px;font-size:10.5px">Reels, Shorts and short ads · long videos</p></div><div class="skcat"><h3>Cutting <span>2</span></h3><div class="chips"><span>cut-silences</span><span>cut-mistakes</span></div><p class="hint" style="margin-top:5px;font-size:10.5px">Dead air · stutters and retakes (shows each cut first)</p></div><div class="skcat"><h3>Visuals <span>3</span></h3><div class="chips"><span>video-storytelling</span><span>hyperframes-video-beats</span><span>style-library</span></div></div><div class="skcat"><h3>Make from scratch <span>3</span></h3><div class="chips"><span>make-a-video</span><span>website-to-hyperframes</span><span>motion-showreel</span></div></div></div>
-  <p class="hint" style="font-size:10.5px;margin-top:-4px">Plus 5 that work behind the scenes: hyperframes, hyperframes-cli, hyperframes-registry, gsap, short-form-video.</p>
 
   <div class="card dark">
-    <h3>How to use it</h3>
+    <h3>How to edit a video</h3>
     <ul class="clean" style="margin-top:7px;gap:6px">
-      <li><span class="dot"></span><span>Start a <b>new</b> Code session and choose the <b>herk-edit-kit</b> folder in Documents. The video skills only work there.</span></li>
-      <li><span class="dot"></span><span>Paste a prompt below and fill in the [brackets]. Approve or skip each cut, then watch the draft.</span></li>
-      <li><span class="dot"></span><span>Happy with it? Ask Claude to copy it to your project's <b>Outputs</b> in your WORK FOLDER.</span></li>
+      <li><span class="dot"></span><span>Start a <b>new</b> Code session and choose the <b>herk-edit-kit</b> folder in Documents. Nate's skills only work there.</span></li>
+      <li><span class="dot"></span><span><b>Your own voice?</b> The editor needs your ElevenLabs key to read what you say. Ask Claude to open the settings file; <b>you</b> paste the key.</span></li>
+      <li><span class="dot"></span><span>Approve or skip each cut, watch the draft, then ask Claude to copy it to your project's <b>Outputs</b>.</span></li>
     </ul>
   </div>
-  <div class="row2">
-    <div class="tp" style="margin-top:0">Use short-form-edit to turn my clip at <span class="fill">[where my clip is]</span> into a 30 to 60 second Reel, with a strong hook, captions and B-roll. Show me the cuts before you render.</div>
-    <div class="tp" style="margin-top:0">Use website-to-hyperframes to make a 20-second promo video from <span class="fill">[my website link]</span>.</div>
-  </div>
+  <div class="tp" style="margin-top:0">Use short-form-edit to turn my clip at <span class="fill">[where my clip is]</span> into a 30 to 60 second Reel, with a strong hook, captions and B-roll. Show me the cuts before you render.</div>
   <div class="card field" style="flex:1">
     <label>My first video to edit <span class="hint">(what it is, where the clip is saved)</span></label>
-    <div class="lines"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>My 24/7 AI Video Editor</span><span>07</span></div>
+  <div class="foot"><span>My 24/7 AI Video Editor · A. Setup Kit</span><span>07</span></div>
+</section>
+
+<!-- 8b. MY 24/7 AI VIDEO EDITOR: B. SKILLS -->
+<section class="page">
+  <div class="head"><span class="badge">07</span><div><h1 style="font-size:26px">My 24/7 AI Video Editor</h1><div class="when">Separate install · One prompt adds all 25 · About 1 to 3 minutes</div></div></div>
+  <h2>B. Skills</h2>
+  <p class="lead">25 more video skills with their own install: transitions, effects, sound, explainers, titles, charts and Reels. They work in <b>every</b> folder, not only herk-edit-kit.</p>
+  <div class="prompt" data-label="Paste in Claude (scan the QR)">Add my video skills from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/03-video-editor/SKILLS.md</span> and install them for me.</div>
+  <div class="skgrid" style="flex:none;grid-auto-rows:auto"><div class="skcat"><h3>Transitions &amp; effects <span>3</span></h3><div class="chips"><span class="hl">hyperframes-registry</span><span class="hl">motion-effects</span><span>sound-effects</span></div></div><div class="skcat"><h3>Video basics <span>3</span></h3><div class="chips"><span>hyperframes</span><span>hyperframes-cli</span><span>media-use</span></div></div><div class="skcat"><h3>Explainers &amp; promos <span>6</span></h3><div class="chips"><span>explainer-default</span><span>explainer-engaging</span><span>explainer-high-energy</span><span>launch-video</span><span>vox-explainer</span><span>apple-launch-film</span></div></div><div class="skcat"><h3>B-roll &amp; cutouts <span>2</span></h3><div class="chips"><span>motion-broll</span><span>object-separation</span></div></div><div class="skcat"><h3>Titles, charts &amp; loops <span>5</span></h3><div class="chips"><span>title-sequence-3d</span><span>animated-chart</span><span>milestone-reveal</span><span>loop-cover</span><span>newsletter-promo</span></div></div><div class="skcat"><h3>Reels &amp; clips <span>2</span></h3><div class="chips"><span>reel-export</span><span>clip-factory</span></div></div><div class="skcat"><h3>Plan &amp; brief <span>4</span></h3><div class="chips"><span>brand-intake</span><span>motion-brief-writer</span><span>motion-prompt-writer</span><span>reference-to-motion</span></div></div><div class="skcat" style="background:var(--midnight);color:#C9D2E0;border:none"><h3 style="color:var(--cyan)">Transitions</h3><p style="margin-top:6px;font-size:11px;line-height:1.45">About 450 ready-made transitions, titles and captions. Just ask: <b style="color:#fff">"Add a glitch transition between scene 1 and 2."</b></p></div></div>
+
+  <h2>Try these</h2>
+  <div class="appgrid">
+    <div class="app"><div class="tt"><span class="tn">1</span><div><h3>Brand first</h3><p>Your colors and style for every video</p></div></div><div class="tp">Use brand-intake to set up my brand for videos. My brand is <span class="fill">[business name]</span>.</div></div>
+    <div class="app"><div class="tt"><span class="tn">2</span><div><h3>15-Second Promo</h3><p>A hype video for your product</p></div></div><div class="tp">Use explainer-high-energy to make a 15-second promo for <span class="fill">[my product]</span>.</div></div>
+    <div class="app"><div class="tt"><span class="tn">3</span><div><h3>Clips from a Long Video</h3><p>The best short clips in a live or podcast</p></div></div><div class="tp">Use clip-factory on my video at <span class="fill">[where my video is]</span>.</div></div>
+    <div class="app"><div class="tt"><span class="tn">4</span><div><h3>Sales Milestone</h3><p>A chart or number that counts up</p></div></div><div class="tp">Use animated-chart to show <span class="fill">[my result, like 1,000 orders]</span>.</div></div>
+  </div>
+  <div class="card field" style="flex:1">
+    <label>Notes</label>
+    <div class="lines"><i></i><i></i><i></i></div>
+  </div>
+  <div class="foot"><span>My 24/7 AI Video Editor · B. Skills</span><span>07</span></div>
 </section>
 
 <!-- 9. STUCK + NOTES -->
