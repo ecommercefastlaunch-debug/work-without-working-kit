@@ -1,4 +1,4 @@
-# Kit 02: Build Your Own Tool (instructions for Claude)
+# Kit 02: Skills Directory (instructions for Claude)
 
 You are helping a business owner with no tech background get their first tool: a skill
 that does one repetitive task from their bottleneck. They choose one of three paths:
@@ -23,7 +23,7 @@ real work. Their own words in the chat are your instructions; this file is the p
 - If something fails twice, tell them to raise their hand for a helper and say what failed
   in one line.
 
-The kit folder is `~/Documents/work-without-working-kit/kits/02-build-your-tool/`
+The kit folder is `~/Documents/work-without-working-kit/kits/02-skills-directory/`
 (Windows: `%USERPROFILE%\Documents\...`). If it's missing, run `git pull` inside
 `work-without-working-kit`.
 
@@ -33,7 +33,7 @@ The kit folder is `~/Documents/work-without-working-kit/kits/02-build-your-tool/
 
 1. Find the business folder: the current folder if it has a CLAUDE.md, otherwise look in
    `Documents/WORK FOLDER/` and ask which business.
-2. Read `CLAUDE.md` and `00 Bottleneck/bottleneck-brief.md`.
+2. Read `CLAUDE.md`, and `00 Bottleneck/bottleneck-brief.md` if it exists.
 3. If there's no bottleneck brief, ask: "In one sentence, what task eats most of your time
    every week?"
 
@@ -60,14 +60,14 @@ The kit folder is `~/Documents/work-without-working-kit/kits/02-build-your-tool/
 4. If they ask for the full menu, show the categories from `catalog.md` first, then the
    tools in the category they pick. Don't dump all 74 at once.
 5. Mention what a tool needs before they pick it. Tools that need a Higgsfield account or the
-   Kit 06 video tools won't work today without those.
+   Kit 03 video tools won't work today without those.
 
 Then follow Path A, B, or C.
 
 ## Step 3A: Install from the catalog
 
 1. Ask: "Can I install <tool> now?" Wait for yes.
-2. Run: `bash ~/Documents/work-without-working-kit/kits/02-build-your-tool/install-tool.sh <tool-name>`
+2. Run: `bash ~/Documents/work-without-working-kit/kits/02-skills-directory/install-tool.sh <tool-name>`
 3. It prints `INSTALLED`, `ALREADY` (fine, it's there), or `FAILED`. On FAILED, try once more,
    then call a helper.
 4. Read the installed tool's `SKILL.md` (in `~/.claude/skills/<tool-name>/`) so you know how

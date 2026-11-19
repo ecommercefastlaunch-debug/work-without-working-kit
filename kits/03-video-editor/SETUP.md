@@ -1,7 +1,7 @@
-# Kit 06: 24/7 Video Editor (instructions for Claude)
+# Kit 03: 24/7 Video Editor (instructions for Claude)
 
 You are installing Nate Herk's video-editing kit for a business owner with no tech
-background, then running their first edit job from Grok. Their own words in the chat are
+background, then editing their first real clip with them. Their own words in the chat are
 your instructions; this file is the plan.
 
 **How to work**
@@ -35,9 +35,8 @@ Ask before each install.
 **Mac**
 
 - If `brew --version` works: `brew install node ffmpeg` for whichever is missing.
-- If Homebrew is missing: don't install Homebrew yourself (it needs the Mac password). Tell
-  them to raise their hand for a helper, or install Node.js from https://nodejs.org (the
-  LTS button) themselves. FFmpeg without Homebrew needs a helper.
+- If Homebrew is missing, Kit 01 (Setup) wasn't finished: tell them to run Kit 01 first.
+  Kit 01 already installs FFmpeg, so usually only Node.js is left.
 
 **Windows**
 
@@ -83,32 +82,23 @@ Inside `herk-edit-kit`:
 4. `npx hyperframes render --quality draft --output renders/demo.mp4`
 5. Tell them where the file is and ask them to play it. Done when they've seen it play.
 
-## Step 6: Exercise 3, edit one video (needs the key from Step 4 and Kit 05's inbox)
+## Step 6: Edit one real video (needs the key from Step 4)
 
 1. Ask for the path to their raw clip. Copy it into
    `Documents/herk-edit-kit/video-projects/my-first-edit/raw/` (create the folders).
 2. Tell them: "Open a new Code session with the `herk-edit-kit` folder selected. That's
-   where the video skills live. Paste this there:"
+   where the video skills live. Paste this there (I filled in your clip):"
 
    ```
-   Read ~/AI-Inbox/CLAUDE-RULES.md and start watching ~/AI-Inbox/inbox for tasks, as in Kit 05 Step 3 of my work-without-working-kit.
-   ```
-
-3. Then give them this to paste into their AI Chief chat in Grok Bot (fill in the real path):
-
-   ```
-   Send Claude this task with send-to-claude.sh, title "Edit my first video":
    Use edit-video to edit my recording at <full path to the raw clip>.
-   Keep my main points. Tighten dead air, show the proposed mistake cuts,
-   add captions, and produce a reviewed draft. Save the draft in the project's renders folder.
-   Then check the result with check-result.sh and tell me when it's ready.
+   Keep my main points. Tighten dead air, show me the proposed mistake cuts,
+   add captions, and produce a reviewed draft. Save it in the project's renders folder.
    ```
 
-   If their Grok Bot can't run commands, they paste the same task text straight into the
-   herk-edit-kit session instead.
+   Fill in the real path before you show it to them.
 
-4. The owner watches the edit happen in that session. When the draft is rendered, they
-   play it and say Approve or one fix.
+3. The owner watches the edit happen in that session, approves or skips the proposed cuts,
+   then plays the draft and says Approve or one fix.
 
 ## Step 7: Done
 
@@ -118,7 +108,7 @@ Show this checklist with a check or a cross for each line:
 - Herk Edit Kit installed, `npm test` passed
 - Demo rendered and played
 - ElevenLabs key added by the owner
-- One clip edited from a Grok task, draft approved or one fix noted
+- One real clip edited, draft approved or one fix noted
 
-Then tell them: "That's your 24/7 video editor. Send it a clip through your AI Chief any
-time; you only review the draft."
+Then tell them: "That's your 24/7 video editor. Any time you have a new recording, open a
+session in the herk-edit-kit folder, give it the clip, and you only review the draft."

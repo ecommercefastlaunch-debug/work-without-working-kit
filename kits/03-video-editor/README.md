@@ -1,15 +1,15 @@
-# Kit 06: 24/7 Video Editor
+# Kit 03: 24/7 Video Editor
 
-**Day 1, blocks 12 and 14 (Exercise 3).** Installs Nate Herk's video-editing kit, then
-runs the first full loop: the AI Chief in Grok sends an edit job, Claude edits one real
-clip, and the owner approves the draft.
+Installs Nate Herk's video-editing kit, then edits one of the owner's real clips with them:
+Claude cuts dead air and mistakes, adds captions, and renders a draft the owner approves.
 
 ## Before this kit
 
-Kits 01 to 05 are done. The owner has one short raw clip (1 to 3 minutes of them talking)
-on the laptop.
+Kit 01 (Setup) is done, so Homebrew and FFmpeg are already installed. The owner has one
+short raw clip (1 to 3 minutes of them talking) on the laptop.
 
-**This is the heaviest kit.** It needs Node.js 22 or newer, Git, FFmpeg, and Chrome.
+**This is the heaviest kit.** It needs Node.js 22 or newer, Git, FFmpeg, and Chrome
+(Kit 01 covers Git and FFmpeg on a Mac).
 Helpers: install these on laptops the night before where you can. If a laptop can't get
 them, that owner watches the facilitator's demo instead.
 
@@ -19,7 +19,7 @@ the kit installs and runs its demo, but can't cut a real clip by its words.
 ## The one prompt (owners paste this into Claude)
 
 ```
-Run Kit 06 from my Documents/work-without-working-kit folder. Read kits/06-video-editor/SETUP.md and follow it step by step with me.
+Run Kit 03 from my Documents/work-without-working-kit folder. Read kits/03-video-editor/SETUP.md and follow it step by step with me.
 ```
 
 ## What happens
@@ -28,7 +28,7 @@ Run Kit 06 from my Documents/work-without-working-kit folder. Read kits/06-video
 2. Downloads and sets up the Herk Edit Kit in Documents
 3. The owner adds their own ElevenLabs key (Claude never types keys)
 4. Renders the kit's demo video to prove it works
-5. Exercise 3: Grok sends "edit my clip", Claude edits it, the owner approves the draft
+5. Edits one of their real clips; the owner approves the cuts and the draft
 
 ## They leave with
 

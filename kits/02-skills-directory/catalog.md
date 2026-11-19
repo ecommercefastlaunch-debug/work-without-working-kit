@@ -6,7 +6,7 @@ bottleneck, then Kit 02 helps you make it yours: tuned to your business and test
 **74 tools.** Install one with:
 
 ```
-bash ~/Documents/work-without-working-kit/kits/02-build-your-tool/install-tool.sh <tool-name>
+bash ~/Documents/work-without-working-kit/kits/02-skills-directory/install-tool.sh <tool-name>
 ```
 
 Tools marked *installed in Kit 01* are already on your laptop.
@@ -110,30 +110,30 @@ Tools marked *installed in Kit 01* are already on your laptop.
 
 | Tool | What it does | Needs | From |
 |---|---|---|---|
-| `hyperframes` | Start here for any video made in code | Kit 06 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
-| `hyperframes-cli` | Preview, check and render HyperFrames videos | Kit 06 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
-| `hyperframes-registry` | About 450 ready-made titles, transitions, captions and charts | Kit 06 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
-| `media-use` | Music, sound effects, voiceover, transcripts and colour looks for videos | Kit 06 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
-| `reel-export` | Exports videos sized for Reels, TikTok and Shorts | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `explainer-default` | 45 to 90 second product demo video | Kit 06 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
-| `explainer-engaging` | 10 to 30 second one-take story explainer | Kit 06 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
-| `explainer-high-energy` | 12 to 20 second hype promo | Kit 06 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
-| `motion-broll` | Animated b-roll for talking videos | Kit 06 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
-| `sound-effects` | Adds sound design and music to a motion video | Kit 06 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
-| `object-separation` | Cuts a person or product out of footage | Kit 06 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
-| `launch-video` | 30 to 45 second product launch video | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `apple-launch-film` | Apple keynote-style launch film | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `title-sequence-3d` | 3D title opener | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `vox-explainer` | Documentary-style explainer | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `animated-chart` | Looping animated chart of your results | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `milestone-reveal` | Animated milestone or number reveal | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `model-showdown` | Side-by-side comparison video | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `loop-cover` | Looping GIF cover | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `newsletter-promo` | Short promo clip for a newsletter | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `motion-effects` | Library of motion effects | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `hyperframes` | Start here for any video made in code | Kit 03 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
+| `hyperframes-cli` | Preview, check and render HyperFrames videos | Kit 03 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
+| `hyperframes-registry` | About 450 ready-made titles, transitions, captions and charts | Kit 03 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
+| `media-use` | Music, sound effects, voiceover, transcripts and colour looks for videos | Kit 03 tools (Node.js, FFmpeg, Chrome) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) |
+| `reel-export` | Exports videos sized for Reels, TikTok and Shorts | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `explainer-default` | 45 to 90 second product demo video | Kit 03 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
+| `explainer-engaging` | 10 to 30 second one-take story explainer | Kit 03 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
+| `explainer-high-energy` | 12 to 20 second hype promo | Kit 03 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
+| `motion-broll` | Animated b-roll for talking videos | Kit 03 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
+| `sound-effects` | Adds sound design and music to a motion video | Kit 03 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
+| `object-separation` | Cuts a person or product out of footage | Kit 03 tools (Node.js, FFmpeg, Chrome) | [Barty-Bart/motion-graphics](https://github.com/Barty-Bart/motion-graphics) |
+| `launch-video` | 30 to 45 second product launch video | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `apple-launch-film` | Apple keynote-style launch film | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `title-sequence-3d` | 3D title opener | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `vox-explainer` | Documentary-style explainer | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `animated-chart` | Looping animated chart of your results | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `milestone-reveal` | Animated milestone or number reveal | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `model-showdown` | Side-by-side comparison video | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `loop-cover` | Looping GIF cover | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `newsletter-promo` | Short promo clip for a newsletter | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `motion-effects` | Library of motion effects | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
 | `motion-brief-writer` | Writes a brief for a motion graphic | Nothing | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
 | `motion-prompt-writer` | Writes prompts for motion graphics | Nothing | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
-| `reference-to-motion` | Turns a reference video into a motion graphic | Kit 06 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
+| `reference-to-motion` | Turns a reference video into a motion graphic | Kit 03 tools (Node.js, FFmpeg, Chrome) | [charlie947/motion-graphics-skills](https://github.com/charlie947/motion-graphics-skills) |
 
 ## Inside the Small Business plugin
 
@@ -152,7 +152,7 @@ After `install-tool.sh small-business`, just describe what you need in plain wor
 
 Don't connect other apps to it during the retreat; it works from pasted text and files.
 
-## Comes with Kit 06: the 24/7 video editor
+## Comes with Kit 03: the 24/7 video editor
 
 `edit-video`, `short-form-edit`, `cut-silences`, `cut-mistakes`, `make-a-video`, `video-storytelling` and more,
 from [nateherkai/herk-edit-kit](https://github.com/nateherkai/herk-edit-kit). They work inside the `herk-edit-kit` folder.

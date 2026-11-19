@@ -1,17 +1,19 @@
-# Kit 02: Build Your Own Tool
+# Kit 02: Skills Directory
 
-**Day 1, block 6 (Exercise 1).** The owner builds one skill, a reusable tool that does one
-repetitive task from their bottleneck, without writing code.
+**74 ready tools, one command each.** The owner picks the tools that fit their business
+(or has Claude find or build one), then makes a version tuned to their business and tests it
+on real work. They can run this kit as many times as they want, one tool per run.
 
 ## Before this kit
 
-Kit 01 is done, and they've run Grill Me, so `00 Bottleneck/bottleneck-brief.md` exists.
-They're in a Code session with their business folder (`WORK FOLDER/<Business>`) selected.
+Kit 01 (Setup) is done. They're in a Code session with their business folder
+(`WORK FOLDER/<Business>`) selected. A bottleneck brief from Grill Me helps Claude suggest
+better tools, but isn't required.
 
 ## The one prompt (owners paste this)
 
 ```
-Run Kit 02 from my Documents/work-without-working-kit folder. Read kits/02-build-your-tool/SETUP.md and follow it step by step with me.
+Run Kit 02 from my Documents/work-without-working-kit folder. Read kits/02-skills-directory/SETUP.md and follow it step by step with me.
 ```
 
 ## Three ways to get their tool

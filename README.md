@@ -1,34 +1,30 @@
 # Work Without Working: Kits
 
-One kit per part of the retreat. Each kit is a folder Claude follows step by step,
-so the owner pastes one line and Claude does the setup with them.
+Three kits. Each is a folder Claude follows, so the owner pastes one line and Claude does
+the setup with them.
 
 **Repo link:** `https://github.com/ecommercefastlaunch-debug/work-without-working-kit`
 
 **One-page handout:** [PNG](handout/work-without-working-kits.png) · [PDF](handout/work-without-working-kits.pdf)
 
-Run the kits in order. Each one builds on the files the one before it made.
+| Kit | What the owner leaves with | Runs on |
+|---|---|---|
+| [01 Setup](kits/01-setup/) | Everything in one go: Homebrew (Mac), the kit files, a work folder with a CLAUDE.md about their business, FFmpeg, Wispr Flow for Taglish voice, and Grill Me, stop-slop, dumbify | Mac, Windows |
+| [02 Skills Directory](kits/02-skills-directory/) | Any of 74 ready tools (or one Claude finds or builds), tuned to their business and tested on real work. Run it again for each new tool | Mac, Windows |
+| [03 24/7 Video Editor](kits/03-video-editor/) | Nate Herk's video-editing kit installed, and one of their clips edited | Mac, Windows; heavy install |
 
-| Kit | Day 1 blocks | What the owner leaves with | Runs on |
-|---|---|---|---|
-| [01 Setup](kits/01-setup/) | 2 to 4 | Homebrew (Mac), the kit files, a work folder with a CLAUDE.md about their business, FFmpeg, Wispr Flow for Taglish voice, and Grill Me, stop-slop, dumbify | Mac, Windows |
-| [02 Build Your Own Tool](kits/02-build-your-tool/) | 6 (Exercise 1) | Their own tool: picked from 74 ready tools, found online, or built from scratch, then tuned to their business and tested | Mac, Windows |
-| [03 Org and AI Chief](kits/03-org-and-ai-chief/) | 7 to 9 | Org plan, Grok Bot hired as AI Chief of Staff | Mac, Windows |
-| [04 AI Workforce](kits/04-ai-workforce/) | 10 to 11 (Exercise 2) | 1 or 2 AI employees, each scored on a real task | Mac, Windows |
-| [05 Connect Grok to Claude](kits/05-connect-grok/) | 13 | Grok sends tasks, Claude does them (AI-Inbox) | Mac only |
-| [06 24/7 Video Editor](kits/06-video-editor/) | 12, 14 (Exercise 3) | Video kit installed, one clip edited from a Grok task | Mac, Windows; heavy install |
-
-Between blocks, owners start a new Code session in their business folder
-(`Documents/WORK FOLDER/<Business>`) so Claude picks up their skills and CLAUDE.md.
+Do Kit 01 first: it downloads the other two. After it, owners start a new Code session in
+their business folder (`Documents/WORK FOLDER/<Business>`) so Claude picks up their skills
+and CLAUDE.md.
 
 ## How an owner uses a kit
 
 In the Claude desktop app, open the **Code** tab and paste the kit's one-line prompt
-from its README. Claude reads the kit's `SETUP.md` and walks them through it.
+from its README (or the handout). Claude reads the kit's `SETUP.md` and walks them through it.
 
 ## Rules every kit follows
 
-- Claude explains each step in plain words and checks it worked before moving on.
-- Claude asks before installing anything.
+- Claude explains what it's doing in plain words and checks it worked.
+- Claude asks before installing anything (Kit 01 asks once, for the whole list).
 - Passwords, payments and account sign-ups are always done by the owner, never by Claude.
 - Skills from other people are installed from their original GitHub repo, with credit.
