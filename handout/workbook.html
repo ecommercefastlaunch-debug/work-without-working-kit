@@ -170,6 +170,10 @@
   .actrow .wn { width: 20px; height: 20px; background: var(--cyan); color: var(--midnight); font: italic 900 11px/20px Inter, sans-serif;
                 text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); margin-bottom: 4px; }
   .actrow .by .hint { font-size: 9.5px; }
+  label.q { display: flex; gap: 8px; align-items: center; font-size: 12.5px; }
+  .qn { flex: none; width: 20px; height: 20px; background: var(--midnight); color: var(--cyan); font: italic 900 11px/20px Inter, sans-serif;
+        text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
+  .hint.qh { margin-left: 28px; font-size: 10.5px; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -273,11 +277,14 @@
     </div>
   </div>
 
-  <div class="field card" style="flex:1">
-    <label>What I want to leave with in these two days <span class="hint">(one sentence)</span></label>
-    <div class="lines"><i></i><i></i><i></i></div>
-    <label style="margin-top:14px">Questions I want answered</label>
-    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="card field" style="flex:1">
+    <h3>Check-in: setting expectations</h3>
+    <label class="q"><span class="qn">1</span>What do you want to walk away with after these two days?</label>
+    <span class="hint qh">Be specific: one result you can point to by Saturday night.</span>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <label class="q" style="margin-top:14px"><span class="qn">2</span>What are you willing to commit to make that happen?</label>
+    <span class="hint qh">Your time, your focus, and one thing you'll stop doing.</span>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
   <div class="foot"><span>Before we start</span><span>01</span></div>
 </section>
@@ -325,7 +332,7 @@
 <section class="page">
   <div class="eyebrow g">Worksheet · Learning and reflection</div>
   <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">My bottleneck</h1></div></div>
-  <p class="lead">Take the quiz first. Then write what you learned, what it means for you, and what you'll do about it.</p>
+  <p class="lead">Take the quiz first. Then answer three questions: what you learned, what it's costing you, and what you'll do about it.</p>
 
   <div class="quizrow">
     <div class="card">
@@ -337,17 +344,19 @@
     <div class="qr"><img src="qr-quiz.svg" alt="QR code to the Business Bottleneck Quiz"><p>Scan to take<br>the quiz</p></div>
   </div>
   <div class="card field">
-    <label>What I learned <span class="hint">(from the quiz, and about my business)</span></label>
-    <div class="lines"><i></i><i></i><i></i><i></i><i></i></div>
+    <label class="q"><span class="qn">1</span>What did your result show you that you didn't fully see before?</label>
+    <span class="hint qh">What surprised you, and what you already knew deep down.</span>
+    <div class="lines"><i></i><i></i><i></i><i></i></div>
   </div>
 
   <div class="card field">
-    <label>My reflection <span class="hint">(what this means for me, and what's been holding me back)</span></label>
-    <div class="lines"><i></i><i></i><i></i><i></i><i></i></div>
+    <label class="q"><span class="qn">2</span>What has this bottleneck been costing you, and what would change if you fixed it?</label>
+    <span class="hint qh">Think time, money, customers, and peace of mind.</span>
+    <div class="lines"><i></i><i></i><i></i><i></i></div>
   </div>
 
   <div class="card field" style="flex:1">
-    <label>What I think I should do <span class="hint">(my next steps)</span></label>
+    <label class="q"><span class="qn">3</span>What will you do about it? Your next 3 steps.</label>
     <div class="acts"><div class="actrow"><span class="wn">1</span><div class="lines"><i></i></div><div class="by"><span class="hint">By when</span><div class="lines"><i></i></div></div></div><div class="actrow"><span class="wn">2</span><div class="lines"><i></i></div><div class="by"><span class="hint">By when</span><div class="lines"><i></i></div></div></div><div class="actrow"><span class="wn">3</span><div class="lines"><i></i></div><div class="by"><span class="hint">By when</span><div class="lines"><i></i></div></div></div></div>
     <label style="margin-top:14px">The one thing I'll start this week</label>
     <div class="lines"><i></i><i></i><i></i></div>
