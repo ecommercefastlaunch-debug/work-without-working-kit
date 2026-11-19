@@ -1,0 +1,61 @@
+category	name	what it does	repo	path
+Offers & positioning	offer-builder	Market research, competitors and offer statements from what you sell	kit	kits/02-skills/skills/offer-builder
+Offers & positioning	offers	Makes your offer stronger: bonuses, guarantees, honest urgency, upsells	coreyhaines31/marketingskills	skills/offers
+Offers & positioning	hundred-million-offers	Hormozi's Grand Slam Offer: value equation, bonus stack, guarantee	wondelai/skills	hundred-million-offers
+Offers & positioning	product-marketing	Who it's for, why you, what to say first	coreyhaines31/marketingskills	skills/product-marketing
+Offers & positioning	obviously-awesome	Positioning: your real competitors, what makes you different, your best customers	wondelai/skills	obviously-awesome
+Offers & positioning	storybrand-messaging	A clear one-liner and brand message where the customer is the hero	wondelai/skills	storybrand-messaging
+Offers & positioning	pricing	What to charge, packages and tiers, raising prices	coreyhaines31/marketingskills	skills/pricing
+Offers & positioning	customer-research	Turns customer messages and reviews into what they really want	coreyhaines31/marketingskills	skills/customer-research
+Offers & positioning	competitors	Fair comparisons with competitors ("us vs them")	coreyhaines31/marketingskills	skills/competitors
+Sales	sales-objections	Word-for-word answers to "too expensive", "I'll think about it" and more	kit	kits/02-skills/skills/sales-objections
+Sales	sales-followup	Follow-ups after a quote or inquiry, and for customers who went quiet	kit	kits/02-skills/skills/sales-followup
+Sales	negotiation	Calm scripts for haggling and discount requests	wondelai/skills	negotiation
+Sales	proposal-pricing	Proposals and quotes with three price options	TheCraigHewitt/skills	sales/proposal-pricing
+Sales	sales-enablement	Sales one-pagers, talk tracks and objection sheets	coreyhaines31/marketingskills	skills/sales-enablement
+Sales	prospecting	Who to target first and how to spot buyers	coreyhaines31/marketingskills	skills/prospecting
+Sales	cold-email	Cold outreach messages that get replies	coreyhaines31/marketingskills	skills/cold-email
+Sales	100m-leads	Hormozi's Core Four for getting leads: warm, content, cold, ads	getagentseal/founder-playbook	skills/100m-leads
+Copy & writing	copywriting	Offers, landing pages, headlines, product pages	coreyhaines31/marketingskills	skills/copywriting
+Copy & writing	copy-editing	Tightens and proofreads your text without rewriting it	coreyhaines31/marketingskills	skills/copy-editing
+Copy & writing	made-to-stick	Makes your message simple, memorable and believable	wondelai/skills	made-to-stick
+Copy & writing	storytelling	Gives scripts and posts a story that holds attention	artemnovitckii/content-skills	storytelling
+Copy & writing	hook-killers	Fixes weak opening lines	kit	kits/02-skills/skills/hook-killers
+Copy & writing	marketing-psychology	Honest persuasion: social proof, anchoring, framing	coreyhaines31/marketingskills	skills/marketing-psychology
+Copy & writing	influence-psychology	Cialdini's 7 principles of persuasion for copy and sales	wondelai/skills	influence-psychology
+Copy & writing	stop-slop	Keeps the writing from sounding like AI	hardikpandya/stop-slop	.
+Copy & writing	anti-ai-writing	A final check that strips AI-sounding writing	artemnovitckii/content-skills	anti-ai-writing
+Copy & writing	dumbify	Keeps explanations and customer messages simple	artemnovitckii/content-skills	dumbify
+Ads	breakthrough-ads	10 ad scripts per request, each from a different angle	kit	kits/02-skills/skills/breakthrough-ads
+Ads	ad-creative	Ad headlines and copy variations	coreyhaines31/marketingskills	skills/ad-creative
+Ads	ads	Plans paid ads: channel, budget, and why results changed	coreyhaines31/marketingskills	skills/ads
+Ads	ab-testing	Plans A/B tests and reads whether a result is real	coreyhaines31/marketingskills	skills/ab-testing
+Social & video	social	Posts, carousels and content calendars	coreyhaines31/marketingskills	skills/social
+Social & video	social-captions	Captions for Facebook, Instagram, TikTok with A/B versions	minhnv0807/ai-business-skills	skills/en/37-social-caption-global
+Social & video	content-strategy	What to post about so content brings customers	coreyhaines31/marketingskills	skills/content-strategy
+Social & video	content-brief	A brief for one post before anyone writes it	minhnv0807/ai-business-skills	skills/en/36-content-brief-global
+Social & video	content-repurposing	One piece of content into many posts	kit	kits/02-skills/skills/content-repurposing
+Social & video	video-scripts	Short video scripts, beat by beat, with hooks	minhnv0807/ai-business-skills	skills/en/04-script-video-global
+Social & video	viral-hooks	Opening lines that stop the scroll	vyralcontent/content-skills	skills/viral-hooks
+Social & video	viral-captions-and-ctas	Captions and calls to action that get saves and replies	vyralcontent/content-skills	skills/viral-captions-and-ctas
+Social & video	viral-instagram-reels	Reels that reach new people	vyralcontent/content-skills	skills/viral-instagram-reels
+Social & video	viral-tiktok-content	TikTok scripts and ideas shaped for the For You page	vyralcontent/content-skills	skills/viral-tiktok-content
+Social & video	viral-short-form-ideas	Lots of short video ideas when you're stuck	vyralcontent/content-skills	skills/viral-short-form-ideas
+Email, chat & leads	emails	Welcome, follow-up and win-back email sequences	coreyhaines31/marketingskills	skills/emails
+Email, chat & leads	sms	Text and WhatsApp promos, abandoned cart, win-back	coreyhaines31/marketingskills	skills/sms
+Email, chat & leads	whatsapp-marketing	Chat selling: broadcasts, flows, conversations (works for Messenger and Viber too)	arnabbagxd/Brand-building-skills	skills/whatsapp-marketing
+Email, chat & leads	lead-magnets	Free guides and checklists that get you contacts	coreyhaines31/marketingskills	skills/lead-magnets
+Email, chat & leads	scorecard-marketing	Quiz funnels that find and sort leads	wondelai/skills	scorecard-marketing
+Reviews & word of mouth	testimonial-request	Asks happy customers for a testimonial or review	mohitagw15856/pm-claude-skills	skills/testimonial-request
+Reviews & word of mouth	review-response-writer	Replies to Google and Facebook reviews, good and bad	OneWave-AI/claude-skills	review-response-writer
+Reviews & word of mouth	referrals	Refer-a-friend and affiliate programs	coreyhaines31/marketingskills	skills/referrals
+Reviews & word of mouth	contagious	Word of mouth and shareable ideas (STEPPS)	wondelai/skills	contagious
+Reviews & word of mouth	influencer-marketing	Working with creators and influencers	coreyhaines31/marketingskills	skills/influencer-marketing
+Reviews & word of mouth	community-marketing	Growing a customer community or group	coreyhaines31/marketingskills	skills/community-marketing
+Reviews & word of mouth	co-marketing	Joint promos with partner businesses	coreyhaines31/marketingskills	skills/co-marketing
+Reviews & word of mouth	local-seo-manager	Google Business Profile, Maps ranking, local listings	alirezarezvani/claude-skills	marketing-skill/skills/local-seo-manager
+Plans & launches	one-page-marketing	A one-page marketing plan, from stranger to raving fan	wondelai/skills	one-page-marketing
+Plans & launches	marketing-plan	A full marketing plan with priorities and budget	coreyhaines31/marketingskills	skills/marketing-plan
+Plans & launches	marketing-ideas	Marketing ideas when you have little time or budget	coreyhaines31/marketingskills	skills/marketing-ideas
+Plans & launches	launch	Plans a product launch or promo	coreyhaines31/marketingskills	skills/launch
+Plans & launches	events	Webinars, booths and events, and following up after	coreyhaines31/marketingskills	skills/events
