@@ -36,7 +36,7 @@ Ask before each install.
 
 - If `brew --version` works: `brew install node ffmpeg` for whichever is missing.
 - If Homebrew is missing, Kit 01 (Setup) wasn't finished: tell them to run Kit 01 first.
-  Kit 01 already installs FFmpeg, so usually only Node.js is left.
+  Kit 01 installs Node.js, FFmpeg, Git and Chrome, so normally nothing is missing here.
 
 **Windows**
 

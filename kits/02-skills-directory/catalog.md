@@ -21,8 +21,8 @@ Tools marked *installed in Kit 01* are already on your laptop.
 
 | Tool | What it does | Needs | From |
 |---|---|---|---|
-| `grill-me` | Interviews you with hard questions until a plan or idea is clear | Nothing (installed in Kit 01) | [mattpocock/skills](https://github.com/mattpocock/skills) |
-| `grilling` | The interview engine Grill Me uses | Nothing (installed in Kit 01) | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| `grill-me` | Interviews you with hard questions until a plan or idea is clear | Nothing | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| `grilling` | The interview engine Grill Me uses | Nothing | [mattpocock/skills](https://github.com/mattpocock/skills) |
 | `market-and-product-fit-research` | Researches what real customers say online about a product or market, with a source for every claim | Claude in Chrome for Reddit; works with web search alone | this kit |
 | `customer-research` | Turns customer messages, reviews and interviews into what customers really want | Nothing | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 
