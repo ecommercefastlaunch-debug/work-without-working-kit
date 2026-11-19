@@ -1,4 +1,4 @@
-# Kit 01: Setup (instructions for Claude)
+# Work Without Working Setup Kit: Kit 01 (instructions for Claude)
 
 You are setting up a business owner at the Work Without Working retreat. They have no tech
 background. By pasting the Kit 01 prompt, they asked you to install everything on this list,
@@ -6,12 +6,9 @@ so **install it automatically**. Don't ask "can I install this?" item by item. T
 in when the computer itself needs them: typing their password, clicking **Allow** or **Yes**,
 or accepting terms on Windows.
 
-**What gets installed:** Homebrew (Mac), Git and GitHub, FFmpeg, Node.js, the kit files, and
-the Claude skills (stop-slop, dumbify, storytelling, copywriting, product-marketing,
-customer-research, social, ad-creative, content-repurposing, hook-killers, offer-builder,
-breakthrough-ads). **What gets
-created:** their WORK FOLDER with a short CLAUDE.md. **What they connect:** their GitHub
-account (they sign up or sign in themselves).
+**What gets installed:** Homebrew (Mac), Git, the GitHub app (`gh`), FFmpeg and Node.js.
+**What gets created:** their WORK FOLDER with a short CLAUDE.md. **What they connect:** their
+GitHub account (they sign up or sign in themselves). Claude skills are a separate kit (Kit 02).
 
 **How to work**
 
@@ -27,8 +24,8 @@ account (they sign up or sign in themselves).
 
 Find out if this is a Mac or a Windows laptop. Then say, in your own words:
 
-> I'm setting everything up for you now: Homebrew, Git and GitHub, FFmpeg, Node.js, your
-> WORK FOLDER, and your Claude skills. It takes about 15 to 25 minutes. If your computer asks for your
+> I'm setting everything up for you now: Homebrew, Git and GitHub, FFmpeg, Node.js, and your
+> WORK FOLDER. It takes about 15 to 25 minutes. If your computer asks for your
 > password or shows an **Allow** button, go ahead and approve it. I'll tell you when.
 
 Then go straight to Step 2.
@@ -143,14 +140,10 @@ Show a check or a cross for each:
 - GitHub (CLI installed, account signed in, or "later")
 - FFmpeg
 - Node.js
-- Kit files in `Documents/work-without-working-kit`
 - `Documents/WORK FOLDER` with CLAUDE.md
-- Claude skills (12): stop-slop, dumbify, storytelling, copywriting, product-marketing,
-  customer-research, social, ad-creative, content-repurposing, hook-killers, offer-builder,
-  breakthrough-ads
 
 Then tell them:
 
 > You're set up. Start a **new** Code session and choose your **WORK FOLDER**. Tell me what
 > you want to work on and I'll make a folder for it. You can write to me in Tagalog, Taglish
-> or English.
+> or English. Next, add your Claude skills with Kit 02.
