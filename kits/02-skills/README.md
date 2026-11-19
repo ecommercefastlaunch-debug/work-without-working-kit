@@ -1,4 +1,4 @@
-# Kit 02: Skills
+# Kit 02: Sales and Marketing Skills
 
 **61 Claude skills for sales and marketing, installed in one go**, including image making with
 the owner's own ChatGPT account (through Codex). Do the Work Without Working Setup Kit

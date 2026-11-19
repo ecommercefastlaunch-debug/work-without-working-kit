@@ -34,7 +34,7 @@ Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-wit
 | FFmpeg | Lets Claude cut, convert and pull audio from video files | [ffmpeg.org](https://ffmpeg.org) |
 | Node.js | Runs tools like video editors and app builders | [nodejs.org](https://nodejs.org) |
 
-Claude skills are a separate kit: [Kit 02 Skills](../02-skills/).
+Claude skills are a separate kit: [Kit 02 Sales and Marketing Skills](../02-skills/).
 
 Already in the Claude app, no install: Word, Excel, PowerPoint and PDF skills.
 

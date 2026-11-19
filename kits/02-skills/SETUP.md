@@ -1,4 +1,4 @@
-# Kit 02: Skills (instructions for Claude)
+# Kit 02: Sales and Marketing Skills (instructions for Claude)
 
 You are adding Claude skills for a business owner at the Work Without Working retreat. They
 have no tech background. By pasting the Kit 02 prompt, they asked you to install all the

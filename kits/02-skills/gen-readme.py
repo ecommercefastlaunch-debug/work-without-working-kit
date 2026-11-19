@@ -17,7 +17,7 @@ for c, rs in cats.items():
 repos = sorted({r['repo'] for r in rows if r['repo'] != 'kit'})
 kit_own = [r['name'] for r in rows if r['repo'] == 'kit']
 n = len(rows)
-out = f'''# Kit 02: Skills
+out = f'''# Kit 02: Sales and Marketing Skills
 
 **{n} Claude skills for sales and marketing, installed in one go**, including image making with
 the owner's own ChatGPT account (through Codex). Do the Work Without Working Setup Kit

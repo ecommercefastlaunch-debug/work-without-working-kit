@@ -1,5 +1,5 @@
 #!/bin/bash
-# Kit 02 Skills: installs the 60 Claude skills listed in skills.tsv into ~/.claude/skills.
+# Kit 02 Sales and Marketing Skills: installs the Claude skills listed in skills.tsv into ~/.claude/skills.
 # Needs Git (Kit 01). Skills from other people are copied from their original GitHub repos,
 # with their LICENSE. Skips any skill that's already there; safe to re-run.
 set -u

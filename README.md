@@ -10,7 +10,7 @@ work with them.
 | Kit | What the owner leaves with | Runs on |
 |---|---|---|
 | [01 Work Without Working Setup Kit](kits/01-setup/) | One prompt installs Homebrew (Mac), Git, the GitHub app, FFmpeg and Node.js, connects their GitHub account, and creates the WORK FOLDER with a CLAUDE.md | Mac, Windows |
-| [02 Skills](kits/02-skills/) | One prompt installs 61 Claude skills for sales and marketing, including image making with ChatGPT (Codex) | Mac, Windows |
+| [02 Sales and Marketing Skills](kits/02-skills/) | One prompt installs 61 Claude skills for sales and marketing, including image making with ChatGPT (Codex) | Mac, Windows |
 
 After Kit 01, owners open their Code sessions in the WORK FOLDER. Every new project gets its own folder
 there, and everything Claude makes goes in that project's `Outputs` folder.
