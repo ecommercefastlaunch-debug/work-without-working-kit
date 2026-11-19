@@ -116,6 +116,12 @@
   .qr img { width: 108px; height: 108px; display: block; }
   .qr p { font: italic 800 9.5px/1.2 Inter, sans-serif; margin-top: 4px; text-transform: uppercase; }
 
+  .reg { padding: 16px 20px; display: flex; flex-direction: column; gap: 14px; }
+  .regrow { display: grid; grid-template-columns: 90px 1fr; align-items: end; gap: 12px; }
+  .regrow label { font: italic 800 12.5px/1 Inter, sans-serif; text-transform: uppercase; letter-spacing: .04em; }
+  .regline { height: 26px; border-bottom: 1.5px solid #9AA5B5; }
+  .regpick { display: flex; gap: 28px; font-size: 13px; padding-top: 4px; }
+  .regpick .boxsm { width: 15px; height: 15px; vertical-align: -3px; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -154,21 +160,19 @@
   </div>
   <div class="glow"></div>
   <div class="inner">
-    <div class="card soft" style="display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;padding:18px 20px">
-      <div class="field"><label>My name</label><div class="lines" style="--n:1"></div></div>
-      <div class="field"><label>My business</label><div class="lines" style="--n:1"></div></div>
-      <div class="field"><label>Laptop</label><div style="display:flex;gap:22px;margin-top:6px"><span><span class="boxsm"></span>Mac</span><span><span class="boxsm"></span>Windows</span></div></div>
-      <div class="field"><label>My table / helper</label><div class="lines" style="--n:1"></div></div>
+    <div class="card reg">
+      <div class="regrow"><label>Name</label><div class="regline"></div></div>
+      <div class="regrow"><label>Business</label><div class="regline"></div></div>
+      <div class="regrow"><label>Laptop</label><div class="regpick"><span><span class="boxsm"></span>Mac</span><span><span class="boxsm"></span>Windows</span></div></div>
     </div>
 
-    <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:stretch">
       <div class="card">
-        <h3>How to use this workbook</h3>
-        <ul class="clean" style="margin-top:8px">
-          <li><span class="dot"></span><span>Every black box is a prompt. <b>Don't retype long prompts:</b> scan the QR and copy them.</span></li>
-          <li><span class="dot"></span><span>Tick the box <span class="boxsm" style="margin:0 2px"></span> when Claude shows a ✓ for that step.</span></li>
-          <li><span class="dot"></span><span>The lines are for you. Write your answers <b>before</b> Claude asks, so you're ready.</span></li>
-          <li><span class="dot"></span><span>Wait for the trainer before the next step. Nobody gets left behind.</span></li>
+        <h3>How this workbook works</h3>
+        <ul class="clean" style="margin-top:10px;gap:9px;font-size:12.5px">
+          <li><span class="dot"></span><span>Every black box is a prompt: <b>scan the QR, then copy and paste it</b>.</span></li>
+          <li><span class="dot"></span><span><b>Tick the box</b> <span class="boxsm" style="margin:0 2px"></span> when Claude shows a ✓.</span></li>
+          <li><span class="dot"></span><span><b>Wait for the trainer</b> before the next step.</span></li>
         </ul>
       </div>
       <div class="qr"><img src="qr.svg" alt="QR code to the kits on GitHub"><p>Scan to copy<br>the prompts</p></div>
