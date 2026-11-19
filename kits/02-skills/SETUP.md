@@ -22,7 +22,7 @@ tell them to run Kit 01 first, and stop.
 
 ## Step 2: Install the skills
 
-Say: "I'm adding 12 Claude skills for your marketing. About 2 minutes."
+Say: "I'm adding 60 Claude skills for your sales and marketing. About 2 to 5 minutes."
 
 ```
 curl -fsSL https://raw.githubusercontent.com/ecommercefastlaunch-debug/work-without-working-kit/main/kits/02-skills/install-skills.sh -o /tmp/wwk-skills.sh && bash /tmp/wwk-skills.sh
@@ -34,22 +34,15 @@ done. Still failing: helper.
 
 ## Step 3: Done
 
-Show a check or a cross for each, with one plain line on what it does:
+Read `~/.claude/skills` and show the result grouped by category (the categories are in
+`kits/02-skills/skills.tsv`; you can read it from
+`https://raw.githubusercontent.com/ecommercefastlaunch-debug/work-without-working-kit/main/kits/02-skills/skills.tsv`).
+For each category, one line with the count and the skill names, for example:
 
-| Skill | What it does |
-|---|---|
-| offer-builder | Market research, competitors and offer statements from what you sell |
-| breakthrough-ads | 10 ad scripts per request, each from a different angle |
-| copywriting | Offers, landing pages, headlines, product pages |
-| product-marketing | Who it's for, why you, what to say first |
-| customer-research | Turns customer messages and reviews into what they really want |
-| social | Posts, carousels and content calendars |
-| ad-creative | Ad headlines and copy variations |
-| content-repurposing | One piece of content into many posts |
-| hook-killers | Fixes weak opening lines |
-| storytelling | Gives scripts and posts a story that holds attention |
-| stop-slop | Keeps the writing from sounding like AI |
-| dumbify | Keeps explanations and customer messages simple |
+> **Sales (8):** sales-objections, sales-followup, negotiation, proposal-pricing, ...
+
+Mark any that failed with a cross. Then suggest **3 to try first** based on their business in
+`WORK FOLDER/CLAUDE.md` (for most owners: offer-builder, sales-objections, breakthrough-ads).
 
 Then tell them:
 
