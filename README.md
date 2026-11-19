@@ -5,6 +5,9 @@ work with them.
 
 **Repo link:** `https://github.com/ecommercefastlaunch-debug/work-without-working-kit`
 
+**Web page (copy the prompts, download the workbook and the skills):** https://work-without-working-workbook.vercel.app
+Source: [site/index.html](site/index.html), hosted on Vercel (project `work-without-working`).
+
 **Day 1 workbook (print A4):** [PDF](handout/work-without-working-workbook.pdf). Both kits, sample applications, and worksheets.
 
 | Kit | What the owner leaves with | Runs on |
