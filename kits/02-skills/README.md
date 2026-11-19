@@ -1,7 +1,8 @@
 # Kit 02: Skills
 
-**60 Claude skills for sales and marketing, installed in one go.** Do the Work Without
-Working Setup Kit (Kit 01) first; this kit needs its Git.
+**61 Claude skills for sales and marketing, installed in one go**, including image making with
+the owner's own ChatGPT account (through Codex). Do the Work Without Working Setup Kit
+(Kit 01) first; this kit needs its Git and Node.js.
 
 ## The one prompt (owners paste this)
 
@@ -9,10 +10,18 @@ Working Setup Kit (Kit 01) first; this kit needs its Git.
 Add my skills with Kit 02 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/02-skills/SETUP.md and install them for me.
 ```
 
+## What happens
+
+1. Claude installs all 61 skills into `~/.claude/skills` (they work in every project).
+2. Claude connects Codex to the owner's ChatGPT account for images: the owner signs in
+   themselves in the browser. Codex comes with the ChatGPT desktop app on a Mac, or is
+   installed with npm. Codex makes still images only; it can't make videos yet.
+3. A checklist by category, and 3 skills to try first.
+
 ## The skills
 
-Installed into `~/.claude/skills`, so they work in every project. The list lives in
-[skills.tsv](skills.tsv); the installer reads it, so add or remove a row there to change the kit.
+The list lives in [skills.tsv](skills.tsv). The installer reads it, so add or remove a row
+there to change the kit, then run `python3 gen-readme.py` to rebuild this page.
 
 ### Offers & positioning (9)
 
@@ -56,7 +65,7 @@ Installed into `~/.claude/skills`, so they work in every project. The list lives
 | anti-ai-writing | A final check that strips AI-sounding writing | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) |
 | dumbify | Keeps explanations and customer messages simple | [artemnovitckii/content-skills](https://github.com/artemnovitckii/content-skills) |
 
-### Ads (4)
+### Ads & images (5)
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -64,6 +73,7 @@ Installed into `~/.claude/skills`, so they work in every project. The list lives
 | ad-creative | Ad headlines and copy variations | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | ads | Plans paid ads: channel, budget, and why results changed | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | ab-testing | Plans A/B tests and reads whether a result is real | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) |
+| image-generation | Makes and edits images with your ChatGPT account (via Codex) | this kit ([skills/](skills/image-generation)) |
 
 ### Social & video (11)
 
@@ -116,24 +126,26 @@ Installed into `~/.claude/skills`, so they work in every project. The list lives
 
 ## Where they come from
 
-All are MIT licensed and copied from their original GitHub repos with their LICENSE:
-OneWave-AI/claude-skills, TheCraigHewitt/skills, alirezarezvani/claude-skills, arnabbagxd/Brand-building-skills, artemnovitckii/content-skills, coreyhaines31/marketingskills, getagentseal/founder-playbook, hardikpandya/stop-slop, minhnv0807/ai-business-skills, mohitagw15856/pm-claude-skills, vyralcontent/content-skills, wondelai/skills. The kit's own skills are in [skills/](skills/): offer-builder,
-breakthrough-ads, content-repurposing and hook-killers, plus sales-objections and
-sales-followup (from zubair-trabzada/ai-sales-team-claude, MIT, with a name and description
-header added so Claude can find them).
+All third-party skills are MIT licensed and copied from their original GitHub repos with
+their LICENSE: OneWave-AI/claude-skills, TheCraigHewitt/skills, alirezarezvani/claude-skills, arnabbagxd/Brand-building-skills, artemnovitckii/content-skills, coreyhaines31/marketingskills, getagentseal/founder-playbook, hardikpandya/stop-slop, minhnv0807/ai-business-skills, mohitagw15856/pm-claude-skills, vyralcontent/content-skills, wondelai/skills. The kit's own skills are in [skills/](skills/):
+offer-builder, sales-objections, sales-followup, hook-killers, breakthrough-ads, image-generation, content-repurposing. sales-objections and sales-followup come from
+zubair-trabzada/ai-sales-team-claude (MIT) with a name and description header added so Claude
+can find them.
 
 Every skill was checked before it was added: MIT license, updated in the last year, no
 passwords or paid accounts needed, nothing that sends the owner's data anywhere or runs
-downloaded code. Two notes: local-seo-manager includes small offline Python helpers, and a
-few skills can read a web page if the owner gives them a link.
+downloaded code. Notes: local-seo-manager includes small offline Python helpers, a few skills
+can read a web page if the owner gives them a link, and image-generation uses the owner's
+own ChatGPT plan (and its daily image limits).
 
 ## Files
 
 - [SETUP.md](SETUP.md): the steps Claude follows
-- [skills.tsv](skills.tsv): the list of skills (category, name, what it does, repo, path)
+- [skills.tsv](skills.tsv): the list (category, name, what it does, repo, path)
 - [install-skills.sh](install-skills.sh): installs everything on the list (safe to re-run; skips what's there)
+- [gen-readme.py](gen-readme.py): rebuilds this README from the list
 - [skills/](skills/): the skills that live in this kit
 
 ## Takes about
 
-2 to 5 minutes.
+5 to 10 minutes, including the ChatGPT sign-in.

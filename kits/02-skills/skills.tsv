@@ -26,10 +26,11 @@ Copy & writing	influence-psychology	Cialdini's 7 principles of persuasion for co
 Copy & writing	stop-slop	Keeps the writing from sounding like AI	hardikpandya/stop-slop	.
 Copy & writing	anti-ai-writing	A final check that strips AI-sounding writing	artemnovitckii/content-skills	anti-ai-writing
 Copy & writing	dumbify	Keeps explanations and customer messages simple	artemnovitckii/content-skills	dumbify
-Ads	breakthrough-ads	10 ad scripts per request, each from a different angle	kit	kits/02-skills/skills/breakthrough-ads
-Ads	ad-creative	Ad headlines and copy variations	coreyhaines31/marketingskills	skills/ad-creative
-Ads	ads	Plans paid ads: channel, budget, and why results changed	coreyhaines31/marketingskills	skills/ads
-Ads	ab-testing	Plans A/B tests and reads whether a result is real	coreyhaines31/marketingskills	skills/ab-testing
+Ads & images	breakthrough-ads	10 ad scripts per request, each from a different angle	kit	kits/02-skills/skills/breakthrough-ads
+Ads & images	ad-creative	Ad headlines and copy variations	coreyhaines31/marketingskills	skills/ad-creative
+Ads & images	ads	Plans paid ads: channel, budget, and why results changed	coreyhaines31/marketingskills	skills/ads
+Ads & images	ab-testing	Plans A/B tests and reads whether a result is real	coreyhaines31/marketingskills	skills/ab-testing
+Ads & images	image-generation	Makes and edits images with your ChatGPT account (via Codex)	kit	kits/02-skills/skills/image-generation
 Social & video	social	Posts, carousels and content calendars	coreyhaines31/marketingskills	skills/social
 Social & video	social-captions	Captions for Facebook, Instagram, TikTok with A/B versions	minhnv0807/ai-business-skills	skills/en/37-social-caption-global
 Social & video	content-strategy	What to post about so content brings customers	coreyhaines31/marketingskills	skills/content-strategy
