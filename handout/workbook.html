@@ -20,8 +20,7 @@
   .page { width: 794px; height: 1123px; overflow: hidden; position: relative; background: #fff;
           padding: 38px 44px 56px; display: flex; flex-direction: column; gap: 12px; }
   .page::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--midnight); }
-  .page::after { content: ""; position: absolute; top: 6px; left: 0; width: 38%; height: 3px; background: var(--cyan);
-                 box-shadow: 0 0 8px rgba(0,229,255,.7); }
+  .page::after { content: ""; position: absolute; top: 6px; left: 0; width: 38%; height: 3px; background: var(--cyan); }
   .foot { position: absolute; left: 44px; right: 44px; bottom: 22px; display: flex; justify-content: space-between; align-items: center;
           font: italic 800 9px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #8A96A8;
           border-top: 1px solid var(--line); padding-top: 9px; }
@@ -35,7 +34,7 @@
   h1 { font: italic 900 30px/1.02 Inter, sans-serif; letter-spacing: -.015em; text-transform: uppercase; }
   h2 { font: italic 800 17px/1.2 Inter, sans-serif; text-transform: uppercase; letter-spacing: -.005em;
        display: flex; align-items: center; gap: 10px; }
-  h2::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, var(--cyan), rgba(0,229,255,0)); }
+  h2::after { content: ""; flex: 1; height: 2px; background: var(--cyan); }
   h3 { font: italic 800 13.5px/1.25 Inter, sans-serif; }
   .lead { font-size: 13px; color: var(--muted); max-width: 660px; }
   .head { display: flex; align-items: center; gap: 14px; }
@@ -79,8 +78,8 @@
   .field { display: flex; flex-direction: column; gap: 4px; }
   .field label { font-weight: 700; font-size: 12px; }
   .field .hint { font-weight: 400; color: var(--muted); font-size: 11px; }
-  .lines { background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 25px, #C9D1DD 25px, #C9D1DD 26px);
-           height: calc(26px * var(--n, 3)); }
+  .lines { background: #fff; }
+  .lines i { display: block; height: 26px; border-bottom: 1px solid #B9C3D1; }
   .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
 
@@ -102,15 +101,15 @@
   .cover .top .swoosh { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
   .cover .kicker { position: relative; display: flex; justify-content: center; align-items: center; gap: 14px;
                    font: italic 700 11px/1 Inter, sans-serif; letter-spacing: .32em; color: #fff; text-transform: uppercase; }
-  .cover .kicker::before, .cover .kicker::after { content: ""; width: 34px; height: 2px; background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+  .cover .kicker::before, .cover .kicker::after { content: ""; width: 34px; height: 2px; background: var(--cyan);  }
   .cover .logo { position: relative; display: block; width: 580px; margin: 0 auto -6px; }
   .cover .panel { position: relative; display: table; margin: 0 auto; background: var(--cyan); color: var(--midnight);
                   font: italic 900 30px/1 Inter, sans-serif; text-transform: uppercase; letter-spacing: -.01em; padding: 12px 34px;
                   clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%); }
   .cover .sub { position: relative; color: #C9D2E0; font-size: 14px; margin: 14px auto 0; max-width: 560px; text-align: center; }
   .cover .link { position: relative; display: table; margin: 14px auto 0; font: 600 12px/1 "SF Mono", Menlo, Consolas, monospace; color: #fff;
-                 border: 1px solid rgba(0,229,255,.55); box-shadow: 0 0 10px rgba(0,229,255,.25); border-radius: 6px; padding: 8px 10px; white-space: nowrap; }
-  .cover .glow { height: 3px; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+                 border: 1px solid #00B8CC; border-radius: 6px; padding: 8px 10px; white-space: nowrap; }
+  .cover .glow { height: 3px; background: var(--cyan);  }
   .cover .inner { padding: 18px 44px 60px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
   .qr { background: #fff; border: 2px solid var(--midnight); border-radius: 12px; padding: 8px; text-align: center; flex: none; }
   .qr img { width: 108px; height: 108px; display: block; }
@@ -151,12 +150,8 @@
              text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
   .app h3 { font-size: 13px; }
   .app p { font-size: 10.6px; color: var(--muted); margin-top: 1px; line-height: 1.3; }
-  /* Printable prompt: white box, blanks to write on */
-  .ap { margin-top: auto; background: #fff; color: var(--ink); border: 1.4px solid var(--midnight); border-radius: 7px;
-        padding: 6px 9px 7px; font: 400 10.2px/2.05 "SF Mono", Menlo, Consolas, monospace; }
-  .blank { display: inline-block; min-width: 92px; border-bottom: 1.2px solid var(--midnight); line-height: 1; padding: 9px 3px 1px;
-           font: italic 500 7.6px/1 Inter, sans-serif; color: #8A96A8; vertical-align: -3px; }
-  .blank.wide { min-width: 150px; }
+  .tp { margin-top: auto; background: var(--midnight); color: #E8EEF7; border-radius: 7px; padding: 7px 9px; font: 400 10px/1.5 "SF Mono", Menlo, Consolas, monospace; }
+  .tp .fill { color: var(--cyan); }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -166,13 +161,12 @@
   .org .node small { display: block; font-size: 10px; color: var(--muted); margin-top: 2px; }
   .org .node.me small { color: #C9D2E0; }
   .org .node.chief small { color: var(--midnight); }
-  .org .node .lines { --n: 1; margin-top: 4px; }
+  .org .node .lines { margin-top: 4px; }
   .org .v { width: 2px; height: 16px; background: var(--midnight); }
   .org .team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 100%; position: relative; padding-top: 16px; }
   .org .team::before { content: ""; position: absolute; top: 0; left: 12.5%; right: 12.5%; height: 2px; background: var(--midnight); }
   .org .team .node { width: auto; position: relative; text-align: left; }
   .org .team .node::before { content: ""; position: absolute; top: -18px; left: 50%; width: 2px; height: 16px; background: var(--midnight); }
-  .org .team .node .lines { --n: 5; }
 </style>
 </head>
 <body>
@@ -181,11 +175,10 @@
 <section class="page cover">
   <div class="top">
     <svg class="swoosh" viewBox="0 0 794 420" preserveAspectRatio="none" aria-hidden="true">
-      <defs><linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#00E5FF" stop-opacity="0"/><stop offset=".6" stop-color="#00E5FF" stop-opacity=".9"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></linearGradient></defs>
-      <path d="M-20 415 C 240 372, 520 432, 820 345" fill="none" stroke="url(#sw)" stroke-width="3"/>
-      <path d="M-20 428 C 260 392, 560 440, 820 372" fill="none" stroke="url(#sw)" stroke-width="1.2" opacity=".6"/>
-      <polygon points="700,0 794,0 794,70" fill="#00E5FF" opacity=".9"/>
-      <polygon points="0,0 60,0 0,48" fill="#00E5FF" opacity=".25"/>
+      <path d="M-20 415 C 240 372, 520 432, 820 345" fill="none" stroke="#00E5FF" stroke-width="3"/>
+      <path d="M-20 428 C 260 392, 560 440, 820 372" fill="none" stroke="#0E6F7D" stroke-width="1.2"/>
+      <polygon points="700,0 794,0 794,70" fill="#00E5FF"/>
+      <polygon points="0,0 60,0 0,48" fill="#0C3A44"/>
     </svg>
     <div class="kicker">Day 1 · November 20, 2026 · Botanika, Alabang</div>
     <img class="logo" src="brand/wow-logo.png" alt="Work Without Working: Make AI work for you">
@@ -256,9 +249,9 @@
 
   <div class="field card" style="flex:1">
     <label>What I want to leave with these two days <span class="hint">(one sentence)</span></label>
-    <div class="lines" style="--n:3"></div>
+    <div class="lines"><i></i><i></i><i></i></div>
     <label style="margin-top:14px">Questions I want answered</label>
-    <div class="lines" style="--n:13"></div>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
   <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>2</span></div>
 </section>
@@ -271,7 +264,7 @@
 
   <div class="card field">
     <label>In one or two sentences: what do I sell, and who buys it? <span class="hint">(or the link to my Facebook page or website)</span></label>
-    <div class="lines" style="--n:4"></div>
+    <div class="lines"><i></i><i></i><i></i><i></i></div>
   </div>
 
   <div class="card">
@@ -296,17 +289,17 @@
 
   <div class="card field">
     <label>My bottleneck: the one task that eats most of my time every week</label>
-    <div class="lines" style="--n:2"></div>
+    <div class="lines"><i></i><i></i></div>
   </div>
   <div class="row2">
     <div class="card field">
       <label>If AI did a first draft of it, I'd get back</label>
-      <div class="lines" style="--n:1"></div>
+      <div class="lines"><i></i></div>
       <span class="hint">hours a week</span>
     </div>
     <div class="card field">
       <label>I'd spend that time on</label>
-      <div class="lines" style="--n:2"></div>
+      <div class="lines"><i></i><i></i></div>
     </div>
   </div>
   <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>3</span></div>
@@ -346,7 +339,7 @@
   </div>
   <div class="card field" style="flex:1">
     <label>My first projects <span class="hint">(each one becomes a folder)</span></label>
-    <div class="lines" style="--n:4"></div>
+    <div class="lines"><i></i><i></i><i></i><i></i></div>
   </div>
   <div class="foot"><span>Kit 01 · Work Without Working Setup Kit</span><span>4</span></div>
 </section>
@@ -374,15 +367,15 @@
 
 <!-- 6. SAMPLE APPLICATIONS -->
 <section class="page">
-  <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">Sample Applications</h1><div class="when">After Kits 01 and 02 · Fill in the blanks, then type or paste it in Claude</div></div></div>
-  <p class="lead">Ten ways to put your skills to work today. Write your answers on the lines, then send the prompt in a Code session in your WORK FOLDER.</p>
-  <div class="appgrid"><div class="app"><div class="tt"><span class="tn">1</span><div><h3>My Offer</h3><p>Market research, competitors and a clear offer</p></div></div><div class="ap">Use offer-builder on my business. I sell <span class="blank">what I sell</span> to <span class="blank">who buys it</span> for <span class="blank">price</span>.</div></div><div class="app"><div class="tt"><span class="tn">2</span><div><h3>10 Ads in One Go</h3><p>10 ad scripts from 10 angles</p></div></div><div class="ap">Use breakthrough-ads to write 10 ad scripts for <span class="blank">my product</span>, in Taglish.</div></div><div class="app"><div class="tt"><span class="tn">3</span><div><h3>Product Poster</h3><p>A 4:5 poster made with your ChatGPT</p></div></div><div class="ap">Use image-generation to make a 4:5 poster of <span class="blank">my product</span> with the words <span class="blank">headline</span>.</div></div><div class="app"><div class="tt"><span class="tn">4</span><div><h3>Price Objection Replies</h3><p>Answers you can send on Messenger</p></div></div><div class="ap">Use sales-objections: my customers say <span class="blank">what they say</span>. Give me Messenger replies.</div></div><div class="app"><div class="tt"><span class="tn">5</span><div><h3>Follow-Up Messages</h3><p>For people who asked and went quiet</p></div></div><div class="ap">Use sales-followup: write 3 follow-ups for people who asked about <span class="blank">product</span> and didn't reply.</div></div><div class="app"><div class="tt"><span class="tn">6</span><div><h3>30-Day Content Plan</h3><p>A month of posts with captions</p></div></div><div class="ap">Use content-strategy and social-captions: plan 30 days of <span class="blank">Facebook / IG / TikTok</span> posts, with captions.</div></div><div class="app"><div class="tt"><span class="tn">7</span><div><h3>5 Reels Scripts</h3><p>Short videos with hooks, ready to shoot</p></div></div><div class="ap">Use video-scripts: 5 Reels scripts about <span class="blank">topic</span>, in Taglish, 30 seconds each.</div></div><div class="app"><div class="tt"><span class="tn">8</span><div><h3>Review Replies</h3><p>Kind replies to your Google and Facebook reviews</p></div></div><div class="ap">Use review-response-writer on my <span class="blank">Google / Facebook</span> reviews. I'll paste them next.</div></div><div class="app"><div class="tt"><span class="tn">9</span><div><h3>Testimonial Request</h3><p>A message asking a happy customer for a review</p></div></div><div class="ap">Use testimonial-request: write a message asking <span class="blank">customer</span> for a review of <span class="blank">product</span>.</div></div><div class="app"><div class="tt"><span class="tn">10</span><div><h3>Payday Promo</h3><p>A 15th and 30th sale: offer, posts and a Messenger blast</p></div></div><div class="ap">Use offers and launch: plan a payday sale for <span class="blank">product</span>, with the offer, 3 posts and 1 Messenger blast.</div></div></div>
+  <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">Sample Applications</h1><div class="when">After Kits 01 and 02 · Copy a prompt, fill in the [brackets], send</div></div></div>
+  <p class="lead">Ten ways to put your skills to work today. Copy a prompt, replace the [brackets] with your details, and send it in a Code session in your WORK FOLDER.</p>
+  <div class="appgrid"><div class="app"><div class="tt"><span class="tn">1</span><div><h3>My Offer</h3><p>Market research, competitors and a clear offer</p></div></div><div class="tp">Use offer-builder on my business. I sell <span class="fill">[what I sell]</span> to <span class="fill">[who buys it]</span> for <span class="fill">[price]</span>.</div></div><div class="app"><div class="tt"><span class="tn">2</span><div><h3>10 Ads in One Go</h3><p>10 ad scripts from 10 angles</p></div></div><div class="tp">Use breakthrough-ads to write 10 ad scripts for <span class="fill">[my product]</span>, in Taglish.</div></div><div class="app"><div class="tt"><span class="tn">3</span><div><h3>Product Poster</h3><p>A 4:5 poster made with your ChatGPT</p></div></div><div class="tp">Use image-generation to make a 4:5 poster of <span class="fill">[my product]</span> with the words <span class="fill">[headline]</span>.</div></div><div class="app"><div class="tt"><span class="tn">4</span><div><h3>Price Objection Replies</h3><p>Answers you can send on Messenger</p></div></div><div class="tp">Use sales-objections: my customers say <span class="fill">[what they say]</span>. Give me Messenger replies.</div></div><div class="app"><div class="tt"><span class="tn">5</span><div><h3>Follow-Up Messages</h3><p>For people who asked and went quiet</p></div></div><div class="tp">Use sales-followup: write 3 follow-ups for people who asked about <span class="fill">[product]</span> and didn't reply.</div></div><div class="app"><div class="tt"><span class="tn">6</span><div><h3>30-Day Content Plan</h3><p>A month of posts with captions</p></div></div><div class="tp">Use content-strategy and social-captions: plan 30 days of <span class="fill">[Facebook / IG / TikTok]</span> posts, with captions.</div></div><div class="app"><div class="tt"><span class="tn">7</span><div><h3>5 Reels Scripts</h3><p>Short videos with hooks, ready to shoot</p></div></div><div class="tp">Use video-scripts: 5 Reels scripts about <span class="fill">[topic]</span>, in Taglish, 30 seconds each.</div></div><div class="app"><div class="tt"><span class="tn">8</span><div><h3>Review Replies</h3><p>Kind replies to your Google and Facebook reviews</p></div></div><div class="tp">Use review-response-writer on my <span class="fill">[Google / Facebook]</span> reviews. I'll paste them next.</div></div><div class="app"><div class="tt"><span class="tn">9</span><div><h3>Testimonial Request</h3><p>A message asking a happy customer for a review</p></div></div><div class="tp">Use testimonial-request: write a message asking <span class="fill">[customer]</span> for a review of <span class="fill">[product]</span>.</div></div><div class="app"><div class="tt"><span class="tn">10</span><div><h3>Payday Promo</h3><p>A 15th and 30th sale: offer, posts and a Messenger blast</p></div></div><div class="tp">Use offers and launch: plan a payday sale for <span class="fill">[product]</span>, with the offer, 3 posts and 1 Messenger blast.</div></div></div>
 
   <div class="card field" style="flex:1">
     <label>Make your own tool <span class="hint">(start from your bottleneck on page 3)</span></label>
-    <div class="ap" style="margin-top:4px">Make me a tool for <span class="blank wide">the task</span>. I'll give it <span class="blank wide">what I give it</span>, and I want back <span class="blank wide">what I want</span>. Ask me questions one at a time, then save it as a skill I can use every week.</div>
+    <div class="tp" style="margin-top:4px">Make me a tool for <span class="fill">[the task]</span>. I'll give it <span class="fill">[what I give it]</span>, and I want back <span class="fill">[what I want]</span>. Ask me questions one at a time, then save it as a skill I can use every week.</div>
     <label style="margin-top:8px">Notes</label>
-    <div class="lines" style="--n:4"></div>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
   <div class="foot"><span>03 · Sample Applications</span><span>6</span></div>
 </section>
@@ -398,10 +391,10 @@
     <div class="v"></div>
     <div class="node chief"><b>AI Chief of Staff</b><small>Gives out the work and reports to me</small></div>
     <div class="team">
-      <div class="node"><b>AI employee 1</b><small>Job · tool</small><div class="lines"></div></div>
-      <div class="node"><b>AI employee 2</b><small>Job · tool</small><div class="lines"></div></div>
-      <div class="node"><b>AI employee 3</b><small>Job · tool</small><div class="lines"></div></div>
-      <div class="node"><b>AI employee 4</b><small>Job · tool</small><div class="lines"></div></div>
+      <div class="node"><b>AI employee 1</b><small>Job · tool</small><div class="lines"><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="node"><b>AI employee 2</b><small>Job · tool</small><div class="lines"><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="node"><b>AI employee 3</b><small>Job · tool</small><div class="lines"><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="node"><b>AI employee 4</b><small>Job · tool</small><div class="lines"><i></i><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
 
@@ -418,8 +411,8 @@
     </table>
   </div>
   <div class="row2">
-    <div class="card field"><label>My first AI hire</label><div class="lines" style="--n:4"></div></div>
-    <div class="card field"><label>What I stop doing myself</label><div class="lines" style="--n:4"></div></div>
+    <div class="card field"><label>My first AI hire</label><div class="lines"><i></i><i></i><i></i><i></i></div></div>
+    <div class="card field"><label>What I stop doing myself</label><div class="lines"><i></i><i></i><i></i><i></i></div></div>
   </div>
   <div class="foot"><span>Afternoon · AI workforce</span><span>7</span></div>
 </section>
@@ -444,7 +437,7 @@
   </div>
   <div class="card field" style="flex:1">
     <label>Notes</label>
-    <div class="lines" style="--n:14"></div>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
   <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>8</span></div>
 </section>
