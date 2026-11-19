@@ -18,6 +18,16 @@ Add my skills with Kit 02 from https://github.com/ecommercefastlaunch-debug/work
    installed with npm. Codex makes still images only; it can't make videos yet.
 3. A checklist by category, and 3 skills to try first.
 
+## Other way: Google Drive
+
+If the prompt can't run (no Git, blocked internet), students scan the second QR on workbook
+page 5. It opens a Google Drive folder with `sales-and-marketing-skills.zip` (all 61 skills
+plus a README). They download it to their laptop, then paste in Claude: "Install the skills
+from sales-and-marketing-skills.zip in my Downloads folder." Drive folder:
+https://drive.google.com/drive/folders/1J9hQ2yeu1fPpNu0OMcbTp-0xPjsmdrMM
+
+When the skill list changes, rebuild that zip from a fresh install and replace it in Drive.
+
 ## The skills
 
 The list lives in [skills.tsv](skills.tsv). The installer reads it, so add or remove a row

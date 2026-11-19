@@ -136,6 +136,13 @@
   .chips { display: flex; flex-wrap: wrap; gap: 5px 5px; margin-top: 8px; }
   .chips span.hl { background: var(--cyan); font-weight: 700; }
   .chips span { font: 500 10.6px/1.4 "SF Mono", Menlo, Consolas, monospace; background: var(--cyan-soft); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
+  .addrow { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: stretch; }
+  .addrow .way { display: flex; gap: 9px; margin-top: 8px; font-size: 11.5px; line-height: 1.45; }
+  .addrow .wn { flex: none; width: 20px; height: 20px; background: var(--cyan); color: var(--midnight); font: italic 900 11px/20px Inter, sans-serif;
+                text-align: center; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
+  .addrow i { color: #fff; }
+  .addrow .after { margin-top: 9px; font-size: 11.3px; color: #C9D2E0; }
+  .qrdrive { display: flex; flex-direction: column; justify-content: center; }
   /* Org chart */
   .org { display: flex; flex-direction: column; align-items: center; gap: 0; }
   .org .node { border: 2px solid var(--midnight); border-radius: 10px; padding: 8px 10px; width: 210px; text-align: center; background: #fff; }
@@ -339,19 +346,14 @@
   <h2>Your 61 sales and marketing skills</h2>
   <div class="skgrid"><div class="skcat"><h3>Offers &amp; positioning <span>9</span></h3><div class="chips"><span>offer-builder</span><span>offers</span><span>hundred-million-offers</span><span>product-marketing</span><span>obviously-awesome</span><span>storybrand-messaging</span><span>pricing</span><span>customer-research</span><span>competitors</span></div></div><div class="skcat"><h3>Sales <span>8</span></h3><div class="chips"><span>sales-objections</span><span>sales-followup</span><span>negotiation</span><span>proposal-pricing</span><span>sales-enablement</span><span>prospecting</span><span>cold-email</span><span>100m-leads</span></div></div><div class="skcat"><h3>Copy &amp; writing <span>10</span></h3><div class="chips"><span>copywriting</span><span>copy-editing</span><span>made-to-stick</span><span>storytelling</span><span>hook-killers</span><span>marketing-psychology</span><span>influence-psychology</span><span>stop-slop</span><span>anti-ai-writing</span><span>dumbify</span></div></div><div class="skcat"><h3>Ads &amp; images <span>5</span></h3><div class="chips"><span>breakthrough-ads</span><span>ad-creative</span><span>ads</span><span>ab-testing</span><span class="hl">image-generation</span></div></div><div class="skcat"><h3>Social &amp; video <span>11</span></h3><div class="chips"><span>social</span><span>social-captions</span><span>content-strategy</span><span>content-brief</span><span>content-repurposing</span><span>video-scripts</span><span>viral-hooks</span><span>viral-captions-and-ctas</span><span>viral-instagram-reels</span><span>viral-tiktok-content</span><span>viral-short-form-ideas</span></div></div><div class="skcat"><h3>Email, chat &amp; leads <span>5</span></h3><div class="chips"><span>emails</span><span>sms</span><span>whatsapp-marketing</span><span>lead-magnets</span><span>scorecard-marketing</span></div></div><div class="skcat"><h3>Reviews &amp; word of mouth <span>8</span></h3><div class="chips"><span>testimonial-request</span><span>review-response-writer</span><span>referrals</span><span>contagious</span><span>influencer-marketing</span><span>community-marketing</span><span>co-marketing</span><span>local-seo-manager</span></div></div><div class="skcat"><h3>Plans &amp; launches <span>5</span></h3><div class="chips"><span>one-page-marketing</span><span>marketing-plan</span><span>marketing-ideas</span><span>launch</span><span>events</span></div></div></div>
 
-  <div class="row2">
+  <div class="addrow">
     <div class="card dark">
-      <h3>How to use them</h3>
-      <ul class="clean" style="margin-top:7px;gap:6px">
-        <li><span class="dot"></span><span>Open a <b>new</b> Code session in your WORK FOLDER. Type <b>/</b> or just ask.</span></li>
-        <li><span class="dot"></span><span><b>Images:</b> sign in to ChatGPT when asked. Try "Make a 4:5 poster of my product."</span></li>
-        <li><span class="dot"></span><span>Start with <b>offer-builder</b>, <b>sales-objections</b>, <b class="nb">image-generation</b>.</span></li>
-      </ul>
+      <h3>How to add your skills: 2 ways</h3>
+      <div class="way"><span class="wn">1</span><span><b>Paste the prompt above</b> in Claude. It installs everything automatically.</span></div>
+      <div class="way"><span class="wn">2</span><span><b>Or scan the QR</b> and download <b class="nb">sales-and-marketing-skills.zip</b> from Google Drive to your laptop. Then paste in Claude: <i>"Install the skills from sales-and-marketing-skills.zip in my Downloads folder."</i></span></div>
+      <p class="after">Then open a <b>new</b> Code session. Type <b>/</b> to see your skills, or just ask.</p>
     </div>
-    <div class="card field">
-      <label>The first 3 skills I'll try</label>
-      <div class="lines" style="--n:2"></div>
-    </div>
+    <div class="qr qrdrive"><img src="qr-skills-drive.svg" alt="QR code to the skills on Google Drive"><p>All 61 skills<br>on Google Drive</p></div>
   </div>
   <div class="foot"><span>Kit 02 · Sales and Marketing Skills</span><span>5</span></div>
 </section>
