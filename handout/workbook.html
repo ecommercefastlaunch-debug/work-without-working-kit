@@ -237,7 +237,8 @@
         <div><b>04</b><span>Sales and Marketing Skills</span></div>
         <div><b>05</b><span>Sample Applications</span></div>
         <div><b>06</b><span>My AI team</span></div>
-        <div><b>07</b><span>When you're stuck, and notes</span></div>
+        <div><b>07</b><span>My 24/7 AI Video Editor</span></div>
+        <div><b>08</b><span>When you're stuck, and notes</span></div>
       </div>
     </div>
 
@@ -437,10 +438,42 @@
   <div class="foot"><span>My AI team</span><span>06</span></div>
 </section>
 
-<!-- 8. STUCK + NOTES -->
+<!-- 8. MY 24/7 AI VIDEO EDITOR -->
+<section class="page">
+  <div class="head"><span class="badge">07</span><div><h1 style="font-size:26px">My 24/7 AI Video Editor</h1><div class="when">After the Setup Kit · One prompt installs it · About 10 to 20 minutes</div></div></div>
+  <p class="lead">Claude edits your videos for you. It cuts the dead air and mistakes, adds captions and graphics, and gives you a draft to approve. It runs on <b>Herk Edit Kit</b>, Nate Herk's free video editor.</p>
+
+  <h2>A. Setup Kit</h2>
+  <div class="prompt" data-label="Paste in Claude (scan the QR)">Set me up with the 24/7 AI Video Editor from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/03-video-editor/SETUP.md</span> and install it for me. I'll allow what's needed.</div>
+  <div class="incgrid"><div class="inc"><span class="box"></span><div><h3>Herk Edit Kit</h3><p>The video editor, saved in Documents/herk-edit-kit.</p></div></div><div class="inc"><span class="box"></span><div><h3>Video engine</h3><p>Turns Claude's edit into a finished MP4.</p></div></div><div class="inc"><span class="box"></span><div><h3>Demo video</h3><p>Claude renders a short test video. You watch it play.</p></div></div><div class="inc"><span class="box"></span><div><h3>ElevenLabs key <span style="font-weight:600;color:var(--muted)">(optional)</span></h3><p>Lets Claude edit by what you say. You paste your own key; Claude never sees it.</p></div></div></div>
+
+  <h2>B. Skills</h2>
+  <div class="skgrid" style="flex:none;grid-auto-rows:auto"><div class="skcat"><h3>Edit my video <span>2</span></h3><div class="chips"><span class="hl">short-form-edit</span><span>edit-video</span></div><p class="hint" style="margin-top:5px;font-size:10.5px">Reels, Shorts and short ads · long videos</p></div><div class="skcat"><h3>Cutting <span>2</span></h3><div class="chips"><span>cut-silences</span><span>cut-mistakes</span></div><p class="hint" style="margin-top:5px;font-size:10.5px">Dead air · stutters and retakes (shows each cut first)</p></div><div class="skcat"><h3>Visuals <span>3</span></h3><div class="chips"><span>video-storytelling</span><span>hyperframes-video-beats</span><span>style-library</span></div></div><div class="skcat"><h3>Make from scratch <span>3</span></h3><div class="chips"><span>make-a-video</span><span>website-to-hyperframes</span><span>motion-showreel</span></div></div></div>
+  <p class="hint" style="font-size:10.5px;margin-top:-4px">Plus 5 that work behind the scenes: hyperframes, hyperframes-cli, hyperframes-registry, gsap, short-form-video.</p>
+
+  <div class="card dark">
+    <h3>How to use it</h3>
+    <ul class="clean" style="margin-top:7px;gap:6px">
+      <li><span class="dot"></span><span>Start a <b>new</b> Code session and choose the <b>herk-edit-kit</b> folder in Documents. The video skills only work there.</span></li>
+      <li><span class="dot"></span><span>Paste a prompt below and fill in the [brackets]. Approve or skip each cut, then watch the draft.</span></li>
+      <li><span class="dot"></span><span>Happy with it? Ask Claude to copy it to your project's <b>Outputs</b> in your WORK FOLDER.</span></li>
+    </ul>
+  </div>
+  <div class="row2">
+    <div class="tp" style="margin-top:0">Use short-form-edit to turn my clip at <span class="fill">[where my clip is]</span> into a 30 to 60 second Reel, with a strong hook, captions and B-roll. Show me the cuts before you render.</div>
+    <div class="tp" style="margin-top:0">Use website-to-hyperframes to make a 20-second promo video from <span class="fill">[my website link]</span>.</div>
+  </div>
+  <div class="card field" style="flex:1">
+    <label>My first video to edit <span class="hint">(what it is, where the clip is saved)</span></label>
+    <div class="lines"><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+  <div class="foot"><span>My 24/7 AI Video Editor</span><span>07</span></div>
+</section>
+
+<!-- 9. STUCK + NOTES -->
 <section class="page">
   <div class="eyebrow g">Help</div>
-  <div class="head"><span class="badge">07</span><div><h1 style="font-size:26px">When you're stuck</h1></div></div>
+  <div class="head"><span class="badge">08</span><div><h1 style="font-size:26px">When you're stuck</h1></div></div>
   <div class="card">
     <table>
       <tr><th style="width:42%">You see</th><th>Do this</th></tr>
@@ -451,7 +484,8 @@
       <tr><td><code>NEEDS GIT</code> or "not found" on Windows</td><td>Close and reopen the Claude app, then paste the Setup Kit prompt again.</td></tr>
       <tr><td>✗ or <code>FAILED</code></td><td>Ask Claude to run the installer once more. It skips what's done.</td></tr>
       <tr><td>Something didn't install</td><td>Paste the same kit's prompt again. It skips what's done.</td></tr>
-      <tr><td>A skill doesn't show when you type <code>/</code></td><td>Start a new Code session.</td></tr>
+      <tr><td>A skill doesn't show when you type <code>/</code></td><td>Start a new Code session. Video skills: choose the <b>herk-edit-kit</b> folder.</td></tr>
+      <tr><td>The video won't render</td><td>Ask Claude: "Run npx hyperframes doctor and fix what fails."</td></tr>
       <tr><td>Anything fails twice</td><td><b>Raise your hand.</b> Tell the helper the step number.</td></tr>
     </table>
   </div>
@@ -459,7 +493,7 @@
     <label>Notes</label>
     <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>When you're stuck, and notes</span><span>07</span></div>
+  <div class="foot"><span>When you're stuck, and notes</span><span>08</span></div>
 </section>
 
 </body>

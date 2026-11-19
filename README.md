@@ -1,6 +1,6 @@
 # Work Without Working: Kits
 
-Two kits. Each is a folder Claude follows, so the owner pastes one line and Claude does the
+Three kits. Each is a folder Claude follows, so the owner pastes one line and Claude does the
 work with them.
 
 **Repo link:** `https://github.com/ecommercefastlaunch-debug/work-without-working-kit`
@@ -8,12 +8,13 @@ work with them.
 **Web page (copy the prompts, download the workbook and the skills):** https://work-without-working-workbook.vercel.app
 Source: [site/index.html](site/index.html), hosted on Vercel (project `work-without-working`).
 
-**Day 1 workbook (print A4):** [PDF](handout/work-without-working-workbook.pdf). Both kits, sample applications, and worksheets.
+**Day 1 workbook (print A4):** [PDF](handout/work-without-working-workbook.pdf). All three kits, sample applications, and worksheets.
 
 | Kit | What the owner leaves with | Runs on |
 |---|---|---|
 | [01 Work Without Working Setup Kit](kits/01-setup/) | One prompt installs Homebrew (Mac), Git, the GitHub app, FFmpeg and Node.js, connects their GitHub account, and creates the WORK FOLDER with a CLAUDE.md | Mac, Windows |
 | [02 Sales and Marketing Skills](kits/02-skills/) | One prompt installs 61 Claude skills for sales and marketing, including image making with ChatGPT (Codex) | Mac, Windows |
+| [03 My 24/7 AI Video Editor](kits/03-video-editor/) | One prompt installs Nate Herk's Herk Edit Kit; Claude then edits their clips into Reels and long videos with captions and graphics | Mac, Windows |
 
 After Kit 01, owners open their Code sessions in the WORK FOLDER. Every new project gets its own folder
 there, and everything Claude makes goes in that project's `Outputs` folder.
