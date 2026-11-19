@@ -9,8 +9,7 @@ description: {{One or two sentences: what this tool does and when to use it. Inc
 
 {{BUILT ON}}
 
-Before starting, read the CLAUDE.md in the business folder for what we sell, our prices,
-and how we talk to customers.
+Before starting, read `WORK FOLDER/CLAUDE.md` for what we sell, who buys, and the folder rules.
 
 ## What I give you
 {{What the owner pastes or points to: a customer message, an order list, a product name...}}
@@ -26,5 +25,6 @@ and how we talk to customers.
 ## Rules
 - This is a draft for the owner to approve. Never send, post, pay, or delete anything.
 - If something needed is missing, ask one clear question instead of guessing.
-- Save the result to `03 Outputs/{{skill-name}}-YYYY-MM-DD.md` and show it in the chat.
+- Save the result in the current project's `Outputs` folder as `YYYY-MM-DD - {{skill-name}}.md`
+  and show it in the chat. If it's not clear which project, ask.
 {{Any rule specific to this task, e.g. "Never promise delivery dates."}}

@@ -13,9 +13,9 @@ the setup with them.
 | [02 Skills Directory](kits/02-skills-directory/) | Any of 74 ready tools (or one Claude finds or builds), tuned to their business and tested on real work. Run it again for each new tool | Mac, Windows |
 | [03 24/7 Video Editor](kits/03-video-editor/) | Nate Herk's video-editing kit installed, and one of their clips edited | Mac, Windows; heavy install |
 
-Do Kit 01 first: it downloads the other two. After it, owners start a new Code session in
-their business folder (`Documents/WORK FOLDER/<Business>`) so Claude picks up their skills
-and CLAUDE.md.
+Do Kit 01 first: it downloads the other two and creates `Documents/WORK FOLDER`. After it,
+owners open their Code sessions in the WORK FOLDER. Every new project gets its own folder
+there, and everything Claude makes goes in that project's `Outputs` folder.
 
 ## How an owner uses a kit
 

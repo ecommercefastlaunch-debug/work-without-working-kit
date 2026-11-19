@@ -99,6 +99,8 @@ Inside `herk-edit-kit`:
 
 3. The owner watches the edit happen in that session, approves or skips the proposed cuts,
    then plays the draft and says Approve or one fix.
+4. When they approve, copy the final video into `Documents/WORK FOLDER/<project>/Outputs/`
+   (ask which project; create the folder if it's new), so it sits with the rest of their work.
 
 ## Step 7: Done
 

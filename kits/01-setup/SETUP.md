@@ -25,7 +25,7 @@ Find out if this is a Mac or a Windows laptop. Then send one message like this:
 
 > I'll set up everything you need for today in one go:
 > - **Homebrew**, the Mac's installer (you'll paste one line and type your Mac password)
-> - **Your work folder** and a short file about your business (I'll ask 4 quick questions)
+> - **Your WORK FOLDER**, where everything you do with me will live (one quick question)
 > - **FFmpeg**, so I can work with your videos and audio
 > - **Skills:** Grill Me, stop-slop, dumbify
 >
@@ -47,7 +47,7 @@ If it's missing, the owner installs it (it needs their Mac password). Tell them:
 > Type your Mac password when asked (nothing shows while you type, that's normal) and press
 > Return. Press Return again when it says "Press RETURN to continue". If a window asks to
 > install command line tools, click **Install**. It takes 5 to 15 minutes. **Leave it
-> running and come back here: we'll do your business questions while it installs.**
+> running and come back here: we'll do your work folder while it installs.**
 
 This is Homebrew's official install line from https://brew.sh. Go straight to Step 3 while it runs.
 
@@ -55,33 +55,23 @@ This is Homebrew's official install line from https://brew.sh. Go straight to St
 (or have them install Git from https://git-scm.com/download/win), then they close and reopen
 the Claude app and paste the kit prompt again.
 
-## Step 3: Work folder and CLAUDE.md (while Homebrew installs)
+## Step 3: WORK FOLDER (while Homebrew installs)
 
-1. Ask: "What's the name of your business?" Use the exact name.
-2. Create inside their Documents folder, skipping anything that already exists and never
-   deleting or overwriting:
-
-   ```
-   WORK FOLDER/
-     <Business Name>/
-       00 Bottleneck/
-       01 Business Info/
-       02 AI Team/
-       03 Outputs/
-       04 Inbox/
-   ```
-
-3. Ask these **one at a time**:
-   1. What do you sell? (main products or services)
-   2. Who buys from you? (describe your best customer)
-   3. What are your prices? (rough is fine)
-   4. How do you talk to customers? (formal, friendly, Taglish, English...)
-4. Write `WORK FOLDER/<Business Name>/CLAUDE.md` from the template at
+1. Create `WORK FOLDER` inside their Documents folder (`~/Documents/WORK FOLDER`). If it
+   already exists, use it and never delete or overwrite anything in it. Nothing else goes
+   inside yet: each new project gets its own folder later, when they start it.
+2. Ask **one** question:
+   > "In one or two sentences, what do you sell and who buys it? Or paste your Facebook
+   > page or website link and I'll read it."
+   If they paste a link, read the page and summarize the business in 2 or 3 lines.
+3. Write `WORK FOLDER/CLAUDE.md` from the template at
    `https://raw.githubusercontent.com/ecommercefastlaunch-debug/work-without-working-kit/main/kits/01-setup/templates/CLAUDE.md`
-   (or the local copy if the kit is already downloaded). Put their answers in their own
-   words. Leave "My bottleneck" as it is; Grill Me fills it later. If a CLAUDE.md already
-   exists, ask before changing it.
-5. Show it in a few lines and fix anything they correct.
+   (or the local copy if the kit is already downloaded). Replace `{{BUSINESS}}` with 2 or 3
+   plain lines in their words. Keep the rest of the template as it is: it tells Claude to
+   give every new project its own folder with an `Outputs` folder inside. If a CLAUDE.md
+   already exists there, ask before changing it.
+4. Tell them in one line: "Your WORK FOLDER is ready. Every new project gets its own folder
+   inside it, and everything I make goes in that project's Outputs folder."
 
 ## Step 4: Install everything else, in one run
 
@@ -109,12 +99,12 @@ Show a check or a cross for each:
 
 - Homebrew (Mac) / Git (Windows)
 - Kit files in `Documents/work-without-working-kit`
-- Work folder `Documents/WORK FOLDER/<Business Name>` with CLAUDE.md
+- `Documents/WORK FOLDER` with CLAUDE.md
 - FFmpeg
 - Skills: Grill Me, grilling, stop-slop, dumbify
 
 Then tell them:
 
-> You're set up. Start a **new** Code session and choose your business folder
-> (`WORK FOLDER/<Business Name>`). Type `/` to see your skills. You can write to
-> me in Tagalog, Taglish or English. When you want more tools, run Kit 02, the Skills Directory.
+> You're set up. Start a **new** Code session and choose your **WORK FOLDER**. Tell me what
+> you want to work on and I'll make a folder for it. Type `/` to see your skills. You can write
+> to me in Tagalog, Taglish or English. When you want more tools, run Kit 02, the Skills Directory.

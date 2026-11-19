@@ -6,9 +6,8 @@ on real work. They can run this kit as many times as they want, one tool per run
 
 ## Before this kit
 
-Kit 01 (Setup) is done. They're in a Code session with their business folder
-(`WORK FOLDER/<Business>`) selected. A bottleneck brief from Grill Me helps Claude suggest
-better tools, but isn't required.
+Kit 01 (Setup) is done. They're in a Code session with their `WORK FOLDER` (or a project
+folder inside it) selected.
 
 ## The one prompt (owners paste this)
 
@@ -33,16 +32,16 @@ business facts, a real example, and their rules, built on top of the installed t
 2. Suggests 3 to 5 catalog tools that fit, plus "see all", "something else", or "from scratch"
 3. Installs or finds the tool (`install-tool.sh`), or skips to building
 4. Asks for one real example: what goes in, and what good looks like
-5. Writes their own version in their business folder
+5. Writes their own version (`my-<tool>`), which works in every project
 6. Runs it on the real example and saves the result
 7. Improves it once if the owner wants changes, then gives a done checklist
 
 ## They leave with
 
-- [ ] Their own tool at `WORK FOLDER/<Business>/.claude/skills/my-<tool>/SKILL.md`
-- [ ] One real output from it in `03 Outputs`
-- [ ] The tool listed in `02 AI Team/my-tools.md`
-- [ ] Knowing how to run it again: type `/my-<tool>` in a session in their business folder
+- [ ] Their own tool at `~/.claude/skills/my-<tool>/SKILL.md`
+- [ ] One real output from it in `WORK FOLDER/<project>/Outputs`
+- [ ] The tool listed in `WORK FOLDER/my-tools.md`
+- [ ] Knowing how to run it again: type `/my-<tool>` in a session in their WORK FOLDER
 
 ## Files
 

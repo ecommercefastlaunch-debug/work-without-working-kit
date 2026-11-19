@@ -1,6 +1,6 @@
 ---
 name: ui-image-gen
-description: Generate images through the owner's own signed-in ChatGPT or Gemini (Nano Banana) account instead of paid APIs, then save the result in the business folder. Use when the owner asks to make or edit an image "sa ChatGPT", "sa Gemini", "Nano Banana", "gamit account ko", or wants both compared. Not for Higgsfield credits or video.
+description: Generate images through the owner's own signed-in ChatGPT or Gemini (Nano Banana) account instead of paid APIs, then save the result in the project's Outputs folder. Use when the owner asks to make or edit an image "sa ChatGPT", "sa Gemini", "Nano Banana", "gamit account ko", or wants both compared. Not for Higgsfield credits or video.
 ---
 
 # Image generation through the owner's ChatGPT / Gemini accounts
@@ -15,7 +15,7 @@ Uses the owner's own subscriptions. No API keys.
 
 ```bash
 CODEX=/Applications/ChatGPT.app/Contents/Resources/codex-cli/bin/codex
-OUT="<business folder>/03 Outputs/images"; mkdir -p "$OUT"; cd "$OUT"
+OUT="<WORK FOLDER>/<project>/Outputs/images"; mkdir -p "$OUT"; cd "$OUT"
 "$CODEX" exec --skip-git-repo-check -s workspace-write \
   "Generate an image with your image generation tool: <prompt, incl. aspect ratio>. Save the image file in the current directory as <name>.png and print its path."
 ```
@@ -32,7 +32,7 @@ OUT="<business folder>/03 Outputs/images"; mkdir -p "$OUT"; cd "$OUT"
 2. Start a new chat for each new image idea.
 3. Start the prompt with "Generate an image:" and state the aspect ratio ("4:5 vertical", "9:16").
 4. Wait for it to finish, then use the "Download full size image" button.
-5. Find the new file in `~/Downloads` and move it to `<business folder>/03 Outputs/images/`.
+5. Find the new file in `~/Downloads` and move it to `<WORK FOLDER>/<project>/Outputs/images/`.
 
 ## Saving
 

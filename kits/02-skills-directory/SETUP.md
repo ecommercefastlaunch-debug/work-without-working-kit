@@ -29,13 +29,15 @@ The kit folder is `~/Documents/work-without-working-kit/kits/02-skills-directory
 
 ---
 
-## Step 1: Read the business
+## Step 1: Read the business and pick the project
 
-1. Find the business folder: the current folder if it has a CLAUDE.md, otherwise look in
-   `Documents/WORK FOLDER/` and ask which business.
-2. Read `CLAUDE.md`, and `00 Bottleneck/bottleneck-brief.md` if it exists.
-3. If there's no bottleneck brief, ask: "In one sentence, what task eats most of your time
-   every week?"
+1. Find their WORK FOLDER: `Documents/WORK FOLDER` (the current folder, or a folder above
+   it, with a CLAUDE.md). Read `WORK FOLDER/CLAUDE.md`.
+2. Ask: "In one sentence, what task eats most of your time every week?" (skip it if they
+   already said, or a Grill Me summary in the WORK FOLDER answers it).
+3. Find the project this tool is for: if the session is inside a project folder, use it.
+   Otherwise ask which project, and if it doesn't exist yet, create
+   `WORK FOLDER/<project name>/Outputs/`. Results from this kit go in that `Outputs` folder.
 
 ## Step 2: Choose the path
 
@@ -113,8 +115,8 @@ Then:
 
 1. Pick a short name with their business in mind, lowercase with hyphens, starting with
    `my-`, for example `my-reply-drafts` or `my-product-captions`. Ask if it's OK.
-2. Create `.claude/skills/<my-name>/` inside the business folder and copy
-   `templates/SKILL.md` from the kit folder into it as `SKILL.md`.
+2. Create `~/.claude/skills/<my-name>/` (their personal skills folder, so the tool works in
+   every project) and copy `templates/SKILL.md` from the kit folder into it as `SKILL.md`.
 3. Fill in every `{{...}}` from Step 1, these answers, and (for Path A or B) the installed
    tool. For Path A or B, fill `{{BUILT ON}}` with: "Use the `<tool-name>` skill for how to
    do this task. This file adds my business and my rules on top." For Path C, delete that line.
@@ -125,7 +127,7 @@ Then:
 ## Step 5: Test it on the real example
 
 1. Follow `<my-name>/SKILL.md` exactly as written (and the tool it's built on) on the example.
-2. Save the result where the skill says, in `03 Outputs`, and show it.
+2. Save the result in the project's `Outputs` folder, as the skill says, and show it.
 3. Ask: "Is this good enough to use? What would you change?"
 
 ## Step 6: Improve it once
@@ -135,16 +137,16 @@ example, and show the new result. At most twice today.
 
 ## Step 7: Record it and finish
 
-1. Add to `02 AI Team/my-tools.md` (create it if missing):
+1. Add to `WORK FOLDER/my-tools.md` (create it if missing):
    `- /<my-name>: <what it does>, built on <tool-name or "from scratch">, made <today's date>`
 2. Show this checklist with a check or a cross for each line:
    - Tool chosen (catalog, found online, or from scratch)
-   - Their own version written at `.claude/skills/<my-name>/SKILL.md`
-   - Tested on a real example, result in `03 Outputs`
-   - Listed in `02 AI Team/my-tools.md`
+   - Their own version written at `~/.claude/skills/<my-name>/SKILL.md`
+   - Tested on a real example, result in `<project>/Outputs`
+   - Listed in `WORK FOLDER/my-tools.md`
 3. Tell them:
 
-> Your tool is ready. Next time, open a Code session in your business folder and type
-> `/<my-name>`, then paste what you want it to work on. If it doesn't show up when you
-> type `/`, start a new session in your business folder. Want another? Paste the Kit 02
-> prompt again and pick a different tool.
+> Your tool is ready, and it works in every project. Next time, open a Code session in your
+> WORK FOLDER (or a project folder in it) and type `/<my-name>`, then paste what you want it
+> to work on. If it doesn't show up when you type `/`, start a new session. Want another?
+> Paste the Kit 02 prompt again and pick a different tool.
