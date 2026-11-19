@@ -18,7 +18,7 @@ is a folder with a `SKILL.md`, installed into `~/.claude/skills`, so it works in
 ## Step 1: Check Git
 
 Run `git --version`. If it's missing, the Work Without Working Setup Kit (Kit 01) isn't done:
-tell them to run Kit 01 first, and stop.
+tell them to do the Work Without Working Setup Kit first (section 02 of their workbook), and stop.
 
 ## Step 2: Install the skills
 

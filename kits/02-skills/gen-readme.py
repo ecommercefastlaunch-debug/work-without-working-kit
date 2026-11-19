@@ -26,7 +26,7 @@ the owner's own ChatGPT account (through Codex). Do the Work Without Working Set
 ## The one prompt (owners paste this)
 
 ```
-Add my skills with Kit 02 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/02-skills/SETUP.md and install them for me.
+Add my sales and marketing skills from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/02-skills/SETUP.md and install them for me.
 ```
 
 ## What happens

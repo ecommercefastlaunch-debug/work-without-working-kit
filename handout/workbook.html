@@ -159,7 +159,7 @@
   .hstep span:not(.wn) { color: var(--muted); }
   .toc { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 22px; margin-top: 8px; }
   .toc div { display: flex; gap: 9px; align-items: baseline; }
-  .toc b { font: italic 900 12px/1 Inter, sans-serif; background: var(--midnight); color: var(--cyan); min-width: 20px; padding: 3px 0; text-align: center; }
+  .toc b { font: italic 900 12px/1 Inter, sans-serif; background: var(--midnight); color: var(--cyan); min-width: 26px; padding: 3px 0; text-align: center; }
   ul.clean.big { gap: 9px; font-size: 13px; }
   ul.clean.big .boxsm { width: 16px; height: 16px; vertical-align: -3px; }
   .quizrow { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: stretch; }
@@ -227,13 +227,13 @@
     <div class="card">
       <h3>What's inside</h3>
       <div class="toc">
-        <div><b>2</b><span>Before we start</span></div>
-        <div><b>3</b><span>01 Work Without Working Setup Kit</span></div>
-        <div><b>4</b><span>My bottleneck: learning and reflection</span></div>
-        <div><b>5</b><span>02 Sales and Marketing Skills</span></div>
-        <div><b>6</b><span>03 Sample Applications</span></div>
-        <div><b>7</b><span>My AI team</span></div>
-        <div><b>8</b><span>When you're stuck, and notes</span></div>
+        <div><b>01</b><span>Before we start</span></div>
+        <div><b>02</b><span>Work Without Working Setup Kit</span></div>
+        <div><b>03</b><span>My bottleneck: learning and reflection</span></div>
+        <div><b>04</b><span>Sales and Marketing Skills</span></div>
+        <div><b>05</b><span>Sample Applications</span></div>
+        <div><b>06</b><span>My AI team</span></div>
+        <div><b>07</b><span>When you're stuck, and notes</span></div>
       </div>
     </div>
 
@@ -247,13 +247,13 @@
       <div style="display:flex;gap:8px"><span class="dot"></span><span><b>Stuck twice?</b> Raise your hand.</span></div>
     </div>
   </div>
-  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span>1</span></div>
+  <div class="foot"><span>Work Without Working · Day 1 Workbook</span><span style="display:none"></span></div>
 </section>
 
 <!-- 2. BEFORE WE START -->
 <section class="page">
   <div class="eyebrow g">Setup checklist</div>
-  <h1>Before we start</h1>
+  <div class="head"><span class="badge">01</span><div><h1 style="font-size:26px">Before we start</h1></div></div>
   <div class="card">
     <h3>Check these now</h3>
     <ul class="clean big" style="margin-top:10px">
@@ -279,14 +279,14 @@
     <label style="margin-top:14px">Questions I want answered</label>
     <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>Before we start</span><span>2</span></div>
+  <div class="foot"><span>Before we start</span><span>01</span></div>
 </section>
 
 <!-- 3. KIT 01 SETUP -->
 <section class="page">
-  <div class="head"><span class="badge">01</span><div><h1 style="font-size:26px">Work Without Working Setup Kit</h1><div class="when">Do this first · One prompt installs everything · About 15 to 25 minutes</div></div></div>
+  <div class="head"><span class="badge">02</span><div><h1 style="font-size:26px">Work Without Working Setup Kit</h1><div class="when">Do this first · One prompt installs everything · About 15 to 25 minutes</div></div></div>
   <p class="lead">Paste one prompt. Claude installs everything below for you. You only approve when your computer asks.</p>
-  <div class="prompt" data-label="Paste in Claude (scan the QR)">Set me up with Kit 01 from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/01-setup/SETUP.md</span> and install everything for me. I'll allow what's needed.</div>
+  <div class="prompt" data-label="Paste in Claude (scan the QR)">Set me up with the Work Without Working Setup Kit from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/01-setup/SETUP.md</span> and install everything for me. I'll allow what's needed.</div>
 
   <h2>What's included</h2>
   <div class="incgrid"><div class="inc"><span class="box"></span><div><h3>Homebrew</h3><p>Mac only. The Mac's installer for everything below.</p></div></div><div class="inc"><span class="box"></span><div><h3>Git + GitHub app</h3><p>Downloads files and skills from GitHub.</p></div></div><div class="inc"><span class="box"></span><div><h3>FFmpeg</h3><p>Lets Claude cut and convert your videos.</p></div></div><div class="inc"><span class="box"></span><div><h3>Node.js</h3><p>Runs tools like video editors and app builders.</p></div></div><div class="inc"><span class="box"></span><div><h3>GitHub account</h3><p>No account yet? Claude opens the sign-up page. You sign up and sign in yourself.</p></div></div><div class="inc"><span class="box"></span><div><h3>WORK FOLDER</h3><p>Your home base, with a file that tells Claude about your business.</p></div></div></div>
@@ -318,13 +318,13 @@
     <label>My first projects <span class="hint">(each one becomes a folder)</span></label>
     <div class="lines"><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>01 · Work Without Working Setup Kit</span><span>3</span></div>
+  <div class="foot"><span>Work Without Working Setup Kit</span><span>02</span></div>
 </section>
 
 <!-- 4. BUSINESS + BOTTLENECK -->
 <section class="page">
   <div class="eyebrow g">Worksheet · Learning and reflection</div>
-  <h1>My bottleneck</h1>
+  <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">My bottleneck</h1></div></div>
   <p class="lead">Take the quiz first. Then write what you learned, what it means for you, and what you'll do about it.</p>
 
   <div class="quizrow">
@@ -352,14 +352,14 @@
     <label style="margin-top:14px">The one thing I'll start this week</label>
     <div class="lines"><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>My bottleneck</span><span>4</span></div>
+  <div class="foot"><span>My bottleneck</span><span>03</span></div>
 </section>
 
 <!-- 5. KIT 02 SKILLS -->
 <section class="page">
-  <div class="head"><span class="badge">02</span><div><h1 style="font-size:26px">Sales and Marketing Skills</h1><div class="when">After the Setup Kit · One prompt adds all 61 · About 2 to 5 minutes</div></div></div>
+  <div class="head"><span class="badge">04</span><div><h1 style="font-size:26px">Sales and Marketing Skills</h1><div class="when">After the Setup Kit · One prompt adds all 61 · About 2 to 5 minutes</div></div></div>
   <p class="lead">Skills are add-ons that teach Claude a sales or marketing job, like writing your offer, your ads or your follow-ups. It also connects your <b>ChatGPT</b> so Claude can make images for you.</p>
-  <div class="prompt" data-label="Paste in Claude (scan the QR)">Add my skills with Kit 02 from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/02-skills/SETUP.md</span> and install them for me.</div>
+  <div class="prompt" data-label="Paste in Claude (scan the QR)">Add my sales and marketing skills from <a class="nb" href="https://github.com/ecommercefastlaunch-debug/work-without-working-kit">https://github.com/ecommercefastlaunch-debug/work-without-working-kit</a>. Read <span class="nb">kits/02-skills/SETUP.md</span> and install them for me.</div>
 
   <h2>Your 61 sales and marketing skills</h2>
   <div class="skgrid"><div class="skcat"><h3>Offers &amp; positioning <span>9</span></h3><div class="chips"><span>offer-builder</span><span>offers</span><span>hundred-million-offers</span><span>product-marketing</span><span>obviously-awesome</span><span>storybrand-messaging</span><span>pricing</span><span>customer-research</span><span>competitors</span></div></div><div class="skcat"><h3>Sales <span>8</span></h3><div class="chips"><span>sales-objections</span><span>sales-followup</span><span>negotiation</span><span>proposal-pricing</span><span>sales-enablement</span><span>prospecting</span><span>cold-email</span><span>100m-leads</span></div></div><div class="skcat"><h3>Copy &amp; writing <span>10</span></h3><div class="chips"><span>copywriting</span><span>copy-editing</span><span>made-to-stick</span><span>storytelling</span><span>hook-killers</span><span>marketing-psychology</span><span>influence-psychology</span><span>stop-slop</span><span>anti-ai-writing</span><span>dumbify</span></div></div><div class="skcat"><h3>Ads &amp; images <span>5</span></h3><div class="chips"><span>breakthrough-ads</span><span>ad-creative</span><span>ads</span><span>ab-testing</span><span class="hl">image-generation</span></div></div><div class="skcat"><h3>Social &amp; video <span>11</span></h3><div class="chips"><span>social</span><span>social-captions</span><span>content-strategy</span><span>content-brief</span><span>content-repurposing</span><span>video-scripts</span><span>viral-hooks</span><span>viral-captions-and-ctas</span><span>viral-instagram-reels</span><span>viral-tiktok-content</span><span>viral-short-form-ideas</span></div></div><div class="skcat"><h3>Email, chat &amp; leads <span>5</span></h3><div class="chips"><span>emails</span><span>sms</span><span>whatsapp-marketing</span><span>lead-magnets</span><span>scorecard-marketing</span></div></div><div class="skcat"><h3>Reviews &amp; word of mouth <span>8</span></h3><div class="chips"><span>testimonial-request</span><span>review-response-writer</span><span>referrals</span><span>contagious</span><span>influencer-marketing</span><span>community-marketing</span><span>co-marketing</span><span>local-seo-manager</span></div></div><div class="skcat"><h3>Plans &amp; launches <span>5</span></h3><div class="chips"><span>one-page-marketing</span><span>marketing-plan</span><span>marketing-ideas</span><span>launch</span><span>events</span></div></div></div>
@@ -373,29 +373,29 @@
     </div>
     <div class="qr qrdrive"><img src="qr-skills-drive.svg" alt="QR code to the skills on Google Drive"><p>All 61 skills<br>on Google Drive</p></div>
   </div>
-  <div class="foot"><span>02 · Sales and Marketing Skills</span><span>5</span></div>
+  <div class="foot"><span>Sales and Marketing Skills</span><span>04</span></div>
 </section>
 
 <!-- 6. SAMPLE APPLICATIONS -->
 <section class="page">
-  <div class="head"><span class="badge">03</span><div><h1 style="font-size:26px">Sample Applications</h1><div class="when">After Kits 01 and 02 · Copy a prompt, fill in the [brackets], send</div></div></div>
+  <div class="head"><span class="badge">05</span><div><h1 style="font-size:26px">Sample Applications</h1><div class="when">After sections 02 and 04 · Copy a prompt, fill in the [brackets], send</div></div></div>
   <p class="lead">Ten ways to put your skills to work today. Copy a prompt, replace the [brackets] with your details, and send it in a Code session in your WORK FOLDER.</p>
   <div class="appgrid"><div class="app"><div class="tt"><span class="tn">1</span><div><h3>My Offer</h3><p>Market research, competitors and a clear offer</p></div></div><div class="tp">Use offer-builder on my business. I sell <span class="fill">[what I sell]</span> to <span class="fill">[who buys it]</span> for <span class="fill">[price]</span>.</div></div><div class="app"><div class="tt"><span class="tn">2</span><div><h3>10 Ads in One Go</h3><p>10 ad scripts from 10 angles</p></div></div><div class="tp">Use breakthrough-ads to write 10 ad scripts for <span class="fill">[my product]</span>, in Taglish.</div></div><div class="app"><div class="tt"><span class="tn">3</span><div><h3>Product Poster</h3><p>A 4:5 poster made with your ChatGPT</p></div></div><div class="tp">Use image-generation to make a 4:5 poster of <span class="fill">[my product]</span> with the words <span class="fill">[headline]</span>.</div></div><div class="app"><div class="tt"><span class="tn">4</span><div><h3>Price Objection Replies</h3><p>Answers you can send on Messenger</p></div></div><div class="tp">Use sales-objections: my customers say <span class="fill">[what they say]</span>. Give me Messenger replies.</div></div><div class="app"><div class="tt"><span class="tn">5</span><div><h3>Follow-Up Messages</h3><p>For people who asked and went quiet</p></div></div><div class="tp">Use sales-followup: write 3 follow-ups for people who asked about <span class="fill">[product]</span> and didn't reply.</div></div><div class="app"><div class="tt"><span class="tn">6</span><div><h3>30-Day Content Plan</h3><p>A month of posts with captions</p></div></div><div class="tp">Use content-strategy and social-captions: plan 30 days of <span class="fill">[Facebook / IG / TikTok]</span> posts, with captions.</div></div><div class="app"><div class="tt"><span class="tn">7</span><div><h3>5 Reels Scripts</h3><p>Short videos with hooks, ready to shoot</p></div></div><div class="tp">Use video-scripts: 5 Reels scripts about <span class="fill">[topic]</span>, in Taglish, 30 seconds each.</div></div><div class="app"><div class="tt"><span class="tn">8</span><div><h3>Review Replies</h3><p>Kind replies to your Google and Facebook reviews</p></div></div><div class="tp">Use review-response-writer on my <span class="fill">[Google / Facebook]</span> reviews. I'll paste them next.</div></div><div class="app"><div class="tt"><span class="tn">9</span><div><h3>Testimonial Request</h3><p>A message asking a happy customer for a review</p></div></div><div class="tp">Use testimonial-request: write a message asking <span class="fill">[customer]</span> for a review of <span class="fill">[product]</span>.</div></div><div class="app"><div class="tt"><span class="tn">10</span><div><h3>Payday Promo</h3><p>A 15th and 30th sale: offer, posts and a Messenger blast</p></div></div><div class="tp">Use offers and launch: plan a payday sale for <span class="fill">[product]</span>, with the offer, 3 posts and 1 Messenger blast.</div></div></div>
 
   <div class="card field" style="flex:1">
-    <label>Make your own tool <span class="hint">(start from your bottleneck on page 4)</span></label>
+    <label>Make your own tool <span class="hint">(start from your next steps in section 03)</span></label>
     <div class="tp" style="margin-top:4px">Make me a tool for <span class="fill">[the task]</span>. I'll give it <span class="fill">[what I give it]</span>, and I want back <span class="fill">[what I want]</span>. Ask me questions one at a time, then save it as a skill I can use every week.</div>
     <label style="margin-top:8px">Notes</label>
     <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>03 · Sample Applications</span><span>6</span></div>
+  <div class="foot"><span>Sample Applications</span><span>05</span></div>
 </section>
 
 <!-- 7. MY AI TEAM -->
 <section class="page">
   <div class="eyebrow g">Worksheet · Grok Bot Setup + AI Chief of Staff</div>
-  <h1>My AI team</h1>
-  <p class="lead">You're the owner. Your AI Chief of Staff runs the team. Each AI employee has one job. Start with your next steps on page 4.</p>
+  <div class="head"><span class="badge">06</span><div><h1 style="font-size:26px">My AI team</h1></div></div>
+  <p class="lead">You're the owner. Your AI Chief of Staff runs the team. Each AI employee has one job. Start with your next steps in section 03.</p>
 
   <div class="org">
     <div class="node me"><b>Me, the owner</b><small>I decide and approve</small></div>
@@ -425,13 +425,13 @@
     <div class="card field"><label>My first AI hire</label><div class="lines"><i></i><i></i><i></i><i></i></div></div>
     <div class="card field"><label>What I stop doing myself</label><div class="lines"><i></i><i></i><i></i><i></i></div></div>
   </div>
-  <div class="foot"><span>My AI team</span><span>7</span></div>
+  <div class="foot"><span>My AI team</span><span>06</span></div>
 </section>
 
 <!-- 8. STUCK + NOTES -->
 <section class="page">
   <div class="eyebrow g">Help</div>
-  <h1>When you're stuck</h1>
+  <div class="head"><span class="badge">07</span><div><h1 style="font-size:26px">When you're stuck</h1></div></div>
   <div class="card">
     <table>
       <tr><th style="width:42%">You see</th><th>Do this</th></tr>
@@ -439,7 +439,7 @@
       <tr><td>"Claude wants to control Terminal"</td><td>Click <b>OK</b>.</td></tr>
       <tr><td>Windows: "Allow this app to make changes?"</td><td>Click <b>Yes</b>.</td></tr>
       <tr><td><code>NEEDS HOMEBREW</code></td><td>Homebrew is still installing. Wait, then ask Claude to run the installer again.</td></tr>
-      <tr><td><code>NEEDS GIT</code> or "not found" on Windows</td><td>Close and reopen the Claude app, then paste the Kit 01 prompt again.</td></tr>
+      <tr><td><code>NEEDS GIT</code> or "not found" on Windows</td><td>Close and reopen the Claude app, then paste the Setup Kit prompt again.</td></tr>
       <tr><td>✗ or <code>FAILED</code></td><td>Ask Claude to run the installer once more. It skips what's done.</td></tr>
       <tr><td>Something didn't install</td><td>Paste the same kit's prompt again. It skips what's done.</td></tr>
       <tr><td>A skill doesn't show when you type <code>/</code></td><td>Start a new Code session.</td></tr>
@@ -450,7 +450,7 @@
     <label>Notes</label>
     <div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="foot"><span>When you're stuck, and notes</span><span>8</span></div>
+  <div class="foot"><span>When you're stuck, and notes</span><span>07</span></div>
 </section>
 
 </body>

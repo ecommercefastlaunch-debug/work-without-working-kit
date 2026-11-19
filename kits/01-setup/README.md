@@ -9,7 +9,7 @@ password for Homebrew, an **Allow** button, or (on Windows) accepting the progra
 Open the Claude desktop app, click the **Code** tab, and paste:
 
 ```
-Set me up with Kit 01 from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/01-setup/SETUP.md and install everything for me. I'll allow what's needed.
+Set me up with the Work Without Working Setup Kit from https://github.com/ecommercefastlaunch-debug/work-without-working-kit. Read kits/01-setup/SETUP.md and install everything for me. I'll allow what's needed.
 ```
 
 ## What happens

@@ -146,4 +146,4 @@ Then tell them:
 
 > You're set up. Start a **new** Code session and choose your **WORK FOLDER**. Tell me what
 > you want to work on and I'll make a folder for it. You can write to me in Tagalog, Taglish
-> or English. Next, add your sales and marketing skills with Kit 02.
+> or English. Next, add your sales and marketing skills (section 04 of your workbook).
